@@ -1028,10 +1028,13 @@
     display: flex;
     align-items: stretch;
     gap: 50px;
+    max-height: 420px;
+    overflow: hidden;
   }
 
   .why-choose-text {
     flex: 1;
+    overflow-y: auto;
   }
 
   .why-choose-text h2 {
@@ -1091,6 +1094,12 @@
   @media (max-width: 900px) {
     .why-choose-inner {
       flex-direction: column;
+      max-height: none;
+      overflow: visible;
+    }
+
+    .why-choose-text {
+      overflow-y: visible;
     }
 
     .why-choose-image {
