@@ -36,11 +36,10 @@
   ── SERVICES COVER SECTION ──
   {{SERVICES_COVER_IMAGE}}                           Image URL (left side)
   {{SERVICES_COVER_IMAGE_ALT}}                       Image alt text
-  {{H2_SERVICES_COVER_TITLE}}                        H2 — Section heading (e.g. "What Our [Service] Covers")
-  {{SERVICES_COVER_P1}}                              First paragraph
-  {{SERVICES_COVER_P2}}                              Second paragraph
-  {{SERVICES_COVER_P3}}                              Third paragraph
-  {{SERVICES_COVER_P4}}                              Fourth paragraph (optional)
+  {{H2_SERVICES_COVER_TITLE}}                        H2 — Section heading (enticing hook)
+  {{SERVICES_COVER_INTRO}}                           Intro paragraph (primary keyword here)
+  {{H3_SUBSERVICE_1}} thru {{H3_SUBSERVICE_3}}      H3 — Sub-service headings
+  {{SERVICES_COVER_P1}} thru {{SERVICES_COVER_P3}}  Paragraphs under each sub-service H3
 
   ── HOW IT WORKS SECTION ──
   {{HIW_EYEBROW}}                                   Eyebrow text (not a heading)
@@ -57,9 +56,9 @@
   {{WHY_CHOOSE_P3}}            Third paragraph
 
   ── FAQ SECTION ──
-  Title "Frequently Asked Questions" is HARDCODED
-  {{FAQ_1_Q}} thru {{FAQ_5_Q}}   Questions
-  {{FAQ_1_A}} thru {{FAQ_5_A}}   Answers
+  {{H2_FAQ_TITLE}}                                     H2 — Section heading (e.g. "Common Questions About [Service]")
+  {{H3_FAQ_1_Q}} thru {{H3_FAQ_5_Q}}                  H3 — Accordion questions
+  {{FAQ_1_A}} thru {{FAQ_5_A}}                         Answers
 
   ── RELATED SERVICES SIDEBAR ──
   {{RELATED_1_URL}} thru {{RELATED_5_URL}}     Link URLs
@@ -685,6 +684,16 @@
     line-height: 1.25;
   }
 
+  .services-cover-text h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #1a1a1a;
+    margin-top: 28px;
+    margin-bottom: 12px;
+    line-height: 1.3;
+  }
+
   .services-cover-text p {
     font-size: 0.95rem;
     color: #444;
@@ -1131,18 +1140,15 @@
   }
 
   .faq-question {
-    width: 100%;
-    background: none;
-    border: none;
     padding: 20px 40px 20px 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 0.95rem;
     color: #1a1a1a;
-    text-align: left;
     cursor: pointer;
     position: relative;
     line-height: 1.4;
+    margin: 0;
   }
 
   .faq-question::after {
@@ -1827,10 +1833,16 @@
 
       <img class="services-cover-mobile-img" src="{{SERVICES_COVER_IMAGE}}" alt="{{SERVICES_COVER_IMAGE_ALT}}">
 
+      <p>{{SERVICES_COVER_INTRO}}</p>
+
+      <h3>{{H3_SUBSERVICE_1}}</h3>
       <p>{{SERVICES_COVER_P1}}</p>
+
+      <h3>{{H3_SUBSERVICE_2}}</h3>
       <p>{{SERVICES_COVER_P2}}</p>
+
+      <h3>{{H3_SUBSERVICE_3}}</h3>
       <p>{{SERVICES_COVER_P3}}</p>
-      <p>{{SERVICES_COVER_P4}}</p>
     </div>
   </div>
 </section>
@@ -1944,41 +1956,41 @@
      ======================== -->
 <section class="faq-section">
   <div class="faq-inner">
-    <h2>Frequently Asked Questions</h2>
+    <h2>{{H2_FAQ_TITLE}}</h2>
 
     <div class="faq-layout">
       <div class="faq-accordion">
 
         <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">{{FAQ_1_Q}}</button>
+          <h3 class="faq-question" onclick="toggleFaq(this)">{{H3_FAQ_1_Q}}</h3>
           <div class="faq-answer">
             <p>{{FAQ_1_A}}</p>
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">{{FAQ_2_Q}}</button>
+          <h3 class="faq-question" onclick="toggleFaq(this)">{{H3_FAQ_2_Q}}</h3>
           <div class="faq-answer">
             <p>{{FAQ_2_A}}</p>
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">{{FAQ_3_Q}}</button>
+          <h3 class="faq-question" onclick="toggleFaq(this)">{{H3_FAQ_3_Q}}</h3>
           <div class="faq-answer">
             <p>{{FAQ_3_A}}</p>
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">{{FAQ_4_Q}}</button>
+          <h3 class="faq-question" onclick="toggleFaq(this)">{{H3_FAQ_4_Q}}</h3>
           <div class="faq-answer">
             <p>{{FAQ_4_A}}</p>
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">{{FAQ_5_Q}}</button>
+          <h3 class="faq-question" onclick="toggleFaq(this)">{{H3_FAQ_5_Q}}</h3>
           <div class="faq-answer">
             <p>{{FAQ_5_A}}</p>
           </div>
