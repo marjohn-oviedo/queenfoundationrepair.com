@@ -1,0 +1,364 @@
+<!--
+  ============================================================
+  LOCATION PAGE TEMPLATE — Queen Foundation Repair
+  ============================================================
+
+  ── PAGE-LEVEL ──
+  {{PAGE_TITLE}}              Browser tab title (e.g. "Foundation Repair Cleveland OH | Queen Foundation Repair")
+
+  ── HERO SECTION ──
+  {{HERO_BG_IMAGE}}           Hero background image URL
+  {{H1_TEXT}}                 H1 — Page title (e.g. "Foundation Repair in Cleveland OH")
+  {{HERO_SUBTEXT}}            Italic subtext below H1
+  {{HERO_BULLET_1}}           First green checkmark bullet
+  {{HERO_BULLET_2}}           Second green checkmark bullet
+  {{HERO_BULLET_3}}           Third green checkmark bullet
+
+  ============================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{PAGE_TITLE}}</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Noto Sans', sans-serif;
+    color: #ffffff;
+    line-height: 1.6;
+  }
+
+  /* ===========================
+     HERO SECTION
+     =========================== */
+  .hero {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    background: url('{{HERO_BG_IMAGE}}') center 40% / cover no-repeat;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+  }
+
+  .hero-inner {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 30px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
+
+  /* --- Left Column: Content --- */
+  .hero-content {
+    flex: 1.2;
+  }
+
+  .hero-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 2.6rem;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    color: #ffffff;
+  }
+
+  .hero-content h1 span {
+    color: #3b9eff;
+  }
+
+  .hero-subtext {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .hero-bullets {
+    list-style: none;
+    margin-bottom: 28px;
+  }
+
+  .hero-bullets li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin-bottom: 14px;
+    color: #ffffff;
+  }
+
+  .hero-bullets li svg {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
+  }
+
+  .phone-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #2563eb;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    padding: 14px 32px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+
+  .phone-btn:hover {
+    background: #1d4ed8;
+  }
+
+  .phone-btn .phone-number {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .phone-btn svg {
+    width: 22px;
+    height: 22px;
+    fill: #ffffff;
+  }
+
+  /* --- Right Column: Form --- */
+  .hero-form-wrap {
+    flex: 0.8;
+    background: rgba(0, 0, 0, 0.30);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    padding: 24px 24px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  .hero-form-wrap .form-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 16px;
+    line-height: 1.3;
+  }
+
+  .hero-form-wrap input,
+  .hero-form-wrap select {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 0.9rem;
+    color: #333;
+    background: #ffffff;
+    outline: none;
+    transition: border-color 0.2s;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  .hero-form-wrap select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23999' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 36px;
+    color: #999;
+  }
+
+  .hero-form-wrap select.selected {
+    color: #333;
+  }
+
+  .hero-form-wrap input:focus,
+  .hero-form-wrap select:focus {
+    border-color: #2563eb;
+  }
+
+  .hero-form-wrap input::placeholder {
+    color: #999;
+  }
+
+  .form-submit-btn {
+    width: 100%;
+    padding: 14px;
+    background: #2563eb;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 4px;
+  }
+
+  .form-submit-btn:hover {
+    background: #1d4ed8;
+  }
+
+  .form-submit-btn:disabled {
+    background: #93b4f0;
+    cursor: not-allowed;
+  }
+
+  .form-success {
+    display: none;
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .form-success p strong {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+
+  .form-success p {
+    font-size: 0.9rem;
+    color: #cccccc;
+  }
+
+  /* ===========================
+     RESPONSIVE
+     =========================== */
+  @media (max-width: 900px) {
+    .hero-inner {
+      flex-direction: column;
+      padding: 40px 20px;
+      gap: 30px;
+    }
+
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+
+    .hero-form-wrap {
+      width: 100%;
+    }
+  }
+
+</style>
+</head>
+<body>
+
+<!-- ========================
+     HERO SECTION
+     ======================== -->
+<section class="hero">
+  <div class="hero-inner">
+
+    <!-- Left: Content -->
+    <div class="hero-content">
+      <h1>{{H1_TEXT}}</h1>
+      <p class="hero-subtext">{{HERO_SUBTEXT}}</p>
+
+      <ul class="hero-bullets">
+        <li>
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#22C55E"/><path d="M7 12.5l3.5 3.5 6.5-7" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+          {{HERO_BULLET_1}}
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#22C55E"/><path d="M7 12.5l3.5 3.5 6.5-7" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+          {{HERO_BULLET_2}}
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#22C55E"/><path d="M7 12.5l3.5 3.5 6.5-7" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+          {{HERO_BULLET_3}}
+        </li>
+      </ul>
+
+      <a href="tel:8882079786" class="phone-btn">
+        <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
+        <span class="phone-number">(888) 207-9786</span>
+      </a>
+    </div>
+
+    <!-- Right: Form -->
+    <div class="hero-form-wrap">
+      <p class="form-heading">I'm Ready For A Free Quote</p>
+      <form id="leadForm" method="post" action="https://app.leadsnap.com/embed/store">
+        <input type="text" name="cf-field[pdf-name]" placeholder="Full Name" required>
+        <input type="tel" name="cf-field[pdf-phone]" placeholder="Phone Number" required>
+        <input type="text" name="cf-field[pdf-zipcode]" placeholder="Zip Code" required>
+        <select name="cf-field[cf-51354]" required onchange="this.classList.toggle('selected', this.value !== '')">
+          <option value="" disabled selected>Select Service</option>
+          <option value="foundation-repair">Foundation Repair</option>
+          <option value="basement-waterproofing">Basement Waterproofing</option>
+          <option value="crawl-space-services">Crawl Space Services</option>
+          <option value="other">Other</option>
+        </select>
+        <input type="hidden" name="api_key" value="QeqPmDWwFvlrHV9INQ5nSPZIBh1YdJTh">
+        <input type="hidden" name="hostname" id="hostname" value="">
+        <button type="submit" class="form-submit-btn">Get My Free Quote</button>
+      </form>
+      <div class="form-success" id="formSuccess">
+        <p><strong>Thank You For Your Submission!</strong></p>
+        <p>A team member will be reaching out to you shortly.</p>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById('hostname').value = window.location.hostname;
+      document.getElementById('leadForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        var btn = this.querySelector('.form-submit-btn');
+        btn.disabled = true;
+        btn.textContent = 'Sending...';
+        var formData = new FormData(this);
+        fetch('https://app.leadsnap.com/embed/store', {
+          method: 'POST',
+          body: formData
+        }).then(function() {
+          document.getElementById('leadForm').style.display = 'none';
+          document.getElementById('formSuccess').style.display = 'block';
+        }).catch(function() {
+          document.getElementById('leadForm').style.display = 'none';
+          document.getElementById('formSuccess').style.display = 'block';
+        });
+      });
+    </script>
+
+  </div>
+</section>
+
+<!-- ========================
+     NEXT SECTION GOES HERE
+     ======================== -->
+
+</body>
+</html>
