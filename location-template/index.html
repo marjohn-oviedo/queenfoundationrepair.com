@@ -254,6 +254,263 @@
   }
 
   /* ===========================
+     TRUST BAR
+     =========================== */
+  .trust-bar {
+    background: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    padding: 28px 30px;
+  }
+
+  .trust-bar-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .trust-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .trust-badge img {
+    height: 110px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  /* --- Google Rating Widget --- */
+  .google-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .google-rating-top {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .google-g {
+    width: 32px;
+    height: 32px;
+  }
+
+  .google-score {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #202124;
+    line-height: 1;
+  }
+
+  .google-stars {
+    display: flex;
+    gap: 2px;
+    margin-top: 2px;
+  }
+
+  .google-stars svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  /* ===========================
+     REVIEWS SECTION
+     =========================== */
+  .reviews-section {
+    background: #f8f9fa;
+    padding: 60px 30px;
+    margin-top: 20px;
+  }
+
+  .reviews-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .reviews-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .reviews-summary {
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .reviews-summary .summary-stars svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .reviews-summary .summary-text {
+    font-size: 0.95rem;
+    color: #5f6368;
+  }
+
+  .reviews-summary .summary-text strong {
+    color: #202124;
+  }
+
+  .review-slider {
+    position: relative;
+    overflow: hidden;
+    margin: 0 40px;
+  }
+
+  .review-track {
+    display: flex;
+    transition: transform 0.4s ease;
+    gap: 20px;
+  }
+
+  .review-card {
+    flex: 0 0 calc(33.333% - 14px);
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 24px;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    position: relative;
+  }
+
+  .review-card-header img.reviewer-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .reviewer-info {
+    flex: 1;
+    overflow: hidden;
+  }
+
+  .reviewer-name {
+    font-weight: 700;
+    font-size: 14px;
+    color: #202124;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .review-date {
+    font-size: 12px;
+    color: #8a8a8a;
+  }
+
+  .review-card-header .google-icon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .review-stars {
+    margin-bottom: 10px;
+  }
+
+  .review-stars svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .review-text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #3c4043;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    flex: 1;
+  }
+
+  .slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    border: 1px solid #dadce0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 5;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: box-shadow 0.2s;
+  }
+
+  .slider-arrow:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  }
+
+  .slider-arrow svg {
+    width: 18px;
+    height: 18px;
+    fill: #5f6368;
+  }
+
+  .slider-arrow.prev {
+    left: -20px;
+  }
+
+  .slider-arrow.next {
+    right: -20px;
+  }
+
+  .slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 24px;
+  }
+
+  .slider-dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #dadce0;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .slider-dots .dot.active {
+    background: #1a73e8;
+  }
+
+  /* ===========================
      RESPONSIVE
      =========================== */
   @media (max-width: 900px) {
@@ -269,6 +526,19 @@
 
     .hero-form-wrap {
       width: 100%;
+    }
+
+    .review-card {
+      flex: 0 0 calc(50% - 10px);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .review-card {
+      flex: 0 0 100%;
+    }
+    .review-slider {
+      margin: 0 30px;
     }
   }
 
@@ -355,6 +625,290 @@
 
   </div>
 </section>
+
+<!-- ========================
+     TRUST BAR
+     ======================== -->
+<section class="trust-bar">
+  <div class="trust-bar-inner">
+    <div class="trust-badge">
+      <img src="https://queenfoundationrepair.com/wp-content/uploads/2025/12/admin-ajax-9.webp" alt="Angi Reviews 5-Star Rating">
+    </div>
+    <div class="trust-badge">
+      <img src="https://queenfoundationrepair.com/wp-content/uploads/2025/12/admin-ajax-10.webp" alt="BBB Accredited Business">
+    </div>
+    <div class="trust-badge">
+      <img src="https://queenfoundationrepair.com/wp-content/uploads/2025/12/admin-ajax-11.webp" alt="Top Work Places 2023 USA">
+    </div>
+    <div class="trust-badge">
+      <img src="https://queenfoundationrepair.com/wp-content/uploads/2026/01/licensed-bonded-insured-vector-icon-business-86546455.webp" alt="Licensed Bonded Insured">
+    </div>
+    <div class="trust-badge">
+      <img src="https://queenfoundationrepair.com/wp-content/uploads/2026/01/extended-warranty-gold-seal-isolated-white-background-347205554.webp" alt="Extended Warranty">
+    </div>
+    <div class="trust-badge">
+      <div class="google-rating">
+        <div class="google-rating-top">
+          <svg class="google-g" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59A14.5 14.5 0 019.5 24c0-1.59.28-3.14.77-4.59l-7.98-6.19A23.99 23.99 0 000 24c0 3.77.9 7.35 2.56 10.54l7.97-5.95z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 5.95C6.51 42.62 14.62 48 24 48z"/></svg>
+          <span class="google-score">4.8</span>
+        </div>
+        <div class="google-stars">
+          <svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24">
+            <defs><linearGradient id="partialStar"><stop offset="80%" stop-color="#FBBC04"/><stop offset="80%" stop-color="#DADCE0"/></linearGradient></defs>
+            <path fill="url(#partialStar)" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     REVIEWS SECTION
+     ======================== -->
+<section class="reviews-section">
+  <div class="reviews-inner">
+    <h2>What Our Customers Are Saying</h2>
+    <div class="reviews-summary">
+      <div class="summary-stars">
+        <svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><defs><linearGradient id="reviewPartialStar"><stop offset="80%" stop-color="#FBBC04"/><stop offset="80%" stop-color="#DADCE0"/></linearGradient></defs><path fill="url(#reviewPartialStar)" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <span class="summary-text"><strong>4.8</strong> stars out of <strong>102 reviews</strong></span>
+    </div>
+
+    <div class="review-slider">
+      <div class="slider-arrow prev" onclick="slideReviews(-1)">
+        <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+      </div>
+      <div class="slider-arrow next" onclick="slideReviews(1)">
+        <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
+      </div>
+
+      <div class="review-track" id="reviewTrack">
+
+        <!-- Review 1: Madison White -->
+        <div class="review-card">
+          <div class="review-card-header">
+            <img class="reviewer-photo" src="https://lh3.googleusercontent.com/a/ACg8ocLN8Uc7gS0Ip5VKPv8IScqvXAZgB4DSamZDlwpbY2PVRXwVoA=s120-c-rp-mo-br100" alt="Madison White">
+            <div class="reviewer-info">
+              <div class="reviewer-name">Madison White</div>
+              <div class="review-date">November 4, 2024</div>
+            </div>
+            <svg class="google-icon" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59A14.5 14.5 0 019.5 24c0-1.59.28-3.14.77-4.59l-7.98-6.19A23.99 23.99 0 000 24c0 3.77.9 7.35 2.56 10.54l7.97-5.95z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 5.95C6.51 42.62 14.62 48 24 48z"/></svg>
+          </div>
+          <div class="review-stars">
+            <svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="review-text">Excellent work from Queen Foundation Repair! From beginning to end, the crew operated with efficiency and professionalism. Carlos and his team completed the foundation repair project in less than four days, and even our neighbors have complimented the immediate transformation. I highly recommend them for foundation work, foundation repair, and water restoration.</div>
+        </div>
+
+        <!-- Review 2: p502 12 -->
+        <div class="review-card">
+          <div class="review-card-header">
+            <img class="reviewer-photo" src="https://lh3.googleusercontent.com/a-/ALV-UjWdqrsMnyYEoqPmwJNyuSjuVnVAGcgbXLXlul8_SXpZPyUaTD5Y=s120-c-rp-mo-br100" alt="p502 12">
+            <div class="reviewer-info">
+              <div class="reviewer-name">p502 12</div>
+              <div class="review-date">November 1, 2024</div>
+            </div>
+            <svg class="google-icon" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59A14.5 14.5 0 019.5 24c0-1.59.28-3.14.77-4.59l-7.98-6.19A23.99 23.99 0 000 24c0 3.77.9 7.35 2.56 10.54l7.97-5.95z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 5.95C6.51 42.62 14.62 48 24 48z"/></svg>
+          </div>
+          <div class="review-stars">
+            <svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="review-text">I had a persistent rat problem in my crawlspace. After years of dealing with exterminators, I turned to QFR, and they solved the issue. Not only did they address the rats, but they also fixed some hidden plumbing leaks. Their crew worked quickly and efficiently, performing exceptional water damage, water restoration, and crawl space encapsulation services.</div>
+        </div>
+
+        <!-- Review 3: Richard Cassidy -->
+        <div class="review-card">
+          <div class="review-card-header">
+            <img class="reviewer-photo" src="https://lh3.googleusercontent.com/a/ACg8ocIHO7zqX7IpZ9YxskH5tiE9ldAhQJnhJDG3gBqRbQSjVTU_Ng=s120-c-rp-mo-br100" alt="Richard Cassidy">
+            <div class="reviewer-info">
+              <div class="reviewer-name">Richard Cassidy</div>
+              <div class="review-date">October 16, 2024</div>
+            </div>
+            <svg class="google-icon" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59A14.5 14.5 0 019.5 24c0-1.59.28-3.14.77-4.59l-7.98-6.19A23.99 23.99 0 000 24c0 3.77.9 7.35 2.56 10.54l7.97-5.95z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 5.95C6.51 42.62 14.62 48 24 48z"/></svg>
+          </div>
+          <div class="review-stars">
+            <svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="review-text">Hi, I had some cracks in my foundation after purchasing my new home and was concerned about them. Queen Foundation Repair made everything a very easy and stress-free process. They came out and repaired these cracks within a day, and the crew, including Dario and Sharon, was very knowledgeable. Thanks very much!</div>
+        </div>
+
+        <!-- Review 4: Andrew Zaragoza -->
+        <div class="review-card">
+          <div class="review-card-header">
+            <img class="reviewer-photo" src="https://lh3.googleusercontent.com/a/ACg8ocLfw4MDa5-2gEE7dXgukyZVd0H449T0WBwwKqA2RQeen8l1sg=s120-c-rp-mo-br100" alt="Andrew Zaragoza">
+            <div class="reviewer-info">
+              <div class="reviewer-name">Andrew Zaragoza</div>
+              <div class="review-date">October 16, 2024</div>
+            </div>
+            <svg class="google-icon" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59A14.5 14.5 0 019.5 24c0-1.59.28-3.14.77-4.59l-7.98-6.19A23.99 23.99 0 000 24c0 3.77.9 7.35 2.56 10.54l7.97-5.95z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 5.95C6.51 42.62 14.62 48 24 48z"/></svg>
+          </div>
+          <div class="review-stars">
+            <svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="review-text">I cannot say enough about these guys — they were a pleasure to work with. Sharon, who was extremely knowledgeable, handled the scheduling, and Carlos and Dario did the assessment and repair of the foundation issues we were having. They answered every question we had, showed up exactly when they said they would, and back all of their work with a lifetime guarantee. Your search for a foundation repair company is over!</div>
+        </div>
+
+        <!-- Review 5: Harriet Hamilton -->
+        <div class="review-card">
+          <div class="review-card-header">
+            <img class="reviewer-photo" src="https://lh3.googleusercontent.com/a/ACg8ocI5eOTyaZ5QtudAJUOEsDHvdjOd7YYzO8rgu7rJQVKMPKCVDqE=s120-c-rp-mo-br100" alt="Harriet Hamilton">
+            <div class="reviewer-info">
+              <div class="reviewer-name">Harriet Hamilton</div>
+              <div class="review-date">October 13, 2024</div>
+            </div>
+            <svg class="google-icon" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59A14.5 14.5 0 019.5 24c0-1.59.28-3.14.77-4.59l-7.98-6.19A23.99 23.99 0 000 24c0 3.77.9 7.35 2.56 10.54l7.97-5.95z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 5.95C6.51 42.62 14.62 48 24 48z"/></svg>
+          </div>
+          <div class="review-stars">
+            <svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="review-text">I'm very pleased with the results. I can clearly see the excellent work Jason's crew did on our crawl space. His team was friendly and left the property clean. This is the first time I've posted a review because I think people should know about them. Call them when you need crawl space repairs in Albany NY!</div>
+        </div>
+
+        <!-- Review 6: Benjamin Simmons -->
+        <div class="review-card">
+          <div class="review-card-header">
+            <img class="reviewer-photo" src="https://lh3.googleusercontent.com/a/ACg8ocIsMT4aMVF1CA6tndAxRY_NBxepN4UfTfHdriDMl3gcq_QHwA=s120-c-rp-mo-br100" alt="Benjamin Simmons">
+            <div class="reviewer-info">
+              <div class="reviewer-name">Benjamin Simmons</div>
+              <div class="review-date">October 12, 2024</div>
+            </div>
+            <svg class="google-icon" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59A14.5 14.5 0 019.5 24c0-1.59.28-3.14.77-4.59l-7.98-6.19A23.99 23.99 0 000 24c0 3.77.9 7.35 2.56 10.54l7.97-5.95z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 5.95C6.51 42.62 14.62 48 24 48z"/></svg>
+          </div>
+          <div class="review-stars">
+            <svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="review-text">The customer care provided by Queen Foundation repair was exceptional. From the first contact to the final walkthrough, they were attentive, informative, and very responsive to my questions and concerns. They took the time to explain the encapsulation process and how it would benefit my home. Their crew was respectful and ensured that the work was completed to a high standard. It's clear that they value their customers and take pride in their work. Our crawl space is now dry, clean, and well-insulated. Highly recommended!</div>
+        </div>
+
+        <!-- Review 7: Howard Carpenter -->
+        <div class="review-card">
+          <div class="review-card-header">
+            <img class="reviewer-photo" src="https://lh3.googleusercontent.com/a/ACg8ocJt-5t-msldaizocebdt1g3yRNrN_8Dy80XpjyiXG04bXY0bA=s120-c-rp-mo-br100" alt="Howard Carpenter">
+            <div class="reviewer-info">
+              <div class="reviewer-name">Howard Carpenter</div>
+              <div class="review-date">August 13, 2024</div>
+            </div>
+            <svg class="google-icon" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59A14.5 14.5 0 019.5 24c0-1.59.28-3.14.77-4.59l-7.98-6.19A23.99 23.99 0 000 24c0 3.77.9 7.35 2.56 10.54l7.97-5.95z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 5.95C6.51 42.62 14.62 48 24 48z"/></svg>
+          </div>
+          <div class="review-stars">
+            <svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="review-text">I'm absolutely delighted with the exceptional assessment service provided by Queen Foundation Repair! When I noticed sloping floors in our bungalow, I knew I needed expert help. Scheduling an assessment was a breeze via email, and John arrived promptly as scheduled. His warm and personable demeanor put me at ease, and his expertise shone through as he quickly identified the root cause of our issue.</div>
+        </div>
+
+        <!-- Review 8: Leona Diehl -->
+        <div class="review-card">
+          <div class="review-card-header">
+            <img class="reviewer-photo" src="https://lh3.googleusercontent.com/a/ACg8ocIqNVqnr5g9GcNX-XWGiW89YWHvT6FKPkV4fBLgqfkf8e_DrA=s120-c-rp-mo-br100" alt="Leona Diehl">
+            <div class="reviewer-info">
+              <div class="reviewer-name">Leona Diehl</div>
+              <div class="review-date">August 1, 2024</div>
+            </div>
+            <svg class="google-icon" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59A14.5 14.5 0 019.5 24c0-1.59.28-3.14.77-4.59l-7.98-6.19A23.99 23.99 0 000 24c0 3.77.9 7.35 2.56 10.54l7.97-5.95z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 5.95C6.51 42.62 14.62 48 24 48z"/></svg>
+          </div>
+          <div class="review-stars">
+            <svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="review-text">I reached out to this company about an issue they couldn't handle, but they were very responsive. They did a thorough inspection and gave recommendations related to their specialty. They even provided a reference number for another company that could help with our issue. They're great for foundation repair work, and I'd definitely recommend them.</div>
+        </div>
+
+        <!-- Review 9: Richard Berry -->
+        <div class="review-card">
+          <div class="review-card-header">
+            <img class="reviewer-photo" src="https://lh3.googleusercontent.com/a-/ALV-UjUCO7KzJ-SX5cEytE_IHZpxYO2w0b_hHJ4YXfS0FJqHsB5kJzk=s120-c-rp-mo-br100" alt="Richard Berry">
+            <div class="reviewer-info">
+              <div class="reviewer-name">Richard Berry</div>
+              <div class="review-date">July 11, 2024</div>
+            </div>
+            <svg class="google-icon" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59A14.5 14.5 0 019.5 24c0-1.59.28-3.14.77-4.59l-7.98-6.19A23.99 23.99 0 000 24c0 3.77.9 7.35 2.56 10.54l7.97-5.95z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 5.95C6.51 42.62 14.62 48 24 48z"/></svg>
+          </div>
+          <div class="review-stars">
+            <svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path fill="#FBBC04" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="review-text">Germao and his crew installed helical piers and expertly stabilized our foundation. The crew was professional and responsive to our needs. I'm happy with their foundation repair service.</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="slider-dots" id="sliderDots"></div>
+
+  </div>
+</section>
+
+<!-- Review Slider Script -->
+<script>
+(function() {
+  var track = document.getElementById('reviewTrack');
+  var cards = track.children;
+  var totalCards = cards.length;
+  var currentIndex = 0;
+  var cardsPerView = 3;
+  var dotsContainer = document.getElementById('sliderDots');
+
+  function getCardsPerView() {
+    if (window.innerWidth <= 600) return 1;
+    if (window.innerWidth <= 900) return 2;
+    return 3;
+  }
+
+  function getTotalPages() {
+    return Math.ceil(totalCards / cardsPerView);
+  }
+
+  function buildDots() {
+    dotsContainer.innerHTML = '';
+    var pages = getTotalPages();
+    for (var i = 0; i < pages; i++) {
+      var dot = document.createElement('div');
+      dot.className = 'dot' + (i === Math.floor(currentIndex / cardsPerView) ? ' active' : '');
+      dot.setAttribute('data-index', i);
+      dot.addEventListener('click', function() {
+        currentIndex = parseInt(this.getAttribute('data-index')) * cardsPerView;
+        updateSlider();
+      });
+      dotsContainer.appendChild(dot);
+    }
+  }
+
+  function updateSlider() {
+    var maxIndex = totalCards - cardsPerView;
+    if (currentIndex > maxIndex) currentIndex = maxIndex;
+    if (currentIndex < 0) currentIndex = 0;
+    var cardWidth = cards[0].offsetWidth;
+    var gap = 20;
+    var offset = currentIndex * (cardWidth + gap);
+    track.style.transform = 'translateX(-' + offset + 'px)';
+    buildDots();
+  }
+
+  window.slideReviews = function(dir) {
+    currentIndex += dir * cardsPerView;
+    var maxIndex = totalCards - cardsPerView;
+    if (currentIndex > maxIndex) currentIndex = 0;
+    if (currentIndex < 0) currentIndex = Math.floor(maxIndex / cardsPerView) * cardsPerView;
+    updateSlider();
+  };
+
+  window.addEventListener('resize', function() {
+    cardsPerView = getCardsPerView();
+    updateSlider();
+  });
+
+  cardsPerView = getCardsPerView();
+  buildDots();
+
+  setInterval(function() {
+    window.slideReviews(1);
+  }, 6000);
+})();
+</script>
 
 <!-- ========================
      NEXT SECTION GOES HERE
