@@ -1038,6 +1038,24 @@
     .review-card {
       flex: 0 0 calc(50% - 10px);
     }
+
+    /* Trust badges: 2 rows on mobile */
+    .trust-bar-inner {
+      gap: 16px 20px;
+    }
+    .trust-badge img {
+      height: 60px;
+    }
+    .trust-badge img[style*="height: 130px"] {
+      height: 65px !important;
+    }
+    .trust-badge img[style*="height: 120px"] {
+      height: 65px !important;
+    }
+    .google-rating {
+      transform: scale(0.7);
+      transform-origin: center;
+    }
   }
 
   @media (max-width: 600px) {
@@ -1070,6 +1088,9 @@
     }
     .why-layout {
       flex-direction: column;
+    }
+    .collage-wrap {
+      order: -1;
     }
   }
 
@@ -1201,6 +1222,10 @@
       flex: none;
       width: 100%;
       position: static;
+      order: 2;
+    }
+    .faq-list {
+      order: 1;
     }
   }
 
@@ -2377,15 +2402,15 @@
      ======================== -->
 <section class="why-section">
   <div class="why-inner">
+    <h2>Why Cleveland Homeowners Call Queen Foundation Repair</h2>
+    <p class="why-subtext">We fix the problems that come with owning a home in Northeast Ohio.</p>
+
     <div class="why-layout">
 
       <!-- Left: Text -->
       <div class="why-text">
-        <h2>Why Cleveland Homeowners Call Queen Foundation Repair</h2>
-        <p class="why-subtext">We fix the problems that come with owning a home in Northeast Ohio.</p>
-
         <h3>Foundation Solutions for Homes Built on Clay</h3>
-        <p>A 1920s block wall in Lakewood doesn’t need the same fix as a post-war poured foundation in Parma. The glacial clay under most homes around here swells when it rains and shrinks when it dries — and that movement hits every foundation differently. We match the method to the problem — <a href="/services/basement-wall-repair">wall anchors</a> for bowing walls, <a href="/services/helical-pier-installation">helical piers</a> for settling porches, <a href="/services/concrete-leveling">concrete leveling</a> for sunken garage floors and sidewalks. Your home, your fix.</p>
+        <p>A 1920s block wall in Lakewood doesn’t need the same fix as a post-war poured foundation in Parma. The glacial clay under most homes around here swells when it rains and shrinks when it dries — and that movement hits every foundation differently. We match the method to the problem — wall anchors for bowing walls, <a href="/services/helical-pier-installation">helical piers</a> for settling porches, <a href="/services/concrete-leveling">concrete leveling</a> for sunken garage floors and sidewalks. Your home, your fix.</p>
 
         <h3>Wet Basement and Crawl Space Experts in Northeast Ohio</h3>
         <p>Snowmelt in March. Heavy rain in May. Homes from Shaker Heights to Garfield Heights deal with the same thing — water finding its way in. If your basement leaks or your crawl space smells musty, the issue is usually water pressure building up against your foundation from saturated ground outside. We find where it’s getting in and fix it at the source.</p>
@@ -2799,7 +2824,7 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
       "name": "Why are cracked and bowing basement walls so common around here?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The soil in this area is heavy clay left behind by glaciers. It swells when wet and shrinks when dry, and that constant push puts lateral pressure on basement walls — especially concrete block. Freeze-thaw cycles make it worse every winter. <a href="/services/basement-wall-repair">Carbon fiber straps</a> stop the wall from bowing further, and <a href="/services/foundation-crack-repair">crack injection</a> seals the openings before water gets through."
+        "text": "The soil in this area is heavy clay left behind by glaciers. It swells when wet and shrinks when dry, and that constant push puts lateral pressure on basement walls — especially concrete block. Freeze-thaw cycles make it worse every winter. Carbon fiber straps stop the wall from bowing further, and crack injection seals the openings before water gets through."
       }
     },
     {
@@ -2815,7 +2840,7 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
       "name": "Is it worth fixing the foundation on an older home in this area?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Some of the best neighborhoods — Ohio City, Tremont, Cleveland Heights — are full of homes built 80 to 100 years ago. The bones are solid, but the foundation has been under stress for decades. Stabilizing it now costs less than waiting for the damage to spread. And once the structure is sound, you can finish the basement, add an <a href=\"/services/egress-window-installation\">egress window</a> for code-compliant living space, or just stop worrying about it."
+        "text": "Yes. Some of the best neighborhoods — Ohio City, Tremont, Cleveland Heights — are full of homes built 80 to 100 years ago. The bones are solid, but the foundation has been under stress for decades. Stabilizing it now costs less than waiting for the damage to spread. And once the structure is sound, you can finish the basement, add an egress window for code-compliant living space, or just stop worrying about it."
       }
     },
     {
