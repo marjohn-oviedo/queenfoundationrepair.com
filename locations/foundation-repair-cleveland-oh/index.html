@@ -331,6 +331,110 @@
   }
 
   /* ===========================
+     MODAL POP-UP FORM
+     =========================== */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-overlay.active {
+    display: flex;
+  }
+
+  .modal-box {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 36px 32px;
+    width: 90%;
+    max-width: 440px;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    color: #999;
+    cursor: pointer;
+    line-height: 1;
+  }
+
+  .modal-close:hover {
+    color: #333;
+  }
+
+  .modal-box .form-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.3rem;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .modal-box input,
+  .modal-box select {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 12px;
+    border: 1px solid #d0d0d0;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-family: 'Noto Sans', sans-serif;
+  }
+
+  .modal-box select {
+    color: #888;
+  }
+
+  .modal-box select.selected {
+    color: #1a1a1a;
+  }
+
+  .modal-box .form-submit-btn {
+    width: 100%;
+    padding: 14px;
+    background: #2563eb;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 4px;
+  }
+
+  .modal-box .form-submit-btn:hover {
+    background: #1d4ed8;
+  }
+
+  .modal-box .form-success {
+    display: none;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .modal-box .form-success p strong {
+    font-family: 'Montserrat', sans-serif;
+    color: #16a34a;
+    margin-bottom: 8px;
+  }
+
+  /* ===========================
      TRUST BAR
      =========================== */
   .trust-bar {
@@ -2376,7 +2480,7 @@
         <h3>Free Inspections, Honest Estimates</h3>
         <p>We tell you what’s wrong and what it costs to fix. No scare tactics. No inflated quotes. If something doesn’t need repair, we’ll say so. Queen Foundation Repair gives every homeowner the same process — a free inspection, a written plan, and a crew that follows through.</p>
 
-        <a href="#leadForm" class="why-cta">Get My Free Quote</a>
+        <a href="javascript:void(0)" onclick="openModal()" class="why-cta">Get My Free Quote</a>
       </div>
 
       <!-- Right: Photo Collage -->
@@ -2646,6 +2750,67 @@
     </div>
   </div>
 </footer>
+
+<!-- ========================
+     MODAL POP-UP FORM
+     ======================== -->
+<div class="modal-overlay" id="quoteModal" onclick="if(event.target===this)closeModal()">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()">&times;</button>
+    <p class="form-heading">Get Your Free Quote</p>
+    <form id="modalForm" method="post">
+      <input type="text" name="cf-field[pdf-name]" placeholder="Full Name" required>
+      <input type="tel" name="cf-field[pdf-phone]" placeholder="Phone Number" required>
+      <input type="text" name="cf-field[pdf-zipcode]" placeholder="Zip Code" required>
+      <select name="cf-field[cf-51354]" required onchange="this.classList.toggle('selected', this.value !== '')">
+        <option value="" disabled selected>Select Service</option>
+        <option value="foundation-repair">Foundation Repair</option>
+        <option value="basement-waterproofing">Basement Waterproofing</option>
+        <option value="crawl-space-services">Crawl Space Services</option>
+        <option value="other">Other</option>
+      </select>
+      <input type="hidden" name="api_key" value="QriIca7znpsJIJ66GZzDDSv3KxSzTjdh">
+      <input type="hidden" name="hostname" id="modalHostname" value="">
+      <button type="submit" class="form-submit-btn">Get My Free Quote</button>
+    </form>
+    <div class="form-success" id="modalSuccess">
+      <p><strong>Thank You For Your Submission!</strong></p>
+      <p>A team member will be reaching out to you shortly.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+document.getElementById('modalHostname').value = window.location.hostname;
+
+function openModal() {
+  document.getElementById('quoteModal').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  document.getElementById('quoteModal').classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+document.getElementById('modalForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  var btn = this.querySelector('.form-submit-btn');
+  btn.disabled = true;
+  btn.textContent = 'Sending...';
+  var formData = new FormData(this);
+  fetch('https://app.leadsnap.com/embed/store', {
+    method: 'POST',
+    body: formData
+  }).then(function() {
+    document.getElementById('modalForm').style.display = 'none';
+    document.getElementById('modalSuccess').style.display = 'block';
+  }).catch(function() {
+    document.getElementById('modalForm').style.display = 'none';
+    document.getElementById('modalSuccess').style.display = 'block';
+  });
+});
+</script>
 
 <!-- Schema Markup -->
 <script type="application/ld+json">
