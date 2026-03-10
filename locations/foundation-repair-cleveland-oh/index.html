@@ -1242,6 +1242,78 @@
     margin: 0 auto;
   }
 
+  .ba-layout {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  .ba-main {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .other-services {
+    width: 260px;
+    flex-shrink: 0;
+    background: #0f2a4a;
+    border-radius: 10px;
+    padding: 30px 25px;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .other-services h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+
+  .other-services ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .other-services li {
+    margin-bottom: 14px;
+  }
+
+  .other-services a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.88rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.2s;
+  }
+
+  .other-services a:hover {
+    color: #93bbff;
+    text-decoration: underline;
+  }
+
+  .other-services a::before {
+    content: '›';
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #5b9aff;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 900px) {
+    .ba-layout {
+      flex-direction: column;
+    }
+    .other-services {
+      width: 100%;
+    }
+  }
+
   .ba-section h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -1263,7 +1335,7 @@
 
   .ba-slider {
     position: relative;
-    max-width: 700px;
+    max-width: 100%;
     margin: 0 auto;
   }
 
@@ -2182,7 +2254,7 @@
     <div class="services-grid">
 
       <!-- Service 1: Foundation Repair -->
-      <a href="/foundation-repair" class="service-card">
+      <a href="/services/foundation-repair" class="service-card">
         <img class="service-card-image" src="../../images/foundation-repair/cracked or sinking foundation.png" alt="Cracked foundation showing signs of structural damage">
         <div class="service-card-body">
           <div class="service-card-title">Foundation Repair</div>
@@ -2192,7 +2264,7 @@
       </a>
 
       <!-- Service 2: Basement Waterproofing -->
-      <a href="/basement-waterproofing" class="service-card">
+      <a href="/services/basement-waterproofing" class="service-card">
         <img class="service-card-image" src="../../images/basement-waterproofing/standing water in basement.png" alt="Standing water in basement requiring waterproofing">
         <div class="service-card-body">
           <div class="service-card-title">Basement Waterproofing</div>
@@ -2202,7 +2274,7 @@
       </a>
 
       <!-- Service 3: Crawl Space Repair -->
-      <a href="/crawl-space-repair" class="service-card">
+      <a href="/services/crawl-space-repair" class="service-card">
         <img class="service-card-image" src="../../images/crawl-space-repair/admin-ajax-3-1-1.webp" alt="Steel crawl space jack posts installed on concrete footings">
         <div class="service-card-body">
           <div class="service-card-title">Crawl Space Repair</div>
@@ -2212,7 +2284,7 @@
       </a>
 
       <!-- Service 4: Crawl Space Encapsulation -->
-      <a href="/crawl-space-encapsulation" class="service-card">
+      <a href="/services/crawl-space-encapsulation" class="service-card">
         <img class="service-card-image" src="../../images/crawl-space-encapsulation/Crawl-space-encapsulation.png" alt="Crawl space with vapor barrier encapsulation installed">
         <div class="service-card-body">
           <div class="service-card-title">Crawl Space Encapsulation</div>
@@ -2222,7 +2294,7 @@
       </a>
 
       <!-- Service 5: Sump Pump Installation -->
-      <a href="/sump-pump-installation" class="service-card">
+      <a href="/services/sump-pump-installation" class="service-card">
         <img class="service-card-image" src="../../images/drainage-services/Whisk_6a1026e2d21142fa3234e773d4f8f01edr-1024x585.png" alt="Sump pump in a basement pit">
         <div class="service-card-body">
           <div class="service-card-title">Sump Pump Installation</div>
@@ -2232,7 +2304,7 @@
       </a>
 
       <!-- Service 6: French Drain Installation -->
-      <a href="/french-drain-installation" class="service-card">
+      <a href="/services/french-drain-installation" class="service-card">
         <img class="service-card-image" src="../../images/drainage-services/Whisk_f073e590fd567ceab304791845ecc2d3dr.webp" alt="French drain system installed along foundation">
         <div class="service-card-body">
           <div class="service-card-title">French Drain Installation</div>
@@ -2441,33 +2513,50 @@
     <h2>Before &amp; After</h2>
     <p class="ba-subtext">See the difference our work makes. Real projects, real results.</p>
 
-    <div class="ba-slider">
-      <div class="ba-viewport">
-        <div class="ba-track" id="baTrack">
-          <div class="ba-card">
-            <img src="../../images/before-after-1.webp" alt="Before and after exterior foundation waterproofing">
+    <div class="ba-layout">
+
+      <div class="ba-main">
+        <div class="ba-slider">
+          <div class="ba-viewport">
+            <div class="ba-track" id="baTrack">
+              <div class="ba-card">
+                <img src="../../images/before-after-1.webp" alt="Before and after exterior foundation waterproofing">
+              </div>
+              <div class="ba-card">
+                <img src="../../images/before-after-2.webp" alt="Before and after basement waterproofing">
+              </div>
+              <div class="ba-card">
+                <img src="../../images/before-after-3.webp" alt="Before and after crawl space encapsulation">
+              </div>
+              <div class="ba-card">
+                <img src="../../images/before-after-4.webp" alt="Before and after foundation wall repair">
+              </div>
+            </div>
           </div>
-          <div class="ba-card">
-            <img src="../../images/before-after-2.webp" alt="Before and after basement waterproofing">
+
+          <div class="slider-arrow arrow-left" id="baArrowLeft">
+            <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
           </div>
-          <div class="ba-card">
-            <img src="../../images/before-after-3.webp" alt="Before and after crawl space encapsulation">
-          </div>
-          <div class="ba-card">
-            <img src="../../images/before-after-4.webp" alt="Before and after foundation wall repair">
+          <div class="slider-arrow arrow-right" id="baArrowRight">
+            <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
           </div>
         </div>
+
+        <div class="ba-dots" id="baDots"></div>
       </div>
 
-      <div class="slider-arrow arrow-left" id="baArrowLeft">
-        <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+      <div class="other-services">
+        <h3>Other Services</h3>
+        <ul>
+          <li><a href="/services/helical-pier-installation">Helical Pier Installation</a></li>
+          <li><a href="/services/concrete-leveling">Concrete Leveling</a></li>
+          <li><a href="/services/egress-window-installation">Egress Window Installation</a></li>
+          <li><a href="/services/foundation-crack-repair">Foundation Crack Repair</a></li>
+          <li><a href="/services/basement-wall-repair">Basement Wall Repair</a></li>
+        </ul>
       </div>
-      <div class="slider-arrow arrow-right" id="baArrowRight">
-        <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
-      </div>
+
     </div>
-
-    <div class="ba-dots" id="baDots"></div>
 
   </div>
 </section>

@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Queen Foundation Repair</title>
+<meta name="description" content="Contact Queen Foundation Repair for a free estimate. Call (888) 207-9786 or fill out our form. We're available Monday through Saturday, 7 AM to 9 PM.">
+<link rel="canonical" href="https://queenfoundationrepair.com/contact-us/">
+<meta property="og:title" content="Contact Us | Queen Foundation Repair">
+<meta property="og:description" content="Contact Queen Foundation Repair for a free estimate. Call (888) 207-9786 or fill out our form. We're available Monday through Saturday, 7 AM to 9 PM.">
+<meta property="og:url" content="https://queenfoundationrepair.com/contact-us/">
+<meta property="og:type" content="website">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Noto Sans', sans-serif;
+    color: #1a1a1a;
+    line-height: 1.6;
+  }
+
+  /* ===========================
+     HEADER
+     =========================== */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  .header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    height: 80px;
+  }
+
+  .header-logo img {
+    height: 65px;
+    width: auto;
+  }
+
+  .header-nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-left: 32px;
+  }
+
+  .header-nav > a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.92rem;
+    color: #1a1a1a;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .header-nav > a:hover {
+    color: #2563eb;
+  }
+
+  .nav-dropdown {
+    position: relative;
+  }
+
+  .nav-dropdown > a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.92rem;
+    color: #1a1a1a;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: color 0.2s;
+  }
+
+  .nav-dropdown > a:hover {
+    color: #2563eb;
+  }
+
+  .nav-dropdown > a svg {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+    stroke-width: 2;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: transform 0.2s;
+  }
+
+  .nav-dropdown:hover > a svg {
+    transform: rotate(180deg);
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 12px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    min-width: 240px;
+    padding: 8px 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(4px);
+    transition: all 0.2s;
+  }
+
+  .dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: 0;
+    width: 100%;
+    height: 12px;
+  }
+
+  .nav-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 0.88rem;
+    color: #333;
+    text-decoration: none;
+    transition: background 0.15s;
+  }
+
+  .dropdown-menu a:hover {
+    background: #f0f4ff;
+    color: #2563eb;
+  }
+
+  .header-nav a.header-cta {
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #2563eb;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.88rem;
+    padding: 9px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.2s;
+  }
+
+  .header-nav a.header-cta:hover {
+    background: #1d4ed8;
+    color: #ffffff;
+  }
+
+  .header-cta .phone-number {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .header-cta svg {
+    width: 16px;
+    height: 16px;
+    fill: #ffffff;
+  }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    margin-left: auto;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 24px;
+    height: 2.5px;
+    background: #1a1a1a;
+    border-radius: 2px;
+    transition: all 0.3s;
+  }
+
+  .mobile-nav {
+    display: none;
+    flex-direction: column;
+    background: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    padding: 12px 30px 20px;
+  }
+
+  .mobile-nav.open {
+    display: flex;
+  }
+
+  .mobile-nav > a,
+  .mobile-dropdown-label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #1a1a1a;
+    text-decoration: none;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .mobile-dropdown-label svg {
+    width: 18px;
+    height: 18px;
+    stroke: #1a1a1a;
+    stroke-width: 2;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: transform 0.2s;
+  }
+
+  .mobile-dropdown-label.open svg {
+    transform: rotate(180deg);
+  }
+
+  .mobile-services {
+    display: none;
+    flex-direction: column;
+    padding-left: 16px;
+  }
+
+  .mobile-services.open {
+    display: flex;
+  }
+
+  .mobile-services a {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 0.88rem;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #f5f5f5;
+  }
+
+  .mobile-cta {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    background: #2563eb;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 12px;
+  }
+
+  .mobile-cta svg {
+    width: 18px;
+    height: 18px;
+    fill: #ffffff;
+  }
+
+  @media (max-width: 768px) {
+    .header-nav { display: none; }
+    .hamburger { display: flex; }
+    .mobile-cta { display: flex; }
+  }
+
+  /* ===========================
+     PAGE HERO
+     =========================== */
+  .page-hero {
+    position: relative;
+    width: 100%;
+    min-height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('../images/foundation-repair/hero-bg.jpg') center 40% / cover no-repeat;
+  }
+
+  .page-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+  }
+
+  .page-hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 60px 30px;
+    max-width: 800px;
+  }
+
+  .page-hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 2.6rem;
+    color: #ffffff;
+    margin-bottom: 16px;
+    line-height: 1.2;
+  }
+
+  .page-hero p {
+    font-size: 1.15rem;
+    color: #e0e0e0;
+    line-height: 1.6;
+  }
+
+  /* ===========================
+     CONTACT SECTION
+     =========================== */
+  .contact-section {
+    padding: 80px 30px;
+    background: #ffffff;
+  }
+
+  .contact-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .contact-grid {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+  }
+
+  /* Left: Contact Info */
+  .contact-info {
+    flex: 1;
+  }
+
+  .contact-info h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.8rem;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+  }
+
+  .contact-info > p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 32px;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+
+  .contact-item-icon {
+    width: 48px;
+    height: 48px;
+    background: #eff4ff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .contact-item-icon svg {
+    width: 22px;
+    height: 22px;
+    fill: #2563eb;
+  }
+
+  .contact-item-text {
+    padding-top: 2px;
+  }
+
+  .contact-item-text h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #1a1a1a;
+    margin-bottom: 4px;
+  }
+
+  .contact-item-text p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  .contact-item-text a {
+    font-size: 0.95rem;
+    color: #555;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    line-height: 1.5;
+  }
+
+  .contact-item-text a:hover {
+    color: #2563eb;
+  }
+
+  /* Right: Form */
+  .contact-form-wrap {
+    flex: 0 0 460px;
+    background: #f8f9fb;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 32px;
+  }
+
+  .contact-form-wrap .form-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .contact-form-wrap input,
+  .contact-form-wrap select {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 0.9rem;
+    color: #333;
+    background: #ffffff;
+    outline: none;
+    transition: border-color 0.2s;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  .contact-form-wrap input:focus,
+  .contact-form-wrap select:focus {
+    border-color: #2563eb;
+  }
+
+  .contact-form-wrap select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23999' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 36px;
+    color: #999;
+  }
+
+  .contact-form-wrap select.selected {
+    color: #333;
+  }
+
+  .form-submit-btn {
+    width: 100%;
+    padding: 14px;
+    background: #2563eb;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 4px;
+  }
+
+  .form-submit-btn:hover {
+    background: #1d4ed8;
+  }
+
+  .form-success {
+    display: none;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .form-success p {
+    color: #1a1a1a;
+    margin-bottom: 6px;
+  }
+
+  /* ===========================
+     FOOTER
+     =========================== */
+  .site-footer {
+    background: #0f1b2d;
+    padding: 60px 30px 30px;
+    color: #ccc;
+    font-size: 0.88rem;
+    line-height: 1.7;
+  }
+
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  .footer-brand img {
+    height: 50px;
+    width: auto;
+    margin-bottom: 14px;
+  }
+
+  .footer-brand p {
+    color: #999;
+    margin-bottom: 16px;
+    font-size: 0.85rem;
+  }
+
+  .footer-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .footer-contact-item svg {
+    width: 16px;
+    height: 16px;
+    fill: #2563eb;
+    flex-shrink: 0;
+  }
+
+  .footer-contact-item a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.85rem;
+  }
+
+  .footer-contact-item a:hover {
+    color: #2563eb;
+  }
+
+  .footer-col-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #ffffff;
+    margin-bottom: 14px;
+  }
+
+  .footer-col a {
+    display: block;
+    color: #999;
+    text-decoration: none;
+    font-size: 0.85rem;
+    padding: 4px 0;
+  }
+
+  .footer-col a:hover {
+    color: #2563eb;
+  }
+
+  .footer-bottom {
+    border-top: 1px solid #1e2d42;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #666;
+  }
+
+  .footer-bottom a {
+    color: #666;
+    text-decoration: none;
+  }
+
+  .footer-bottom a:hover {
+    color: #2563eb;
+  }
+
+  /* ===========================
+     RESPONSIVE
+     =========================== */
+  @media (max-width: 768px) {
+    .page-hero {
+      min-height: 280px;
+    }
+
+    .page-hero h1 {
+      font-size: 2rem;
+    }
+
+    .contact-grid {
+      flex-direction: column;
+    }
+
+    .contact-form-wrap {
+      flex: none;
+      width: 100%;
+    }
+
+    .contact-section {
+      padding: 50px 30px;
+    }
+
+    .footer-grid {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .footer-bottom {
+      flex-direction: column;
+      gap: 8px;
+      text-align: center;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- ========================
+     HEADER
+     ======================== -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="header-logo">
+      <img src="../images/qfr-logo-badge.png" alt="Queen Foundation Repair">
+    </a>
+
+    <nav class="header-nav">
+      <a href="/">Home</a>
+      <div class="nav-dropdown">
+        <a href="#">Services <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5"/></svg></a>
+        <div class="dropdown-menu">
+          <a href="/foundation-repair">Foundation Repair</a>
+          <a href="/basement-waterproofing">Basement Waterproofing</a>
+          <a href="/crawl-space-repair">Crawl Space Repair</a>
+          <a href="/crawl-space-encapsulation">Crawl Space Encapsulation</a>
+          <a href="/sump-pump-installation">Sump Pump Installation</a>
+          <a href="/french-drain-installation">French Drain Installation</a>
+          <a href="/basement-wall-repair">Basement Wall Repair</a>
+          <a href="/foundation-crack-repair">Foundation Crack Repair</a>
+          <a href="/helical-pier-installation">Helical Pier Installation</a>
+          <a href="/egress-window-installation">Egress Window Installation</a>
+        </div>
+      </div>
+      <a href="/about-us">About Us</a>
+      <a href="/contact-us">Contact Us</a>
+      <a href="tel:+18882079786" class="header-cta">
+        <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
+        <span class="phone-number">(888) 207-9786</span>
+      </a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="/">Home</a>
+    <button class="mobile-dropdown-label" id="mobileServicesToggle">
+      Services
+      <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5"/></svg>
+    </button>
+    <div class="mobile-services" id="mobileServices">
+      <a href="/foundation-repair">Foundation Repair</a>
+      <a href="/basement-waterproofing">Basement Waterproofing</a>
+      <a href="/crawl-space-repair">Crawl Space Repair</a>
+      <a href="/crawl-space-encapsulation">Crawl Space Encapsulation</a>
+      <a href="/sump-pump-installation">Sump Pump Installation</a>
+      <a href="/french-drain-installation">French Drain Installation</a>
+      <a href="/basement-wall-repair">Basement Wall Repair</a>
+      <a href="/foundation-crack-repair">Foundation Crack Repair</a>
+      <a href="/helical-pier-installation">Helical Pier Installation</a>
+      <a href="/egress-window-installation">Egress Window Installation</a>
+    </div>
+    <a href="/about-us">About Us</a>
+    <a href="/contact-us">Contact Us</a>
+    <a href="tel:+18882079786" class="mobile-cta">
+      <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
+      (888) 207-9786
+    </a>
+  </div>
+</header>
+
+<!-- Hamburger + Mobile Dropdown Script -->
+<script>
+(function() {
+  var hamburger = document.getElementById('hamburger');
+  var mobileNav = document.getElementById('mobileNav');
+  hamburger.addEventListener('click', function() {
+    hamburger.classList.toggle('open');
+    mobileNav.classList.toggle('open');
+  });
+  var servicesToggle = document.getElementById('mobileServicesToggle');
+  var mobileServices = document.getElementById('mobileServices');
+  servicesToggle.addEventListener('click', function() {
+    servicesToggle.classList.toggle('open');
+    mobileServices.classList.toggle('open');
+  });
+})();
+</script>
+
+<!-- ========================
+     PAGE HERO
+     ======================== -->
+<section class="page-hero">
+  <div class="page-hero-content">
+    <h1>Contact Us</h1>
+    <p>Have a question or ready to schedule your free estimate? We're here to help.</p>
+  </div>
+</section>
+
+<!-- ========================
+     CONTACT SECTION
+     ======================== -->
+<section class="contact-section">
+  <div class="contact-inner">
+    <div class="contact-grid">
+
+      <!-- Left: Contact Info -->
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>Whether you've got a question about your foundation, want to schedule an estimate, or just need some advice — reach out. We're happy to help.</p>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
+          </div>
+          <div class="contact-item-text">
+            <h3>Call Us</h3>
+            <a href="tel:+18882079786">(888) 207-9786</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </div>
+          <div class="contact-item-text">
+            <h3>Email Us</h3>
+            <a href="mailto:info@queenfoundationrepair.com">info@queenfoundationrepair.com</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+          </div>
+          <div class="contact-item-text">
+            <h3>Business Hours</h3>
+            <p>Monday – Friday: 7:00 AM – 9:00 PM</p>
+            <p>Saturday: 7:00 AM – 9:00 PM</p>
+            <p>Sunday: Closed</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right: Form -->
+      <div class="contact-form-wrap">
+        <p class="form-heading">Request Your Free Estimate</p>
+        <form id="leadForm" method="post" action="https://app.leadsnap.com/embed/store">
+          <input type="text" name="cf-field[pdf-name]" placeholder="Full Name" required>
+          <input type="tel" name="cf-field[pdf-phone]" placeholder="Phone Number" required>
+          <input type="text" name="cf-field[pdf-zipcode]" placeholder="Zip Code" required>
+          <select name="cf-field[cf-51354]" required onchange="this.classList.toggle('selected', this.value !== '')">
+            <option value="" disabled selected>Select Service</option>
+            <option value="foundation-repair">Foundation Repair</option>
+            <option value="basement-waterproofing">Basement Waterproofing</option>
+            <option value="crawl-space-services">Crawl Space Services</option>
+            <option value="other">Other</option>
+          </select>
+          <input type="hidden" name="api_key" value="QeqPmDWwFvlrHV9INQ5nSPZIBh1YdJTh">
+          <input type="hidden" name="hostname" id="hostname" value="">
+          <button type="submit" class="form-submit-btn">Get My Free Quote</button>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <p><strong>Thank You For Your Submission!</strong></p>
+          <p>A team member will be reaching out to you shortly.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Form Submit Script -->
+<script>
+  document.getElementById('hostname').value = window.location.hostname;
+  document.getElementById('leadForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var btn = this.querySelector('.form-submit-btn');
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+    var formData = new FormData(this);
+    fetch('https://app.leadsnap.com/embed/store', {
+      method: 'POST',
+      body: formData
+    }).then(function() {
+      document.getElementById('leadForm').style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    }).catch(function() {
+      document.getElementById('leadForm').style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    });
+  });
+</script>
+
+<!-- ========================
+     FOOTER
+     ======================== -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+
+      <!-- Column 1: Brand -->
+      <div class="footer-brand">
+        <img src="../images/logo-no-background.png" alt="Queen Foundation Repair" style="filter: brightness(0) invert(1);">
+        <p>Professional foundation repair, basement waterproofing, and crawl space services. Protecting your home from the ground up.</p>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
+          <a href="tel:+18882079786">(888) 207-9786</a>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          <a href="mailto:info@queenfoundationrepair.com">info@queenfoundationrepair.com</a>
+        </div>
+      </div>
+
+      <!-- Column 2: Services (left) -->
+      <div class="footer-col">
+        <p class="footer-col-title">Services</p>
+        <a href="/foundation-repair">Foundation Repair</a>
+        <a href="/basement-waterproofing">Basement Waterproofing</a>
+        <a href="/crawl-space-repair">Crawl Space Repair</a>
+        <a href="/crawl-space-encapsulation">Crawl Space Encapsulation</a>
+        <a href="/sump-pump-installation">Sump Pump Installation</a>
+      </div>
+
+      <!-- Column 3: Services (right) -->
+      <div class="footer-col">
+        <p class="footer-col-title" aria-hidden="true">&nbsp;</p>
+        <a href="/french-drain-installation">French Drain Installation</a>
+        <a href="/basement-wall-repair">Basement Wall Repair</a>
+        <a href="/foundation-crack-repair">Foundation Crack Repair</a>
+        <a href="/helical-pier-installation">Helical Pier Installation</a>
+        <a href="/egress-window-installation">Egress Window Installation</a>
+      </div>
+
+      <!-- Column 4: Company -->
+      <div class="footer-col">
+        <p class="footer-col-title">Company</p>
+        <a href="/">Home</a>
+        <a href="/about-us">About Us</a>
+        <a href="/contact-us">Contact Us</a>
+        <a href="/locations">Areas We Serve</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2026 Queen Foundation Repair. All rights reserved.</span>
+      <a href="/privacy-policy">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
