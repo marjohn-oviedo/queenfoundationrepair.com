@@ -881,7 +881,7 @@
     padding: 12px 28px;
     border-radius: 6px;
     text-decoration: none;
-    margin-top: 20px;
+    margin-top: auto;
     transition: background 0.2s;
   }
 
@@ -1075,12 +1075,14 @@
   .why-layout {
     display: flex;
     gap: 40px;
-    align-items: flex-start;
+    align-items: stretch;
   }
 
   .why-text {
     flex: 1;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
   }
 
   .why-text h3 {
@@ -2595,6 +2597,7 @@
         <h3>{{WHY_CHOOSE_HEADING_3}}</h3>
         <p>{{WHY_CHOOSE_PARAGRAPH_3}}</p>
 
+        <a href="javascript:void(0)" onclick="openModal()" class="why-cta">Get My Free Quote</a>
       </div>
 
       <!-- Right: Photo Collage -->
@@ -2606,7 +2609,6 @@
       </div>
 
     </div>
-    <a href="javascript:void(0)" onclick="openModal()" class="why-cta">Get My Free Quote</a>
   </div>
 </section>
 
