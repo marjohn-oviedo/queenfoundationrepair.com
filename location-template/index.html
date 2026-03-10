@@ -30,7 +30,7 @@
   {{STEP_4_TITLE}}             Step 4 heading
   {{STEP_4_DESC}}              Step 4 description
 
-  ── SERVICES ──
+  ── SERVICES (11 Cards) ──
   {{SERVICES_H2}}              H2 heading for services section
   {{SERVICES_SUBTEXT}}         Intro sentence for services grid
   {{SERVICE_1_DESC}}           Foundation Repair card description
@@ -39,6 +39,11 @@
   {{SERVICE_4_DESC}}           Crawl Space Encapsulation card description
   {{SERVICE_5_DESC}}           Sump Pump Installation card description
   {{SERVICE_6_DESC}}           French Drain Installation card description
+  {{SERVICE_7_DESC}}           Basement Wall Repair card description
+  {{SERVICE_8_DESC}}           Foundation Crack Repair card description
+  {{SERVICE_9_DESC}}           Helical Pier Installation card description
+  {{SERVICE_10_DESC}}          Egress Window Installation card description
+  {{SERVICE_11_DESC}}          Concrete Leveling card description
 
   ── HOW IT WORKS ──  (H2)
   {{HOW_IT_WORKS_H2}}          H2 heading for process section
@@ -796,6 +801,36 @@
     transform: translateX(4px);
   }
 
+  .services-toggle {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 24px auto 0;
+    background: none;
+    border: none;
+    color: #555;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 8px 4px;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+
+  .services-toggle:hover {
+    color: #2563eb;
+  }
+
+  .services-toggle svg {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+  }
+
+  .services-toggle.expanded svg {
+    transform: rotate(180deg);
+  }
+
   /* ===========================
      MID-PAGE CTA
      =========================== */
@@ -1042,6 +1077,7 @@
 
   .why-text {
     flex: 1;
+    overflow: hidden;
   }
 
   .why-text h3 {
@@ -1109,6 +1145,24 @@
     .review-card {
       flex: 0 0 calc(50% - 10px);
     }
+
+    /* Trust badges: 2 rows on mobile */
+    .trust-bar-inner {
+      gap: 14px 18px;
+    }
+    .trust-badge img {
+      height: 75px;
+    }
+    .trust-badge img[style*="height: 130px"] {
+      height: 80px !important;
+    }
+    .trust-badge img[style*="height: 120px"] {
+      height: 80px !important;
+    }
+    .google-rating {
+      transform: scale(0.75);
+      transform-origin: center;
+    }
   }
 
   @media (max-width: 600px) {
@@ -1141,6 +1195,9 @@
     }
     .why-layout {
       flex-direction: column;
+    }
+    .collage-wrap {
+      order: -1;
     }
   }
 
@@ -1272,6 +1329,10 @@
       flex: none;
       width: 100%;
       position: static;
+      order: 2;
+    }
+    .faq-list {
+      order: 1;
     }
   }
 
@@ -1287,6 +1348,7 @@
     max-width: 1200px;
     margin: 0 auto;
   }
+
 
   .ba-section h2 {
     font-family: 'Montserrat', sans-serif;
@@ -2228,7 +2290,7 @@
     <div class="services-grid">
 
       <!-- Service 1: Foundation Repair -->
-      <a href="/foundation-repair" class="service-card">
+      <a href="/services/foundation-repair" class="service-card">
         <img class="service-card-image" src="../images/foundation-repair/cracked or sinking foundation.png" alt="Cracked foundation showing signs of structural damage">
         <div class="service-card-body">
           <div class="service-card-title">Foundation Repair</div>
@@ -2238,7 +2300,7 @@
       </a>
 
       <!-- Service 2: Basement Waterproofing -->
-      <a href="/basement-waterproofing" class="service-card">
+      <a href="/services/basement-waterproofing" class="service-card">
         <img class="service-card-image" src="../images/basement-waterproofing/standing water in basement.png" alt="Standing water in basement requiring waterproofing">
         <div class="service-card-body">
           <div class="service-card-title">Basement Waterproofing</div>
@@ -2248,7 +2310,7 @@
       </a>
 
       <!-- Service 3: Crawl Space Repair -->
-      <a href="/crawl-space-repair" class="service-card">
+      <a href="/services/crawl-space-repair" class="service-card">
         <img class="service-card-image" src="../images/crawl-space-repair/admin-ajax-3-1-1.webp" alt="Steel crawl space jack posts installed on concrete footings">
         <div class="service-card-body">
           <div class="service-card-title">Crawl Space Repair</div>
@@ -2258,7 +2320,7 @@
       </a>
 
       <!-- Service 4: Crawl Space Encapsulation -->
-      <a href="/crawl-space-encapsulation" class="service-card">
+      <a href="/services/crawl-space-encapsulation" class="service-card">
         <img class="service-card-image" src="../images/crawl-space-encapsulation/Crawl-space-encapsulation.png" alt="Crawl space with vapor barrier encapsulation installed">
         <div class="service-card-body">
           <div class="service-card-title">Crawl Space Encapsulation</div>
@@ -2268,7 +2330,7 @@
       </a>
 
       <!-- Service 5: Sump Pump Installation -->
-      <a href="/sump-pump-installation" class="service-card">
+      <a href="/services/sump-pump-installation" class="service-card">
         <img class="service-card-image" src="../images/drainage-services/Whisk_6a1026e2d21142fa3234e773d4f8f01edr-1024x585.png" alt="Sump pump in a basement pit">
         <div class="service-card-body">
           <div class="service-card-title">Sump Pump Installation</div>
@@ -2278,7 +2340,7 @@
       </a>
 
       <!-- Service 6: French Drain Installation -->
-      <a href="/french-drain-installation" class="service-card">
+      <a href="/services/french-drain-installation" class="service-card">
         <img class="service-card-image" src="../images/drainage-services/Whisk_f073e590fd567ceab304791845ecc2d3dr.webp" alt="French drain system installed along foundation">
         <div class="service-card-body">
           <div class="service-card-title">French Drain Installation</div>
@@ -2287,9 +2349,76 @@
         </div>
       </a>
 
+      <!-- Services 7-11: hidden behind toggle -->
+      <a href="/services/basement-wall-repair" class="service-card service-extra" style="display:none;">
+        <img class="service-card-image" src="../images/basement-wall-repair/rhino-carbon-fiber™_bowed_wall_repair_01.webp" alt="Carbon fiber strips reinforcing a bowed basement wall">
+        <div class="service-card-body">
+          <div class="service-card-title">Basement Wall Repair</div>
+          <p class="service-card-desc">{{SERVICE_7_DESC}}</p>
+          <span class="service-card-link">Learn More <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/services/foundation-crack-repair" class="service-card service-extra" style="display:none;">
+        <img class="service-card-image" src="../images/foundation-repair/Hairline-crack-in-concrete-basement-wall-leaking.png" alt="Hairline crack in concrete basement wall">
+        <div class="service-card-body">
+          <div class="service-card-title">Foundation Crack Repair</div>
+          <p class="service-card-desc">{{SERVICE_8_DESC}}</p>
+          <span class="service-card-link">Learn More <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/services/helical-pier-installation" class="service-card service-extra" style="display:none;">
+        <img class="service-card-image" src="../images/helical-pier-installation/Whisk_aee186b64c807d9a5044f7e3956200bbdr.webp" alt="Helical pier being installed for foundation support">
+        <div class="service-card-body">
+          <div class="service-card-title">Helical Pier Installation</div>
+          <p class="service-card-desc">{{SERVICE_9_DESC}}</p>
+          <span class="service-card-link">Learn More <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/services/egress-window-installation" class="service-card service-extra" style="display:none;">
+        <img class="service-card-image" src="../images/egress-window-installation/egress-window-well-exterior.jpg" alt="Egress window well installed on exterior of home">
+        <div class="service-card-body">
+          <div class="service-card-title">Egress Window Installation</div>
+          <p class="service-card-desc">{{SERVICE_10_DESC}}</p>
+          <span class="service-card-link">Learn More <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/services/concrete-leveling" class="service-card service-extra" style="display:none;">
+        <img class="service-card-image" src="../images/concrete-leveling/sunken-concrete-slab.jpeg" alt="Sunken concrete slab settling away from building foundation">
+        <div class="service-card-body">
+          <div class="service-card-title">Concrete Leveling</div>
+          <p class="service-card-desc">{{SERVICE_11_DESC}}</p>
+          <span class="service-card-link">Learn More <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg></span>
+        </div>
+      </a>
+
     </div>
+
+    <button class="services-toggle" id="servicesToggle">
+      Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+    </button>
+
   </div>
 </section>
+
+<script>
+(function(){
+  var btn = document.getElementById('servicesToggle');
+  var extras = document.querySelectorAll('.service-extra');
+  var open = false;
+  btn.addEventListener('click', function(){
+    open = !open;
+    for(var i=0;i<extras.length;i++){
+      extras[i].style.display = open ? 'flex' : 'none';
+    }
+    btn.firstChild.textContent = open ? 'Show Less ' : 'Learn More ';
+    btn.classList.toggle('expanded', open);
+  });
+})();
+</script>
 
 <!-- CTA: Call Us -->
 <div class="mid-cta">
@@ -2454,7 +2583,6 @@
       <div class="why-text">
         <h2>{{WHY_CHOOSE_H2}}</h2>
         <p class="why-subtext">{{WHY_CHOOSE_SUBTEXT}}</p>
-
         <h3>{{WHY_CHOOSE_HEADING_1}}</h3>
         <p>{{WHY_CHOOSE_PARAGRAPH_1}}</p>
 
@@ -2464,7 +2592,6 @@
         <h3>{{WHY_CHOOSE_HEADING_3}}</h3>
         <p>{{WHY_CHOOSE_PARAGRAPH_3}}</p>
 
-        <a href="javascript:void(0)" onclick="openModal()" class="why-cta">Get My Free Quote</a>
       </div>
 
       <!-- Right: Photo Collage -->
@@ -2476,8 +2603,25 @@
       </div>
 
     </div>
+    <a href="javascript:void(0)" onclick="openModal()" class="why-cta">Get My Free Quote</a>
   </div>
 </section>
+
+<!-- Match Why Choose Us text height to collage image -->
+<script>
+(function(){
+  var img = document.querySelector('.collage-img');
+  var txt = document.querySelector('.why-text');
+  if(!img || !txt) return;
+  function setHeight(){
+    var h = img.offsetHeight;
+    if(h > 100) txt.style.maxHeight = h + 'px';
+  }
+  if(img.complete) setHeight();
+  img.addEventListener('load', setHeight);
+  window.addEventListener('resize', setHeight);
+})();
+</script>
 
 <!-- ========================
      BEFORE & AFTER
@@ -2487,33 +2631,33 @@
     <h2>Before &amp; After</h2>
     <p class="ba-subtext">See the difference our work makes. Real projects, real results.</p>
 
-    <div class="ba-slider">
-      <div class="ba-viewport">
-        <div class="ba-track" id="baTrack">
-          <div class="ba-card">
-            <img src="../images/before-after-1.webp" alt="Before and after exterior foundation waterproofing">
+        <div class="ba-slider">
+          <div class="ba-viewport">
+            <div class="ba-track" id="baTrack">
+              <div class="ba-card">
+                <img src="../images/before-after-1.webp" alt="Before and after exterior foundation waterproofing">
+              </div>
+              <div class="ba-card">
+                <img src="../images/before-after-2.webp" alt="Before and after basement waterproofing">
+              </div>
+              <div class="ba-card">
+                <img src="../images/before-after-3.webp" alt="Before and after crawl space encapsulation">
+              </div>
+              <div class="ba-card">
+                <img src="../images/before-after-4.webp" alt="Before and after foundation wall repair">
+              </div>
+            </div>
           </div>
-          <div class="ba-card">
-            <img src="../images/before-after-2.webp" alt="Before and after basement waterproofing">
+
+          <div class="slider-arrow arrow-left" id="baArrowLeft">
+            <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
           </div>
-          <div class="ba-card">
-            <img src="../images/before-after-3.webp" alt="Before and after crawl space encapsulation">
-          </div>
-          <div class="ba-card">
-            <img src="../images/before-after-4.webp" alt="Before and after foundation wall repair">
+          <div class="slider-arrow arrow-right" id="baArrowRight">
+            <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
           </div>
         </div>
-      </div>
 
-      <div class="slider-arrow arrow-left" id="baArrowLeft">
-        <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
-      </div>
-      <div class="slider-arrow arrow-right" id="baArrowRight">
-        <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
-      </div>
-    </div>
-
-    <div class="ba-dots" id="baDots"></div>
+        <div class="ba-dots" id="baDots"></div>
 
   </div>
 </section>
@@ -2588,6 +2732,7 @@
   startAutoScroll();
 })();
 </script>
+
 
 <!-- ========================
      FAQ SECTION
@@ -2806,6 +2951,7 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
   "serviceType": "Foundation Repair and Waterproofing",
   "provider": {
     "@type": "LocalBusiness",
+    "@id": "{{CANONICAL_URL}}",
     "name": "Queen Foundation Repair"
   },
   "hasOfferCatalog": {
