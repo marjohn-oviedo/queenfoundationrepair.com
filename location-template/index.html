@@ -2404,7 +2404,7 @@
     </div>
 
     <button class="services-toggle" id="servicesToggle">
-      Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+      Show More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
     </button>
 
   </div>
@@ -2420,7 +2420,7 @@
     for(var i=0;i<extras.length;i++){
       extras[i].style.display = open ? 'flex' : 'none';
     }
-    btn.firstChild.textContent = open ? 'Show Less ' : 'Learn More ';
+    btn.firstChild.textContent = open ? 'Show Less ' : 'Show More ';
     btn.classList.toggle('expanded', open);
   });
 })();
