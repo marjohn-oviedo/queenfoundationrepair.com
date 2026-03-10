@@ -109,7 +109,7 @@
     min-height: 600px;
     display: flex;
     align-items: center;
-    background: url('../images/foundation-repair/new section image.png') center 20% / cover no-repeat;
+    background: url('../../images/foundation-repair/new section image.png') center 20% / cover no-repeat;
   }
 
   .hero::before {
@@ -1065,49 +1065,6 @@
   }
 
 
-  .why-text::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 80px;
-    background: linear-gradient(transparent, #fff);
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-  }
-  .why-text.expanded::after {
-    opacity: 0;
-  }
-
-  .why-text-wrap {
-    position: relative;
-  }
-  .why-toggle {
-    background: none;
-    border: none;
-    color: #1a6b3c;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    cursor: pointer;
-    padding: 8px 0;
-    margin-top: 12px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-  .why-toggle:hover {
-    color: #145a31;
-  }
-  .why-toggle svg {
-    width: 14px;
-    height: 14px;
-    transition: transform 0.3s ease;
-  }
-  .why-toggle.expanded svg {
-    transform: rotate(180deg);
-  }
   .why-cta {
     align-self: flex-start;
   }
@@ -1213,55 +1170,10 @@
     .why-layout {
       flex-direction: column;
     }
-  
-  .why-text::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 80px;
-    background: linear-gradient(transparent, #fff);
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-  }
-  .why-text.expanded::after {
-    opacity: 0;
-  }
-
-  .why-text-wrap {
-    position: relative;
-  }
-  .why-toggle {
-    background: none;
-    border: none;
-    color: #1a6b3c;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    cursor: pointer;
-    padding: 8px 0;
-    margin-top: 12px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-  .why-toggle:hover {
-    color: #145a31;
-  }
-  .why-toggle svg {
-    width: 14px;
-    height: 14px;
-    transition: transform 0.3s ease;
-  }
-  .why-toggle.expanded svg {
-    transform: rotate(180deg);
-  }
-  .why-cta {
-    align-self: flex-start;
-  }
-
-  .collage-wrap {
+    .why-cta {
+      align-self: flex-start;
+    }
+    .collage-wrap {
       order: -1;
     }
   }
@@ -2683,10 +2595,6 @@
 
     </div>
 
-    <button class="why-toggle" id="whyToggle" onclick="var w=document.querySelector('.why-text');w.classList.toggle('expanded');if(w.classList.contains('expanded')){w.style.maxHeight='none'}else{w.style.maxHeight=document.querySelector('.collage-img').offsetHeight+'px'};this.classList.toggle('expanded');this.firstChild.textContent=this.classList.contains('expanded')?'Read Less ':'Read More '">
-      Read More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
-    </button>
-
     <a href="javascript:void(0)" onclick="openModal()" class="why-cta">Get My Free Quote</a>
   </div>
 </section>
@@ -2827,7 +2735,7 @@
 
       <!-- Left: GBP Embed -->
       <div class="gbp-wrap">
-        <iframe src="https://www.google.com/maps?cid=5735159885965417493&output=embed" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d823843.0700753188!2d-96.76825635342622!3d36.23616601601697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b69313be98aadf%3A0x7d08448a3b5bef24!2sQueen%20Foundation%20Repair!5e0!3m2!1sen!2sus!4v1773166351845!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
       <!-- Right: FAQ Accordion -->
@@ -3161,22 +3069,6 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
 }
 </script>
 
-<script>
-(function(){
-  var img = document.querySelector('.collage-img');
-  var txt = document.querySelector('.why-text');
-  if(!img || !txt) return;
-  function setHeight(){
-    var h = img.offsetHeight;
-    if(h > 100 && !txt.classList.contains('expanded')){
-      txt.style.maxHeight = h + 'px';
-    }
-  }
-  if(img.complete) setHeight();
-  img.addEventListener('load', setHeight);
-  window.addEventListener('resize', setHeight);
-})();
-</script>
 
 </body>
 </html>
