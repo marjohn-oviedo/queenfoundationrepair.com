@@ -1081,7 +1081,6 @@
 
   .why-text {
     flex: 1;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
   }
@@ -2613,21 +2612,6 @@
   </div>
 </section>
 
-<!-- Match Why Choose Us text height to collage image -->
-<script>
-(function(){
-  var img = document.querySelector('.collage-img');
-  var txt = document.querySelector('.why-text');
-  if(!img || !txt) return;
-  function setHeight(){
-    var h = img.offsetHeight;
-    if(h > 100) txt.style.maxHeight = h + 'px';
-  }
-  if(img.complete) setHeight();
-  img.addEventListener('load', setHeight);
-  window.addEventListener('resize', setHeight);
-})();
-</script>
 
 <!-- ========================
      BEFORE & AFTER
