@@ -80,11 +80,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Foundation Repair Durham NC | Queen Foundation Repair</title>
+<title>Durham NC Foundation Repair | Basement Waterproofing, Crawl Space Repair &amp; Encapsulation. Serving Surrounding Areas Like Raleigh, Cary, Apex &amp; More. Call Now for a Free Estimate.</title>
 <meta name="description" content="Foundation repair, basement waterproofing &amp; crawl space services in Durham, NC. Free inspections, honest estimates. Serving Trinity Park, Duke Park, Hope Valley &amp; all of Durham County.">
 <link rel="canonical" href="https://queenfoundationrepair.com/locations/foundation-repair-durham-nc/">
 <meta name="robots" content="index, follow">
-<meta property="og:title" content="Foundation Repair Durham NC | Queen Foundation Repair">
+<meta property="og:title" content="Durham NC Foundation Repair | Basement Waterproofing, Crawl Space Repair &amp; Encapsulation. Serving Surrounding Areas Like Raleigh, Cary, Apex &amp; More. Call Now for a Free Estimate.">
 <meta property="og:description" content="Foundation repair, basement waterproofing &amp; crawl space services in Durham, NC. Free inspections, honest estimates. Serving Trinity Park, Duke Park, Hope Valley &amp; all of Durham County.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://queenfoundationrepair.com/locations/foundation-repair-durham-nc/">
@@ -1075,8 +1075,13 @@
 
   .why-layout {
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
     align-items: stretch;
+  }
+
+  .why-heading-top {
+    flex-basis: 100%;
   }
 
   .why-text {
@@ -1198,11 +1203,23 @@
     .process-image-wrap {
       max-height: 300px;
     }
+    .process-step {
+      margin-bottom: 28px;
+    }
+    .process-step:last-child {
+      margin-bottom: 0;
+    }
     .why-layout {
       flex-direction: column;
     }
     .collage-wrap {
-      order: -1;
+      order: 2;
+    }
+    .why-text {
+      order: 3;
+    }
+    .why-heading-top {
+      order: 1;
     }
   }
 
@@ -2421,6 +2438,9 @@
     }
     btn.firstChild.textContent = open ? 'Show Less ' : 'Show More ';
     btn.classList.toggle('expanded', open);
+    if(!open){
+      btn.scrollIntoView({behavior:'smooth',block:'end'});
+    }
   });
 })();
 </script>
@@ -2584,10 +2604,14 @@
   <div class="why-inner">
     <div class="why-layout">
 
-      <!-- Left: Text -->
-      <div class="why-text">
+      <!-- Heading (stays above image on mobile) -->
+      <div class="why-heading-top">
         <h2>Why Durham Homeowners Call Queen Foundation Repair</h2>
         <p class="why-subtext">We fix the problems that come with owning a home on Piedmont red clay.</p>
+      </div>
+
+      <!-- Left: Text -->
+      <div class="why-text">
         <h3>Foundation Solutions Built for Durham&#39;s Soil</h3>
         <p>A 1930s bungalow in Duke Park doesn&#39;t need the same fix as a 1990s home in Woodcroft. Durham sits on Cecil clay &#8212; the deep red Piedmont soil that swells when it rains and pulls away from your foundation when it dries. That wet-dry cycle has been pushing and pulling on homes here for decades. We match the repair to your foundation &#8212; helical piers for settling on deep clay, wall anchors for bowing walls under pressure, crawl space jacks for sagging floors in older homes. Your house, your fix.</p>
 

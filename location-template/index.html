@@ -1075,8 +1075,13 @@
 
   .why-layout {
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
     align-items: stretch;
+  }
+
+  .why-heading-top {
+    flex-basis: 100%;
   }
 
   .why-text {
@@ -1198,11 +1203,23 @@
     .process-image-wrap {
       max-height: 300px;
     }
+    .process-step {
+      margin-bottom: 28px;
+    }
+    .process-step:last-child {
+      margin-bottom: 0;
+    }
     .why-layout {
       flex-direction: column;
     }
     .collage-wrap {
-      order: -1;
+      order: 2;
+    }
+    .why-text {
+      order: 3;
+    }
+    .why-heading-top {
+      order: 1;
     }
   }
 
@@ -2421,6 +2438,9 @@
     }
     btn.firstChild.textContent = open ? 'Show Less ' : 'Show More ';
     btn.classList.toggle('expanded', open);
+    if(!open){
+      btn.scrollIntoView({behavior:'smooth',block:'end'});
+    }
   });
 })();
 </script>
@@ -2584,10 +2604,14 @@
   <div class="why-inner">
     <div class="why-layout">
 
-      <!-- Left: Text -->
-      <div class="why-text">
+      <!-- Heading (stays above image on mobile) -->
+      <div class="why-heading-top">
         <h2>{{WHY_CHOOSE_H2}}</h2>
         <p class="why-subtext">{{WHY_CHOOSE_SUBTEXT}}</p>
+      </div>
+
+      <!-- Left: Text -->
+      <div class="why-text">
         <h3>{{WHY_CHOOSE_HEADING_1}}</h3>
         <p>{{WHY_CHOOSE_PARAGRAPH_1}}</p>
 
