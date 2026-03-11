@@ -1075,13 +1075,16 @@
 
   .why-layout {
     display: flex;
-    flex-wrap: wrap;
     gap: 40px;
     align-items: stretch;
   }
 
   .why-heading-top {
-    flex-basis: 100%;
+    display: none;
+  }
+
+  .why-heading-inline {
+    display: block;
   }
 
   .why-text {
@@ -1219,7 +1222,11 @@
       order: 3;
     }
     .why-heading-top {
+      display: block;
       order: 1;
+    }
+    .why-heading-inline {
+      display: none;
     }
   }
 
@@ -2612,6 +2619,10 @@
 
       <!-- Left: Text -->
       <div class="why-text">
+        <div class="why-heading-inline">
+          <h2>{{WHY_CHOOSE_H2}}</h2>
+          <p class="why-subtext">{{WHY_CHOOSE_SUBTEXT}}</p>
+        </div>
         <h3>{{WHY_CHOOSE_HEADING_1}}</h3>
         <p>{{WHY_CHOOSE_PARAGRAPH_1}}</p>
 

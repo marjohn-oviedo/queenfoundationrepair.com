@@ -1075,13 +1075,16 @@
 
   .why-layout {
     display: flex;
-    flex-wrap: wrap;
     gap: 40px;
     align-items: stretch;
   }
 
   .why-heading-top {
-    flex-basis: 100%;
+    display: none;
+  }
+
+  .why-heading-inline {
+    display: block;
   }
 
   .why-text {
@@ -1219,7 +1222,11 @@
       order: 3;
     }
     .why-heading-top {
+      display: block;
       order: 1;
+    }
+    .why-heading-inline {
+      display: none;
     }
   }
 
@@ -2612,6 +2619,10 @@
 
       <!-- Left: Text -->
       <div class="why-text">
+        <div class="why-heading-inline">
+          <h2>Why Durham Homeowners Call Queen Foundation Repair</h2>
+          <p class="why-subtext">We fix the problems that come with owning a home on Piedmont red clay.</p>
+        </div>
         <h3>Foundation Solutions Built for Durham&#39;s Soil</h3>
         <p>A 1930s bungalow in Duke Park doesn&#39;t need the same fix as a 1990s home in Woodcroft. Durham sits on Cecil clay &#8212; the deep red Piedmont soil that swells when it rains and pulls away from your foundation when it dries. That wet-dry cycle has been pushing and pulling on homes here for decades. We match the repair to your foundation &#8212; helical piers for settling on deep clay, wall anchors for bowing walls under pressure, crawl space jacks for sagging floors in older homes. Your house, your fix.</p>
 
