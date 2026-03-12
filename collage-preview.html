@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Collage Photo Options</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #1a1a1a;
+    color: #fff;
+    padding: 40px;
+    margin: 0;
+  }
+  h1 { text-align: center; margin-bottom: 10px; }
+  p.sub { text-align: center; color: #999; margin-bottom: 40px; }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .photo-card {
+    background: #2a2a2a;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .photo-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+  }
+  .photo-card .info {
+    padding: 15px 20px;
+  }
+  .photo-card .position {
+    font-size: 0.8rem;
+    color: #2563eb;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+  }
+  .photo-card .label {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  .photo-card .desc {
+    font-size: 0.85rem;
+    color: #999;
+  }
+  h2 { text-align: center; margin: 50px 0 20px; }
+  .original {
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .original img {
+    width: 100%;
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+<h1>Collage Photo Candidates</h1>
+<p class="sub">These are the 4 photos I'm recommending for the Why Choose Us / About Us collage</p>
+
+<div class="grid">
+
+  <div class="photo-card">
+    <img src="images/crawl-space-encapsulation/Crawl-space-encapsulation.png" alt="Crawl space encapsulation">
+    <div class="info">
+      <div class="position">Top Left</div>
+      <div class="label">Crawl Space Encapsulation</div>
+      <div class="desc">Clean finished crawl space — same as original collage. Strong service shot.</div>
+    </div>
+  </div>
+
+  <div class="photo-card">
+    <img src="../site photos/Gallery of physical QFR/IMG_8440.jpg" alt="QFR Truck">
+    <div class="info">
+      <div class="position">Top Right — Truck Replacement</div>
+      <div class="label">White QFR Truck with Door Magnet</div>
+      <div class="desc">Side view, blue QFR magnet visible, utility bed, outdoor with green grass. Replaces the pixelated RAM truck.</div>
+    </div>
+  </div>
+
+  <div class="photo-card">
+    <img src="../site photos/Gallery of physical QFR/IMG_8223.jpg" alt="QFR Warehouse">
+    <div class="info">
+      <div class="position">Bottom Left — "Real Company" Shot</div>
+      <div class="label">Warehouse Full of Equipment</div>
+      <div class="desc">Shows the real operation — tools, hydraulic jacks, workbenches. Replaces the pier installation close-up.</div>
+    </div>
+  </div>
+
+  <div class="photo-card">
+    <img src="../admin-ajax-3.webp" alt="Exterior foundation work">
+    <div class="info">
+      <div class="position">Bottom Right</div>
+      <div class="label">Exterior Brick Wall / Foundation Work</div>
+      <div class="desc">From the original collage — bottom right quadrant showing real foundation repair on brick exterior.</div>
+    </div>
+  </div>
+
+</div>
+
+<h2>Original Collage for Reference</h2>
+<div class="original">
+  <img src="../admin-ajax-3.webp" alt="Original collage">
+</div>
+
+</body>
+</html>
