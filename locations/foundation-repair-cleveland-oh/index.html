@@ -1,15 +1,14 @@
-<!-- Location Page: Cleveland, OH | Queen Foundation Repair -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cleveland, OH Foundation Repair, Basement Waterproofing, Crawl Space Repair & More | Queen Foundation Repair</title>
-<meta name="description" content="Foundation repair, basement waterproofing, crawl space repair, sump pump installation, and French drain services in Cleveland, OH. Serving Parma, Lakewood, Shaker Heights & surrounding areas. Free estimates from Queen Foundation Repair — call today.">
+<title>Foundation Repair & Basement Waterproofing in Cleveland, OH | Crawl Space Repair, Sump Pump Installation | Serving Lakewood, Parma & Cleveland Heights | Free Inspection</title>
+<meta name="description" content="Foundation repair and basement waterproofing in Cleveland, OH. Crawl space repair, sump pump installation, crack repair, and concrete leveling. Serving Lakewood, Parma, Cleveland Heights & all of Cuyahoga County. Schedule your free inspection today.">
 <link rel="canonical" href="https://queenfoundationrepair.com/locations/foundation-repair-cleveland-oh/">
 <meta name="robots" content="index, follow">
-<meta property="og:title" content="Cleveland, OH Foundation Repair, Basement Waterproofing, Crawl Space Repair & More | Queen Foundation Repair">
-<meta property="og:description" content="Foundation repair, basement waterproofing, crawl space repair, sump pump installation, and French drain services in Cleveland, OH. Serving Parma, Lakewood, Shaker Heights & surrounding areas. Free estimates from Queen Foundation Repair — call today.">
+<meta property="og:title" content="Foundation Repair & Basement Waterproofing in Cleveland, OH | Crawl Space Repair, Sump Pump Installation | Serving Lakewood, Parma & Cleveland Heights | Free Inspection">
+<meta property="og:description" content="Foundation repair and basement waterproofing in Cleveland, OH. Crawl space repair, sump pump installation, crack repair, and concrete leveling. Serving Lakewood, Parma, Cleveland Heights & all of Cuyahoga County. Schedule your free inspection today.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://queenfoundationrepair.com/locations/foundation-repair-cleveland-oh/">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -58,7 +57,7 @@
     padding: 60px 30px;
     display: flex;
     gap: 50px;
-    align-items: center;
+    align-items: stretch;
   }
 
   /* --- Left Column: Content --- */
@@ -148,6 +147,9 @@
     border-radius: 10px;
     padding: 24px 24px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .hero-form-wrap .form-heading {
@@ -725,6 +727,36 @@
     transform: translateX(4px);
   }
 
+  .services-toggle {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 24px auto 0;
+    background: none;
+    border: none;
+    color: #1a1a1a;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    padding: 8px 4px;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+
+  .services-toggle:hover {
+    color: #2563eb;
+  }
+
+  .services-toggle svg {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+  }
+
+  .services-toggle.expanded svg {
+    transform: rotate(180deg);
+  }
+
   /* ===========================
      MID-PAGE CTA
      =========================== */
@@ -772,7 +804,8 @@
     padding: 12px 28px;
     border-radius: 6px;
     text-decoration: none;
-    margin-top: 20px;
+    margin-top: auto;
+    align-self: flex-start;
     transition: background 0.2s;
   }
 
@@ -966,11 +999,30 @@
   .why-layout {
     display: flex;
     gap: 40px;
-    align-items: flex-start;
+    align-items: stretch;
+  }
+
+  .why-heading-top {
+    display: none;
+  }
+
+  .why-h2-mobile {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #1a1a1a;
+    text-align: left;
+    margin-bottom: 8px;
+  }
+
+  .why-heading-inline {
+    display: block;
   }
 
   .why-text {
     flex: 1;
+    display: flex;
+    flex-direction: column;
   }
 
   .why-text h3 {
@@ -1086,11 +1138,27 @@
     .process-image-wrap {
       max-height: 300px;
     }
+    .process-step {
+      margin-bottom: 28px;
+    }
+    .process-step:last-child {
+      margin-bottom: 0;
+    }
     .why-layout {
       flex-direction: column;
     }
     .collage-wrap {
-      order: -1;
+      order: 2;
+    }
+    .why-text {
+      order: 3;
+    }
+    .why-heading-top {
+      display: block;
+      order: 1;
+    }
+    .why-heading-inline {
+      display: none;
     }
   }
 
@@ -1242,77 +1310,6 @@
     margin: 0 auto;
   }
 
-  .ba-layout {
-    display: flex;
-    gap: 40px;
-    align-items: flex-start;
-  }
-
-  .ba-main {
-    flex: 1;
-    min-width: 0;
-  }
-
-  .other-services {
-    width: 260px;
-    flex-shrink: 0;
-    background: #0f2a4a;
-    border-radius: 10px;
-    padding: 30px 25px;
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .other-services h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: #ffffff;
-    margin-bottom: 20px;
-  }
-
-  .other-services ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .other-services li {
-    margin-bottom: 14px;
-  }
-
-  .other-services a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 0.88rem;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: color 0.2s;
-  }
-
-  .other-services a:hover {
-    color: #93bbff;
-    text-decoration: underline;
-  }
-
-  .other-services a::before {
-    content: '›';
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #5b9aff;
-    flex-shrink: 0;
-  }
-
-  @media (max-width: 900px) {
-    .ba-layout {
-      flex-direction: column;
-    }
-    .other-services {
-      width: 100%;
-    }
-  }
 
   .ba-section h2 {
     font-family: 'Montserrat', sans-serif;
@@ -1335,7 +1332,7 @@
 
   .ba-slider {
     position: relative;
-    max-width: 100%;
+    max-width: 700px;
     margin: 0 auto;
   }
 
@@ -1900,8 +1897,8 @@
 
     <!-- Left: Content -->
     <div class="hero-content">
-      <h1>Cleveland, OH Foundation Repair & Waterproofing</h1>
-      <p class="hero-subtext">Cracked walls. Wet basement. Sinking floors. We fix it.</p>
+      <h1>Cleveland, OH Foundation Repair and Basement Waterproofing</h1>
+      <p class="hero-subtext">Water in your basement or cracks spreading across your walls — we fix what’s causing it.</p>
 
       <ul class="hero-bullets">
         <li>
@@ -2248,8 +2245,8 @@
      ======================== -->
 <section class="services-section">
   <div class="services-inner">
-    <h2>Foundation, Waterproofing & Crawl Space Services in Cleveland</h2>
-    <p class="services-subtext">Most homes in this area deal with more than one issue. Here’s what we fix.</p>
+    <h2>Foundation and Waterproofing Services for Cleveland Homes</h2>
+    <p class="services-subtext">Most problems we see in Cleveland start with water pushing against old basement walls. Whether it’s a wet floor after rain, a crack that keeps growing, or a crawl space that smells like mold — there’s a fix. Here’s what we do.</p>
 
     <div class="services-grid">
 
@@ -2257,8 +2254,8 @@
       <a href="/services/foundation-repair" class="service-card">
         <img class="service-card-image" src="../../images/foundation-repair/cracked or sinking foundation.png" alt="Cracked foundation showing signs of structural damage">
         <div class="service-card-body">
-          <div class="service-card-title">Foundation Repair</div>
-          <p class="service-card-desc">Cracks in your walls. Doors that stick. Floors that slope. Your home is settling. We drive steel push piers and helical piers to stable ground and stop the movement for good.</p>
+          <h3 class="service-card-title">Foundation Repair</h3>
+          <p class="service-card-desc">Floors sloping toward one corner. Cracks running diagonal from your windows. Doors that used to close fine and now stick. These are signs your foundation has shifted. We stabilize it with pier systems driven down to stable ground so the movement stops for good.</p>
           <span class="service-card-link">Learn More <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg></span>
         </div>
       </a>
@@ -2267,8 +2264,8 @@
       <a href="/services/basement-waterproofing" class="service-card">
         <img class="service-card-image" src="../../images/basement-waterproofing/standing water in basement.png" alt="Standing water in basement requiring waterproofing">
         <div class="service-card-body">
-          <div class="service-card-title">Basement Waterproofing</div>
-          <p class="service-card-desc">A wet basement isn’t something you live with. We install interior drainage that catches water where it enters — at the wall-floor joint — and routes it out before it hits your living space.</p>
+          <h3 class="service-card-title">Basement Waterproofing</h3>
+          <p class="service-card-desc">If your basement gets wet every time it rains, the water is being pushed through your walls and floor by soil pressure. Painting the walls won’t stop it. We install interior drainage systems that capture the water before it reaches your floor and route it to a sump pump that moves it out.</p>
           <span class="service-card-link">Learn More <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg></span>
         </div>
       </a>
@@ -2277,8 +2274,8 @@
       <a href="/services/crawl-space-repair" class="service-card">
         <img class="service-card-image" src="../../images/crawl-space-repair/admin-ajax-3-1-1.webp" alt="Steel crawl space jack posts installed on concrete footings">
         <div class="service-card-body">
-          <div class="service-card-title">Crawl Space Repair</div>
-          <p class="service-card-desc">Bouncy floors and soft spots mean something under your house is giving out. We replace damaged floor joists, failing beams, and worn-out posts with steel jack posts built to carry the load.</p>
+          <h3 class="service-card-title">Crawl Space Repair</h3>
+          <p class="service-card-desc">Sagging floors above, musty air rising through the house, soft or bouncy spots when you walk. Your crawl space is telling you something is wrong underneath. We repair damaged supports, replace failing joists, and fix the structural problems that are making your floors uneven.</p>
           <span class="service-card-link">Learn More <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg></span>
         </div>
       </a>
@@ -2287,8 +2284,8 @@
       <a href="/services/crawl-space-encapsulation" class="service-card">
         <img class="service-card-image" src="../../images/crawl-space-encapsulation/Crawl-space-encapsulation.png" alt="Crawl space with vapor barrier encapsulation installed">
         <div class="service-card-body">
-          <div class="service-card-title">Crawl Space Encapsulation</div>
-          <p class="service-card-desc">A damp crawl space pushes moisture, mold, and musty air into your home. We seal it with a 20-mil vapor barrier, close the vents, and install a commercial dehumidifier to keep it dry.</p>
+          <h3 class="service-card-title">Crawl Space Encapsulation</h3>
+          <p class="service-card-desc">Moisture in your crawl space doesn’t stay in your crawl space. It rises into your living area, brings mold spores with it, and drives up your energy bills. We seal the entire space with a heavy-duty vapor barrier and install dehumidification to keep it dry permanently.</p>
           <span class="service-card-link">Learn More <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg></span>
         </div>
       </a>
@@ -2297,8 +2294,8 @@
       <a href="/services/sump-pump-installation" class="service-card">
         <img class="service-card-image" src="../../images/drainage-services/Whisk_6a1026e2d21142fa3234e773d4f8f01edr-1024x585.png" alt="Sump pump in a basement pit">
         <div class="service-card-body">
-          <div class="service-card-title">Sump Pump Installation</div>
-          <p class="service-card-desc">When groundwater rises, you need a pump that works — even during a power outage. We install submersible sump pumps with battery backup so your basement stays dry no matter what.</p>
+          <h3 class="service-card-title">Sump Pump Installation</h3>
+          <p class="service-card-desc">Cleveland’s combined sewer system can push contaminated water back into your basement during heavy rain. A properly installed sump pump is the last line of defense. We install primary pumps with battery backup systems so you’re protected even during power outages.</p>
           <span class="service-card-link">Learn More <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg></span>
         </div>
       </a>
@@ -2307,15 +2304,85 @@
       <a href="/services/french-drain-installation" class="service-card">
         <img class="service-card-image" src="../../images/drainage-services/Whisk_f073e590fd567ceab304791845ecc2d3dr.webp" alt="French drain system installed along foundation">
         <div class="service-card-body">
-          <div class="service-card-title">French Drain Installation</div>
-          <p class="service-card-desc">Water pushing against your basement walls needs a way out. A perimeter french drain catches it at the base of the wall and routes it to a sump pit — off your floor and out of your home.</p>
+          <h3 class="service-card-title">French Drain Installation</h3>
+          <p class="service-card-desc">Water always finds the lowest point. If that’s your basement, a French drain redirects it before it gets there. We install interior and exterior drain lines that collect groundwater from around your foundation and channel it away from your home.</p>
+          <span class="service-card-link">Learn More <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg></span>
+        </div>
+      </a>
+
+      <!-- Services 7-11: hidden behind toggle -->
+      <a href="/services/basement-wall-repair" class="service-card service-extra" style="display:none;">
+        <img class="service-card-image" src="../../images/basement-wall-repair/rhino-carbon-fiber™_bowed_wall_repair_01.webp" alt="Carbon fiber strips reinforcing a bowed basement wall">
+        <div class="service-card-body">
+          <h3 class="service-card-title">Basement Wall Repair</h3>
+          <p class="service-card-desc">Horizontal cracks along the middle of your block walls mean soil is pushing inward. You might also see stair-step cracks following the mortar joints. We stop the movement with carbon fiber reinforcement for minor bowing or steel wall anchors for walls that have shifted further.</p>
+          <span class="service-card-link">Learn More <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/services/foundation-crack-repair" class="service-card service-extra" style="display:none;">
+        <img class="service-card-image" src="../../images/foundation-crack-repair/foundation-crack-repair.png" alt="Cracked brick foundation wall near downspout">
+        <div class="service-card-body">
+          <h3 class="service-card-title">Foundation Crack Repair</h3>
+          <p class="service-card-desc">That crack in your basement wall isn’t just cosmetic — it’s where water gets in. Every freeze-thaw cycle makes it wider. We inject cracks with expanding material that seals them from the inside out and flexes with your foundation so the seal holds.</p>
+          <span class="service-card-link">Learn More <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/services/helical-pier-installation" class="service-card service-extra" style="display:none;">
+        <img class="service-card-image" src="../../images/helical-pier-installation/Whisk_aee186b64c807d9a5044f7e3956200bbdr.webp" alt="Helical pier being installed for foundation support">
+        <div class="service-card-body">
+          <h3 class="service-card-title">Helical Pier Installation</h3>
+          <p class="service-card-desc">When a section of your home has settled and the foundation is sinking, helical piers screw deep into the ground until they hit stable soil. They lift the settled area back toward level and lock it in place. No heavy excavation required.</p>
+          <span class="service-card-link">Learn More <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/services/egress-window-installation" class="service-card service-extra" style="display:none;">
+        <img class="service-card-image" src="../../images/egress-window-installation/egress-window-well-exterior.jpg" alt="Egress window well installed on exterior of home">
+        <div class="service-card-body">
+          <h3 class="service-card-title">Egress Window Installation</h3>
+          <p class="service-card-desc">If you’re finishing your basement or need a code-compliant emergency exit, an egress window solves both. It adds natural light, ventilation, and a safe way out. We handle the full installation including the window well and drainage.</p>
+          <span class="service-card-link">Learn More <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg></span>
+        </div>
+      </a>
+
+      <a href="/services/concrete-leveling" class="service-card service-extra" style="display:none;">
+        <img class="service-card-image" src="../../images/concrete-leveling/concrete-leveling.png" alt="Uneven concrete slab settlement near front porch">
+        <div class="service-card-body">
+          <h3 class="service-card-title">Concrete Leveling</h3>
+          <p class="service-card-desc">Sidewalks, driveways, patios, and garage floors that have sunk or cracked from freeze-thaw cycles. Instead of tearing it out and replacing it, we inject expanding foam underneath to lift the slab back to level. Faster, less disruptive, and it lasts.</p>
           <span class="service-card-link">Learn More <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg></span>
         </div>
       </a>
 
     </div>
+
+    <button class="services-toggle" id="servicesToggle">
+      Show More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+    </button>
+
   </div>
 </section>
+
+<script>
+(function(){
+  var btn = document.getElementById('servicesToggle');
+  var extras = document.querySelectorAll('.service-extra');
+  var open = false;
+  btn.addEventListener('click', function(){
+    open = !open;
+    for(var i=0;i<extras.length;i++){
+      extras[i].style.display = open ? 'flex' : 'none';
+    }
+    btn.firstChild.textContent = open ? 'Show Less ' : 'Show More ';
+    btn.classList.toggle('expanded', open);
+    if(!open){
+      btn.scrollIntoView({behavior:'smooth',block:'end'});
+    }
+  });
+})();
+</script>
 
 <!-- CTA: Call Us -->
 <div class="mid-cta">
@@ -2330,7 +2397,7 @@
      ======================== -->
 <section class="process-section">
   <div class="process-inner">
-    <h2>How Basement and Crawl Space Repair Works in Cleveland</h2>
+    <h2>How We Fix It — From First Call to Dry Basement</h2>
     <p class="process-subtext">Getting started is simple. Here's what to expect when you work with us.</p>
 
     <div class="process-layout">
@@ -2349,8 +2416,8 @@
             <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
           </div>
           <div class="step-number">Step 1</div>
-          <div class="step-title">Book a Free Inspection</div>
-          <div class="step-desc">We check your foundation, basement, or crawl space and tell you exactly what’s going on. No cost. No pressure.</div>
+          <div class="step-title">Schedule Your Free Inspection</div>
+          <div class="step-desc">Tell us what you’re seeing — water, cracks, uneven floors, whatever it is. We’ll set up a time to come look at it. No cost, no obligation.</div>
         </div>
 
         <!-- Step 2 -->
@@ -2359,8 +2426,8 @@
             <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
           </div>
           <div class="step-number">Step 2</div>
-          <div class="step-title">Get a Repair Plan</div>
-          <div class="step-desc">Every home is different. We put together a plan based on what we find — not a cookie-cutter quote.</div>
+          <div class="step-title">We Inspect and Explain What’s Happening</div>
+          <div class="step-desc">Our inspector spends real time in your basement or crawl space. We show you exactly where the problem is, what’s causing it, and what your options are — in plain language, not contractor jargon. If you don’t need repair, we’ll tell you.</div>
         </div>
 
         <!-- Step 3 -->
@@ -2369,8 +2436,8 @@
             <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
           </div>
           <div class="step-number">Step 3</div>
-          <div class="step-title">We Do the Work</div>
-          <div class="step-desc">Our crew shows up and handles the repair. Most jobs wrap up without tearing up your yard or disrupting your day.</div>
+          <div class="step-title">You Pick a Plan That Works for You</div>
+          <div class="step-desc">We give you a written proposal with the scope, method, timeline, and cost. No pressure to decide on the spot. Compare us to anyone. We also offer flexible financing so the cost doesn’t have to stop you from fixing the problem.</div>
         </div>
 
         <!-- Step 4 -->
@@ -2379,8 +2446,8 @@
             <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
           </div>
           <div class="step-number">Step 4</div>
-          <div class="step-title">Problem Solved for Good</div>
-          <div class="step-desc">Your home is stable. Your basement is dry. And you stop worrying about what’s happening underneath.</div>
+          <div class="step-title">We Do the Work and Back It Up</div>
+          <div class="step-desc">Our crew shows up on time, does the job, and walks you through everything when it’s done. You get a lifetime transferable warranty on structural repairs. If you sell the house, the warranty goes with it.</div>
         </div>
 
       </div>
@@ -2474,21 +2541,28 @@
      ======================== -->
 <section class="why-section">
   <div class="why-inner">
-    <h2>Why Cleveland Homeowners Call Queen Foundation Repair</h2>
-    <p class="why-subtext">We fix the problems that come with owning a home in Northeast Ohio.</p>
-
     <div class="why-layout">
+
+      <!-- Heading (stays above image on mobile) -->
+      <div class="why-heading-top">
+        <p class="why-h2-mobile" aria-hidden="true">Why Cleveland Homeowners Call Us</p>
+        <p class="why-subtext">Most of the homes in this city were built before 1970. They’re sitting on heavy clay soil that swells when it rains and shrinks when it dries. Every year, freeze-thaw cycles push and pull against your foundation walls. That’s not going to stop. But the damage can.</p>
+      </div>
 
       <!-- Left: Text -->
       <div class="why-text">
-        <h3>Foundation Solutions for Homes Built on Clay</h3>
-        <p>A 1920s block wall in Lakewood doesn’t need the same fix as a post-war poured foundation in Parma. The glacial clay under most homes around here swells when it rains and shrinks when it dries — and that movement hits every foundation differently. We match the method to the problem — wall anchors for bowing walls, <a href="/services/helical-pier-installation">helical piers</a> for settling porches, <a href="/services/concrete-leveling">concrete leveling</a> for sunken garage floors and sidewalks. Your home, your fix.</p>
+        <div class="why-heading-inline">
+          <h2>Why Cleveland Homeowners Call Us</h2>
+          <p class="why-subtext">Most of the homes in this city were built before 1970. They’re sitting on heavy clay soil that swells when it rains and shrinks when it dries. Every year, freeze-thaw cycles push and pull against your foundation walls. That’s not going to stop. But the damage can.</p>
+        </div>
+        <h3>We Tell You What You Actually Need — Not the Biggest Job We Can Sell</h3>
+        <p>A hairline crack in a 70-year-old foundation is normal. Not every crack means your house is falling apart. When we inspect your home, we tell you what needs fixing now, what can wait, and what doesn’t need fixing at all. If your foundation is fine, we’ll say so. You’ll never get a scare pitch from us.</p>
 
-        <h3>Wet Basement and Crawl Space Experts in Northeast Ohio</h3>
-        <p>Snowmelt in March. Heavy rain in May. Homes from Shaker Heights to Garfield Heights deal with the same thing — water finding its way in. If your basement leaks or your crawl space smells musty, the issue is usually water pressure building up against your foundation from saturated ground outside. We find where it’s getting in and fix it at the source.</p>
+        <h3>We Know What Cleveland Soil Does to Foundations</h3>
+        <p>The glacial clay underneath Cleveland homes is the main reason basements leak and walls bow. It holds water like a sponge, expands with massive force against your walls, then shrinks and pulls away — leaving gaps for the next rain to fill. We design every repair around this soil. The fix has to work against what the ground is doing, not just patch over what you see inside.</p>
 
-        <h3>Free Inspections, Honest Estimates</h3>
-        <p>We tell you what’s wrong and what it costs to fix. No scare tactics. No inflated quotes. If something doesn’t need repair, we’ll say so. Queen Foundation Repair gives every homeowner the same process — a free inspection, a written plan, and a crew that follows through.</p>
+        <h3>Small Fix Now or Big Problem Later — Your Call</h3>
+        <p>Foundation problems don’t hold still. A crack that leaks a little after rain this year will leak more next year. A wall that’s bowed one inch will bow further. Homeowners who catch it early pay a fraction of what it costs to fix the same problem three years later. Every winter that passes adds another round of freeze-thaw damage. The best time to fix it is before the next one.</p>
 
         <a href="javascript:void(0)" onclick="openModal()" class="why-cta">Get My Free Quote</a>
       </div>
@@ -2505,6 +2579,7 @@
   </div>
 </section>
 
+
 <!-- ========================
      BEFORE & AFTER
      ======================== -->
@@ -2513,9 +2588,6 @@
     <h2>Before &amp; After</h2>
     <p class="ba-subtext">See the difference our work makes. Real projects, real results.</p>
 
-    <div class="ba-layout">
-
-      <div class="ba-main">
         <div class="ba-slider">
           <div class="ba-viewport">
             <div class="ba-track" id="baTrack">
@@ -2543,20 +2615,6 @@
         </div>
 
         <div class="ba-dots" id="baDots"></div>
-      </div>
-
-      <div class="other-services">
-        <h3>Other Services</h3>
-        <ul>
-          <li><a href="/services/helical-pier-installation">Helical Pier Installation</a></li>
-          <li><a href="/services/concrete-leveling">Concrete Leveling</a></li>
-          <li><a href="/services/egress-window-installation">Egress Window Installation</a></li>
-          <li><a href="/services/foundation-crack-repair">Foundation Crack Repair</a></li>
-          <li><a href="/services/basement-wall-repair">Basement Wall Repair</a></li>
-        </ul>
-      </div>
-
-    </div>
 
   </div>
 </section>
@@ -2632,70 +2690,81 @@
 })();
 </script>
 
+
 <!-- ========================
      FAQ SECTION
      ======================== -->
 <section class="faq-section">
   <div class="faq-inner">
-    <h2>Foundation & Basement Repair Questions in Cleveland, OH</h2>
-    <p class="faq-subtext">Answers to what homeowners around here ask us most.</p>
+    <h2>Common Questions About Foundation Repair in Cleveland</h2>
+    <p class="faq-subtext">If you’re noticing cracks, water, or shifting in your home, you probably have questions. Here are the ones we hear most.</p>
 
     <div class="faq-layout">
 
       <!-- Left: GBP Embed -->
       <div class="gbp-wrap">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d765942.8299294673!2d-82.9173617814462!3d41.41829624341317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ca23022e2b4207d%3A0x63023d4a7025e0e8!2sQueen%20Foundation%20Repair!5e0!3m2!1sen!2sus!4v1772475566563!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps?cid=7134332149626691816&output=embed" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
       <!-- Right: FAQ Accordion -->
       <div class="faq-list">
         <div class="faq-item">
           <button class="faq-question">
-            <h3>Why are cracked and bowing basement walls so common around here?</h3>
+            <h3>Why do so many Cleveland homes have basement water problems?</h3>
             <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
           </button>
           <div class="faq-answer">
-            <p>The soil in this area is heavy clay left behind by glaciers. It swells when wet and shrinks when dry, and that constant push puts lateral pressure on basement walls — especially concrete block. Freeze-thaw cycles make it worse every winter. <a href="/services/basement-wall-repair">Carbon fiber straps</a> stop the wall from bowing further, and <a href="/services/foundation-crack-repair">crack injection</a> seals the openings before water gets through.</p>
+            <p>It comes down to three things working together. The soil here is heavy glacial clay that doesn’t drain — it holds water and pushes it against your foundation. The city gets around 38 inches of rain a year plus snowmelt. And most homes were built with concrete block walls that weaken at the mortar joints over decades. Add in Cleveland’s combined sewer system, which can back up during heavy storms and push water through your floor drain, and you’ve got a city where basement water issues are extremely common.</p>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-question">
-            <h3>What’s the best way to fix a basement that floods every spring?</h3>
+            <h3>How do I know if a foundation crack is serious?</h3>
             <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
           </button>
           <div class="faq-answer">
-            <p>An interior drain-and-pump system. We cut a channel along the inside perimeter of your basement floor, lay drain tile in gravel, and connect it to a sump pump. When the ground outside gets saturated, water enters the channel instead of your basement — and the pump pushes it out through a discharge line away from your home.</p>
+            <p>A thin vertical crack in poured concrete is usually from the concrete curing when the house was built. It may let some water in, but it’s not structural. What you want to watch for is horizontal cracks in block walls — that means soil pressure is pushing the wall inward. Stair-step cracks along mortar joints, diagonal cracks from window corners, and any crack that’s wider at one end than the other all point to movement. If your doors are sticking or your floors are sloping, that’s another sign the foundation has shifted. When in doubt, get it inspected — the inspection is free and we’ll tell you straight whether it needs attention.</p>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-question">
-            <h3>Is it worth fixing the foundation on an older home in this area?</h3>
+            <h3>Does homeowners insurance cover foundation repair?</h3>
             <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
           </button>
           <div class="faq-answer">
-            <p>Yes. Some of the best neighborhoods — Ohio City, Tremont, Cleveland Heights — are full of homes built 80 to 100 years ago. The bones are solid, but the foundation has been under stress for decades. Stabilizing it now costs less than waiting for the damage to spread. And once the structure is sound, you can finish the basement, add an <a href="/services/egress-window-installation">egress window</a> for code-compliant living space, or just stop worrying about it.</p>
+            <p>In most cases, no. Homeowners insurance typically does not cover foundation damage caused by settling, soil pressure, water seepage, or normal wear over time — which accounts for the vast majority of foundation problems in Cleveland. Insurance may cover damage from sudden events like a burst pipe or a tree falling on your home. If you’re unsure, check your specific policy, but plan on this being an out-of-pocket repair. That’s why we offer flexible financing options.</p>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-question">
-            <h3>How do I know if my sagging floors are a crawl space problem or a foundation problem?</h3>
+            <h3>What happens if I wait to fix the problem?</h3>
             <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
           </button>
           <div class="faq-answer">
-            <p>If your home has a crawl space, sagging floors usually mean the support posts, joists, or beams underneath are failing — not the foundation walls. Moisture from the ground speeds that up. If you have a full basement, uneven floors more likely point to settling. A free inspection tells you which one it is and what the repair looks like.</p>
+            <p>It gets worse. Foundation and water problems are progressive — they don’t fix themselves and they don’t stay the same. A crack that lets in a little water today will widen with the next freeze-thaw cycle and let in more. A wall that’s started to bow will keep moving under soil pressure. Homeowners who fix things early pay significantly less than those who wait. Beyond cost, unresolved foundation issues can reduce your home’s market value and eventually become safety concerns if walls or floors shift too far.</p>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-question">
-            <h3>Do I need a sump pump if my basement has never flooded?</h3>
+            <h3>How long does the repair take?</h3>
             <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
           </button>
           <div class="faq-answer">
-            <p>Rainfall around here keeps trending up year over year. A basement that stayed dry in the past may not stay that way next spring — especially in low-lying areas near the lake or the Cuyahoga River where the water table sits high. A pump with a backup system is affordable protection against a problem that’s getting more likely.</p>
+            <p>It depends on what’s needed. A single crack repair can be done in a few hours. An interior drainage system with a sump pump usually takes two to five days. Structural work like piers or wall anchors typically takes two to four days. Most jobs are done from inside the basement with no need to dig up your yard. You can stay in your home during the work.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <h3>Do you serve areas outside of Cleveland?</h3>
+            <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. We serve all of Cuyahoga County and the surrounding communities, including Lakewood, Parma, Cleveland Heights, Shaker Heights, Old Brooklyn, Tremont, Ohio City, West Park, Garfield Heights, Maple Heights, Brooklyn, and East Cleveland. If you’re not sure whether we cover your area, just ask when you schedule your inspection.</p>
           </div>
         </div>
       </div>
@@ -2844,32 +2913,62 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://queenfoundationrepair.com/locations/foundation-repair-cleveland-oh/#business",
+  "@id": "https://queenfoundationrepair.com/locations/foundation-repair-cleveland-oh/",
   "name": "Queen Foundation Repair",
-  "description": "Foundation repair, basement waterproofing, and crawl space services in Cleveland, OH. Free estimates from Queen Foundation Repair.",
-  "telephone": "(216) 243-5157",
   "url": "https://queenfoundationrepair.com/locations/foundation-repair-cleveland-oh/",
-  "areaServed": [
-    {"@type": "City", "name": "Cleveland", "containedInPlace": {"@type": "State", "name": "Ohio"}},
-    {"@type": "City", "name": "Lakewood"},
-    {"@type": "City", "name": "Parma"},
-    {"@type": "City", "name": "Shaker Heights"},
-    {"@type": "City", "name": "Cleveland Heights"},
-    {"@type": "City", "name": "Garfield Heights"},
-    {"@type": "City", "name": "Brook Park"},
-    {"@type": "City", "name": "Euclid"}
-  ],
+  "telephone": "(216) 243-5157",
+  "image": "https://queenfoundationrepair.com/images/qfr-logo-badge.png",
+  "priceRange": "$$",
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": "41.4993",
-    "longitude": "-81.6944"
+    "latitude": 41.4993,
+    "longitude": -81.6944
   },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Cleveland",
+      "sameAs": "https://en.wikipedia.org/wiki/Cleveland"
+    },
+    {
+      "@type": "City",
+      "name": "Lakewood"
+    },
+    {
+      "@type": "City",
+      "name": "Parma"
+    },
+    {
+      "@type": "City",
+      "name": "Cleveland Heights"
+    },
+    {
+      "@type": "City",
+      "name": "Shaker Heights"
+    },
+    {
+      "@type": "City",
+      "name": "Old Brooklyn"
+    }
+  ],
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
       "opens": "07:00",
-      "closes": "21:00"
+      "closes": "19:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "08:00",
+      "closes": "17:00"
     }
   ]
 }
@@ -2882,24 +2981,101 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
   "serviceType": "Foundation Repair and Waterproofing",
   "provider": {
     "@type": "LocalBusiness",
-    "@id": "https://queenfoundationrepair.com/locations/foundation-repair-cleveland-oh/#business",
+    "@id": "https://queenfoundationrepair.com/locations/foundation-repair-cleveland-oh/",
     "name": "Queen Foundation Repair"
   },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Foundation Repair & Waterproofing Services",
     "itemListElement": [
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Foundation Repair", "url": "https://queenfoundationrepair.com/services/foundation-repair"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Basement Waterproofing", "url": "https://queenfoundationrepair.com/services/basement-waterproofing"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Crawl Space Repair", "url": "https://queenfoundationrepair.com/services/crawl-space-repair"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Crawl Space Encapsulation", "url": "https://queenfoundationrepair.com/services/crawl-space-encapsulation"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sump Pump Installation", "url": "https://queenfoundationrepair.com/services/sump-pump-installation"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "French Drain Installation", "url": "https://queenfoundationrepair.com/services/french-drain-installation"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Basement Wall Repair", "url": "https://queenfoundationrepair.com/services/basement-wall-repair"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Foundation Crack Repair", "url": "https://queenfoundationrepair.com/services/foundation-crack-repair"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Helical Pier Installation", "url": "https://queenfoundationrepair.com/services/helical-pier-installation"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Egress Window Installation", "url": "https://queenfoundationrepair.com/services/egress-window-installation"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Concrete Leveling", "url": "https://queenfoundationrepair.com/services/concrete-leveling"}}
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Foundation Repair",
+          "url": "https://queenfoundationrepair.com/services/foundation-repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Basement Waterproofing",
+          "url": "https://queenfoundationrepair.com/services/basement-waterproofing"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Crawl Space Repair",
+          "url": "https://queenfoundationrepair.com/services/crawl-space-repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Crawl Space Encapsulation",
+          "url": "https://queenfoundationrepair.com/services/crawl-space-encapsulation"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Sump Pump Installation",
+          "url": "https://queenfoundationrepair.com/services/sump-pump-installation"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "French Drain Installation",
+          "url": "https://queenfoundationrepair.com/services/french-drain-installation"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Basement Wall Repair",
+          "url": "https://queenfoundationrepair.com/services/basement-wall-repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Foundation Crack Repair",
+          "url": "https://queenfoundationrepair.com/services/foundation-crack-repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Helical Pier Installation",
+          "url": "https://queenfoundationrepair.com/services/helical-pier-installation"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Egress Window Installation",
+          "url": "https://queenfoundationrepair.com/services/egress-window-installation"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Concrete Leveling",
+          "url": "https://queenfoundationrepair.com/services/concrete-leveling"
+        }
+      }
     ]
   }
 }
@@ -2912,47 +3088,56 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Why are cracked and bowing basement walls so common around here?",
+      "name": "Why do so many Cleveland homes have basement water problems?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The soil in this area is heavy clay left behind by glaciers. It swells when wet and shrinks when dry, and that constant push puts lateral pressure on basement walls — especially concrete block. Freeze-thaw cycles make it worse every winter. Carbon fiber straps stop the wall from bowing further, and crack injection seals the openings before water gets through."
+        "text": "It comes down to three things working together. The soil here is heavy glacial clay that doesn\u2019t drain \u2014 it holds water and pushes it against your foundation. The city gets around 38 inches of rain a year plus snowmelt. And most homes were built with concrete block walls that weaken at the mortar joints over decades. Add in Cleveland\u2019s combined sewer system, which can back up during heavy storms and push water through your floor drain, and you\u2019ve got a city where basement water issues are extremely common."
       }
     },
     {
       "@type": "Question",
-      "name": "What’s the best way to fix a basement that floods every spring?",
+      "name": "How do I know if a foundation crack is serious?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "An interior drain-and-pump system. We cut a channel along the inside perimeter of your basement floor, lay drain tile in gravel, and connect it to a sump pump. When the ground outside gets saturated, water enters the channel instead of your basement — and the pump pushes it out through a discharge line away from your home."
+        "text": "A thin vertical crack in poured concrete is usually from the concrete curing when the house was built. It may let some water in, but it\u2019s not structural. What you want to watch for is horizontal cracks in block walls \u2014 that means soil pressure is pushing the wall inward. Stair-step cracks along mortar joints, diagonal cracks from window corners, and any crack that\u2019s wider at one end than the other all point to movement. If your doors are sticking or your floors are sloping, that\u2019s another sign the foundation has shifted. When in doubt, get it inspected \u2014 the inspection is free and we\u2019ll tell you straight whether it needs attention."
       }
     },
     {
       "@type": "Question",
-      "name": "Is it worth fixing the foundation on an older home in this area?",
+      "name": "Does homeowners insurance cover foundation repair?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Some of the best neighborhoods — Ohio City, Tremont, Cleveland Heights — are full of homes built 80 to 100 years ago. The bones are solid, but the foundation has been under stress for decades. Stabilizing it now costs less than waiting for the damage to spread. And once the structure is sound, you can finish the basement, add an egress window for code-compliant living space, or just stop worrying about it."
+        "text": "In most cases, no. Homeowners insurance typically does not cover foundation damage caused by settling, soil pressure, water seepage, or normal wear over time \u2014 which accounts for the vast majority of foundation problems in Cleveland. Insurance may cover damage from sudden events like a burst pipe or a tree falling on your home. If you\u2019re unsure, check your specific policy, but plan on this being an out-of-pocket repair. That\u2019s why we offer flexible financing options."
       }
     },
     {
       "@type": "Question",
-      "name": "How do I know if my sagging floors are a crawl space problem or a foundation problem?",
+      "name": "What happens if I wait to fix the problem?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "If your home has a crawl space, sagging floors usually mean the support posts, joists, or beams underneath are failing — not the foundation walls. Moisture from the ground speeds that up. If you have a full basement, uneven floors more likely point to settling. A free inspection tells you which one it is and what the repair looks like."
+        "text": "It gets worse. Foundation and water problems are progressive \u2014 they don\u2019t fix themselves and they don\u2019t stay the same. A crack that lets in a little water today will widen with the next freeze-thaw cycle and let in more. A wall that\u2019s started to bow will keep moving under soil pressure. Homeowners who fix things early pay significantly less than those who wait. Beyond cost, unresolved foundation issues can reduce your home\u2019s market value and eventually become safety concerns if walls or floors shift too far."
       }
     },
     {
       "@type": "Question",
-      "name": "Do I need a sump pump if my basement has never flooded?",
+      "name": "How long does the repair take?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Rainfall around here keeps trending up year over year. A basement that stayed dry in the past may not stay that way next spring — especially in low-lying areas near the lake or the Cuyahoga River where the water table sits high. A pump with a backup system is affordable protection against a problem that’s getting more likely."
+        "text": "It depends on what\u2019s needed. A single crack repair can be done in a few hours. An interior drainage system with a sump pump usually takes two to five days. Structural work like piers or wall anchors typically takes two to four days. Most jobs are done from inside the basement with no need to dig up your yard. You can stay in your home during the work."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you serve areas outside of Cleveland?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We serve all of Cuyahoga County and the surrounding communities, including Lakewood, Parma, Cleveland Heights, Shaker Heights, Old Brooklyn, Tremont, Ohio City, West Park, Garfield Heights, Maple Heights, Brooklyn, and East Cleveland. If you\u2019re not sure whether we cover your area, just ask when you schedule your inspection."
       }
     }
   ]
 }
 </script>
+
 
 </body>
 </html>
