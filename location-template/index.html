@@ -3083,15 +3083,17 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
     position: fixed;
     bottom: 52px;
     right: 24px;
-    width: 60px;
-    height: 60px;
+    width: 64px;
+    height: 64px;
     background: #2563eb;
     border-radius: 50%;
     border: none;
     cursor: pointer;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 1px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.3);
     z-index: 9998;
     transition: background 0.2s, transform 0.2s;
@@ -3101,27 +3103,18 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
     transform: scale(1.05);
   }
   .text-widget-btn svg {
-    width: 28px;
-    height: 28px;
+    width: 22px;
+    height: 22px;
     fill: #ffffff;
   }
-  .text-widget-btn .btn-label {
-    position: absolute;
-    right: 70px;
-    background: #1a1a1a;
-    color: #ffffff;
+  .text-widget-btn .btn-text {
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.8rem;
-    font-weight: 600;
-    padding: 6px 12px;
-    border-radius: 6px;
-    white-space: nowrap;
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-  .text-widget-btn:hover .btn-label {
-    opacity: 1;
+    font-size: 0.6rem;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    line-height: 1;
   }
 
   .text-widget-panel {
@@ -3311,8 +3304,8 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
 
 <!-- Floating Text Button -->
 <button class="text-widget-btn" id="textWidgetBtn" aria-label="Text us">
-  <span class="btn-label">Text Us</span>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.2L4 17.2V4h16v12zM7 9h2v2H7V9zm4 0h2v2h-2V9zm4 0h2v2h-2V9z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2z"/></svg>
+  <span class="btn-text">Text</span>
 </button>
 
 <!-- Chat Panel -->
