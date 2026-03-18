@@ -1680,20 +1680,20 @@
   align-items: center;
   justify-content: center;
   gap: 6px;
-  margin: 24px auto 0;
+  margin: 30px auto 0;
   padding: 12px 28px;
-  background: #2563eb;
-  color: #fff;
+  background: none;
+  color: #1a1a1a;
   border: none;
-  border-radius: 6px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.95rem;
-  font-weight: 600;
+  font-size: 1.15rem;
+  font-weight: 500;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: color 0.2s;
 }
-.services-toggle:hover { background: #1d4ed8; }
-.services-toggle svg { width: 18px; height: 18px; transition: transform 0.2s; }
+.services-toggle:hover { color: #2563eb; }
+.services-toggle svg { width: 18px; height: 18px; transition: transform 0.2s; stroke: #1a1a1a; }
+.services-toggle:hover svg { stroke: #2563eb; }
 .services-toggle.expanded svg { transform: rotate(180deg); }
 </style>
 </head>
