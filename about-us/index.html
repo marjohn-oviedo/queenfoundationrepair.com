@@ -737,6 +737,29 @@
       display: none;
     }
   }
+
+  /* Who We Are: desktop vs mobile heading */
+  .about-heading-top { display: none; }
+  .about-heading-inline { display: block; }
+
+  @media (max-width: 900px) {
+    .about-grid {
+      flex-direction: column;
+    }
+    .about-heading-top {
+      display: block;
+      order: 1;
+    }
+    .about-image {
+      order: 2;
+    }
+    .about-text {
+      order: 3;
+    }
+    .about-heading-inline {
+      display: none;
+    }
+  }
 </style>
 <link rel="icon" type="image/png" href="../favicon.png">
 
@@ -1062,11 +1085,18 @@
 <section class="about-section">
   <div class="about-inner">
     <div class="about-grid">
+      <!-- Mobile heading (above image) -->
+      <div class="about-heading-top">
+        <h2>Who We Are</h2>
+      </div>
+
       <div class="about-image">
         <img src="../images/brand/collage.webp" alt="Queen Foundation Repair team and completed projects">
       </div>
       <div class="about-text">
-        <h2>Who We Are</h2>
+        <div class="about-heading-inline">
+          <h2>Who We Are</h2>
+        </div>
         <p>We started Queen Foundation Repair for one reason: homeowners deserve better. Better service, better communication, and better results when their home needs work.</p>
         <p>We've seen too many companies show up late, give confusing quotes, and leave homeowners guessing. That's not how we operate. When you call us, we pick up. When we schedule an estimate, we show up. When we give you a price, that's the price.</p>
         <p>Whether it's a cracked foundation, a wet basement, or a crawl space that needs attention — we've seen it, we've fixed it, and we stand behind every job with a warranty. This isn't a side hustle. This is what we do every day.</p>
