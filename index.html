@@ -1597,6 +1597,83 @@
   }
 
 
+
+.service-area {
+    background: #ffffff;
+    padding: 70px 30px;
+  }
+
+  .service-area-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .service-area-toggle {
+    width: 100%;
+    background: #fff;
+    border: none;
+    padding: 18px 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #1a1a1a;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .service-area-toggle:hover {
+    background: #f8f9fa;
+  }
+
+  .service-area-arrow {
+    font-size: 0.7rem;
+    transition: transform 0.3s;
+  }
+
+  .service-area-inner.active .service-area-arrow {
+    transform: rotate(180deg);
+  }
+
+  .service-area-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding: 0 24px;
+  }
+
+  .service-area-inner.active .service-area-content {
+    max-height: 600px;
+    padding: 20px 24px 24px;
+  }
+
+  .service-area-desc {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+
+  .service-area-links {
+    font-size: 0.9rem;
+    line-height: 1.8;
+  }
+
+  .service-area-links a {
+    color: #2563eb;
+    text-decoration: underline;
+  }
+
+  .service-area-links a:hover {
+    color: #1d4fd8;
+  }
 </style>
 </head>
 <body>
@@ -1615,16 +1692,66 @@
       <div class="nav-dropdown">
         <a href="#">Services <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5"/></svg></a>
         <div class="dropdown-menu">
-          <a href="/foundation-repair/">Foundation Repair</a>
-          <a href="/basement-waterproofing/">Basement Waterproofing</a>
-          <a href="/crawl-space-repair/">Crawl Space Repair</a>
-          <a href="/crawl-space-encapsulation/">Crawl Space Encapsulation</a>
-          <a href="/sump-pump-installation/">Sump Pump Installation</a>
-          <a href="/french-drain-installation/">French Drain Installation</a>
-          <a href="/basement-wall-repair/">Basement Wall Repair</a>
-          <a href="/foundation-crack-repair/">Foundation Crack Repair</a>
-          <a href="/helical-pier-installation/">Helical Pier Installation</a>
-          <a href="/egress-window-installation/">Egress Window Installation</a>
+          <a href="/services/foundation-repair/">Foundation Repair</a>
+          <a href="/services/basement-waterproofing/">Basement Waterproofing</a>
+          <a href="/services/crawl-space-repair/">Crawl Space Repair</a>
+          <a href="/services/crawl-space-encapsulation/">Crawl Space Encapsulation</a>
+          <a href="/services/sump-pump-installation/">Sump Pump Installation</a>
+          <a href="/services/french-drain-installation/">French Drain Installation</a>
+      <!-- Service 7: Basement Wall Repair -->
+      <a href="/services/basement-wall-repair/" class="service-card">
+        <img class="service-card-image" src="./images/basement-wall-repair/rhino-carbon-fiber™_bowed_wall_repair_01.webp" alt="Carbon fiber strips reinforcing a bowed basement wall">
+        <div class="service-card-body">
+          <div class="service-card-title">Basement Wall Repair</div>
+          <p class="service-card-desc">Bowing, cracking, or leaning basement walls need structural reinforcement before they get worse.</p>
+          <span class="service-card-link">Learn More <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg></span>
+        </div>
+      </a>
+
+      <!-- Service 8: Foundation Crack Repair -->
+      <a href="/services/foundation-crack-repair/" class="service-card">
+        <img class="service-card-image" src="./images/foundation-crack-repair/foundation-crack-repair.png" alt="Cracked brick foundation wall near downspout">
+        <div class="service-card-body">
+          <div class="service-card-title">Foundation Crack Repair</div>
+          <p class="service-card-desc">Cracks let water in and weaken your foundation. We seal them permanently so they stop spreading.</p>
+          <span class="service-card-link">Learn More <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg></span>
+        </div>
+      </a>
+
+      <!-- Service 9: Helical Pier Installation -->
+      <a href="/services/helical-pier-installation/" class="service-card">
+        <img class="service-card-image" src="./images/helical-pier-installation/Whisk_aee186b64c807d9a5044f7e3956200bbdr.webp" alt="Helical pier being installed for foundation support">
+        <div class="service-card-body">
+          <div class="service-card-title">Helical Pier Installation</div>
+          <p class="service-card-desc">Steel piers driven to stable ground stop your foundation from sinking and can lift it back to level.</p>
+          <span class="service-card-link">Learn More <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg></span>
+        </div>
+      </a>
+
+      <!-- Service 10: Egress Window Installation -->
+      <a href="/services/egress-window-installation/" class="service-card">
+        <img class="service-card-image" src="./images/egress-window-installation/egress-window-well-exterior.jpg" alt="Egress window well installed on exterior of home">
+        <div class="service-card-body">
+          <div class="service-card-title">Egress Window Installation</div>
+          <p class="service-card-desc">Code-compliant basement windows that give you natural light, ventilation, and a safe emergency exit.</p>
+          <span class="service-card-link">Learn More <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg></span>
+        </div>
+      </a>
+
+      <!-- Service 11: Concrete Leveling -->
+      <a href="/services/concrete-leveling/" class="service-card">
+        <img class="service-card-image" src="./images/concrete-leveling/concrete-leveling.png" alt="Uneven concrete slab settlement near front porch">
+        <div class="service-card-body">
+          <div class="service-card-title">Concrete Leveling</div>
+          <p class="service-card-desc">Sunken driveways, sidewalks, and patios lifted back to level with foam injection — no full replacement needed.</p>
+          <span class="service-card-link">Learn More <svg viewBox="0 0 24 24"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg></span>
+        </div>
+      </a>
+
+          <a href="/services/basement-wall-repair/">Basement Wall Repair</a>
+          <a href="/services/foundation-crack-repair/">Foundation Crack Repair</a>
+          <a href="/services/helical-pier-installation/">Helical Pier Installation</a>
+          <a href="/services/egress-window-installation/">Egress Window Installation</a>
         </div>
       </div>
       <a href="/about-us/">About Us</a>
@@ -1649,16 +1776,16 @@
       <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5"/></svg>
     </button>
     <div class="mobile-services" id="mobileServices">
-      <a href="/foundation-repair/">Foundation Repair</a>
-      <a href="/basement-waterproofing/">Basement Waterproofing</a>
-      <a href="/crawl-space-repair/">Crawl Space Repair</a>
-      <a href="/crawl-space-encapsulation/">Crawl Space Encapsulation</a>
-      <a href="/sump-pump-installation/">Sump Pump Installation</a>
-      <a href="/french-drain-installation/">French Drain Installation</a>
-      <a href="/basement-wall-repair/">Basement Wall Repair</a>
-      <a href="/foundation-crack-repair/">Foundation Crack Repair</a>
-      <a href="/helical-pier-installation/">Helical Pier Installation</a>
-      <a href="/egress-window-installation/">Egress Window Installation</a>
+      <a href="/services/foundation-repair/">Foundation Repair</a>
+      <a href="/services/basement-waterproofing/">Basement Waterproofing</a>
+      <a href="/services/crawl-space-repair/">Crawl Space Repair</a>
+      <a href="/services/crawl-space-encapsulation/">Crawl Space Encapsulation</a>
+      <a href="/services/sump-pump-installation/">Sump Pump Installation</a>
+      <a href="/services/french-drain-installation/">French Drain Installation</a>
+      <a href="/services/basement-wall-repair/">Basement Wall Repair</a>
+      <a href="/services/foundation-crack-repair/">Foundation Crack Repair</a>
+      <a href="/services/helical-pier-installation/">Helical Pier Installation</a>
+      <a href="/services/egress-window-installation/">Egress Window Installation</a>
     </div>
     <a href="/about-us/">About Us</a>
     <a href="/contact-us/">Contact Us</a>
@@ -2052,7 +2179,7 @@
     <div class="services-grid">
 
       <!-- Service 1: Foundation Repair -->
-      <a href="/foundation-repair/" class="service-card">
+      <a href="/services/foundation-repair/" class="service-card">
         <img class="service-card-image" src="./images/foundation-repair/cracked or sinking foundation.png" alt="Cracked foundation showing signs of structural damage">
         <div class="service-card-body">
           <div class="service-card-title">Foundation Repair</div>
@@ -2062,7 +2189,7 @@
       </a>
 
       <!-- Service 2: Basement Waterproofing -->
-      <a href="/basement-waterproofing/" class="service-card">
+      <a href="/services/basement-waterproofing/" class="service-card">
         <img class="service-card-image" src="./images/basement-waterproofing/standing water in basement.png" alt="Standing water in basement requiring waterproofing">
         <div class="service-card-body">
           <div class="service-card-title">Basement Waterproofing</div>
@@ -2072,7 +2199,7 @@
       </a>
 
       <!-- Service 3: Crawl Space Repair -->
-      <a href="/crawl-space-repair/" class="service-card">
+      <a href="/services/crawl-space-repair/" class="service-card">
         <img class="service-card-image" src="./images/crawl-space-repair/admin-ajax-3-1-1.webp" alt="Steel crawl space jack posts installed on concrete footings">
         <div class="service-card-body">
           <div class="service-card-title">Crawl Space Repair</div>
@@ -2082,7 +2209,7 @@
       </a>
 
       <!-- Service 4: Crawl Space Encapsulation -->
-      <a href="/crawl-space-encapsulation/" class="service-card">
+      <a href="/services/crawl-space-encapsulation/" class="service-card">
         <img class="service-card-image" src="./images/crawl-space-encapsulation/Crawl-space-encapsulation.png" alt="Crawl space with vapor barrier encapsulation installed">
         <div class="service-card-body">
           <div class="service-card-title">Crawl Space Encapsulation</div>
@@ -2092,7 +2219,7 @@
       </a>
 
       <!-- Service 5: Sump Pump Installation -->
-      <a href="/sump-pump-installation/" class="service-card">
+      <a href="/services/sump-pump-installation/" class="service-card">
         <img class="service-card-image" src="./images/drainage-services/Whisk_6a1026e2d21142fa3234e773d4f8f01edr-1024x585.png" alt="Sump pump in a basement pit">
         <div class="service-card-body">
           <div class="service-card-title">Sump Pump Installation</div>
@@ -2102,7 +2229,7 @@
       </a>
 
       <!-- Service 6: French Drain Installation -->
-      <a href="/french-drain-installation/" class="service-card">
+      <a href="/services/french-drain-installation/" class="service-card">
         <img class="service-card-image" src="./images/drainage-services/Whisk_f073e590fd567ceab304791845ecc2d3dr.webp" alt="French drain system installed along foundation">
         <div class="service-card-body">
           <div class="service-card-title">French Drain Installation</div>
@@ -2493,6 +2620,67 @@
 <!-- ========================
      FOOTER
      ======================== -->
+
+<!-- ========================
+     SERVICE AREA
+     ======================== -->
+<section class="service-area">
+  <div class="service-area-inner" id="serviceAreaBox">
+    <button class="service-area-toggle" onclick="document.getElementById('serviceAreaBox').classList.toggle('active')">
+      <span class="service-area-arrow">&#9660;</span> Our Service Area
+    </button>
+    <div class="service-area-content">
+    <p class="service-area-desc">Queen Foundation Repair provides foundation repair services across 44 cities nationwide.</p>
+    <div class="service-area-links">
+              <a href="/locations/foundation-repair-durham-nc/">Durham, NC</a>
+        <a href="/locations/foundation-repair-matthews-nc/">Matthews, NC</a>
+        <a href="/locations/foundation-repair-charlotte-nc/">Charlotte, NC</a>
+        <a href="/locations/foundation-repair-concord-nc/">Concord, NC</a>
+        <a href="/locations/foundation-repair-chesapeake-va/">Chesapeake, VA</a>
+        <a href="/locations/foundation-repair-alexandria-va/">Alexandria, VA</a>
+        <a href="/locations/foundation-repair-asheville-nc/">Asheville, NC</a>
+        <a href="/locations/foundation-repair-augusta-ga/">Augusta, GA</a>
+        <a href="/locations/foundation-repair-philadelphia-pa/">Philadelphia, PA</a>
+        <a href="/locations/foundation-repair-pittsburgh-pa/">Pittsburgh, PA</a>
+        <a href="/locations/foundation-repair-columbus-oh/">Columbus, OH</a>
+        <a href="/locations/foundation-repair-cleveland-oh/">Cleveland, OH</a>
+        <a href="/locations/foundation-repair-cincinnati-oh/">Cincinnati, OH</a>
+        <a href="/locations/foundation-repair-birmingham-al/">Birmingham, AL</a>
+        <a href="/locations/foundation-repair-huntsville-al/">Huntsville, AL</a>
+        <a href="/locations/foundation-repair-milwaukee-wi/">Milwaukee, WI</a>
+        <a href="/locations/foundation-repair-jacksonville-fl/">Jacksonville, FL</a>
+        <a href="/locations/foundation-repair-tulsa-ok/">Tulsa, OK</a>
+        <a href="/locations/foundation-repair-fort-worth-tx/">Fort Worth, TX</a>
+        <a href="/locations/foundation-repair-boston-ma/">Boston, MA</a>
+        <a href="/locations/foundation-repair-greensboro-nc/">Greensboro, NC</a>
+        <a href="/locations/foundation-repair-chicago-il/">Chicago, IL</a>
+        <a href="/locations/foundation-repair-minneapolis-mn/">Minneapolis, MN</a>
+        <a href="/locations/foundation-repair-baltimore-md/">Baltimore, MD</a>
+        <a href="/locations/foundation-repair-greenville-sc/">Greenville, SC</a>
+        <a href="/locations/foundation-repair-dayton-oh/">Dayton, OH</a>
+        <a href="/locations/foundation-repair-columbia-sc/">Columbia, SC</a>
+        <a href="/locations/foundation-repair-akron-oh/">Akron, OH</a>
+        <a href="/locations/foundation-repair-syracuse-ny/">Syracuse, NY</a>
+        <a href="/locations/foundation-repair-erie-pa/">Erie, PA</a>
+        <a href="/locations/foundation-repair-albany-ny/">Albany, NY</a>
+        <a href="/locations/foundation-repair-johnson-city-tn/">Johnson City, TN</a>
+        <a href="/locations/foundation-repair-roanoke-va/">Roanoke, VA</a>
+        <a href="/locations/foundation-repair-port-charlotte-fl/">Port Charlotte, FL</a>
+        <a href="/locations/foundation-repair-tallahassee-fl/">Tallahassee, FL</a>
+        <a href="/locations/foundation-repair-fort-myers-fl/">Fort Myers, FL</a>
+        <a href="/locations/foundation-repair-sarasota-fl/">Sarasota, FL</a>
+        <a href="/locations/foundation-repair-wilmington-nc/">Wilmington, NC</a>
+        <a href="/locations/foundation-repair-worcester-ma/">Worcester, MA</a>
+        <a href="/locations/foundation-repair-lynchburg-va/">Lynchburg, VA</a>
+        <a href="/locations/foundation-repair-atlanta-ga/">Atlanta, GA</a>
+        <a href="/locations/foundation-repair-reidsville-nc/">Reidsville, NC</a>
+        <a href="/locations/foundation-repair-hickory-nc/">Hickory, NC</a>
+        <a href="/locations/foundation-repair-richmond-va/">Richmond, VA</a>
+    </div>
+    </div>
+  </div>
+</section>
+
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-grid">
@@ -2514,21 +2702,21 @@
       <!-- Column 2: Services (left) -->
       <div class="footer-col">
         <p class="footer-col-title">Services</p>
-        <a href="/foundation-repair/">Foundation Repair</a>
-        <a href="/basement-waterproofing/">Basement Waterproofing</a>
-        <a href="/crawl-space-repair/">Crawl Space Repair</a>
-        <a href="/crawl-space-encapsulation/">Crawl Space Encapsulation</a>
-        <a href="/sump-pump-installation/">Sump Pump Installation</a>
+        <a href="/services/foundation-repair/">Foundation Repair</a>
+        <a href="/services/basement-waterproofing/">Basement Waterproofing</a>
+        <a href="/services/crawl-space-repair/">Crawl Space Repair</a>
+        <a href="/services/crawl-space-encapsulation/">Crawl Space Encapsulation</a>
+        <a href="/services/sump-pump-installation/">Sump Pump Installation</a>
       </div>
 
       <!-- Column 3: Services (right) -->
       <div class="footer-col">
         <p class="footer-col-title" aria-hidden="true">&nbsp;</p>
-        <a href="/french-drain-installation/">French Drain Installation</a>
-        <a href="/basement-wall-repair/">Basement Wall Repair</a>
-        <a href="/foundation-crack-repair/">Foundation Crack Repair</a>
-        <a href="/helical-pier-installation/">Helical Pier Installation</a>
-        <a href="/egress-window-installation/">Egress Window Installation</a>
+        <a href="/services/french-drain-installation/">French Drain Installation</a>
+        <a href="/services/basement-wall-repair/">Basement Wall Repair</a>
+        <a href="/services/foundation-crack-repair/">Foundation Crack Repair</a>
+        <a href="/services/helical-pier-installation/">Helical Pier Installation</a>
+        <a href="/services/egress-window-installation/">Egress Window Installation</a>
       </div>
 
       <!-- Column 4: Company -->
