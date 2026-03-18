@@ -1753,6 +1753,64 @@
 .services-toggle svg { width: 18px; height: 18px; transition: transform 0.2s; stroke: #1a1a1a; }
 .services-toggle:hover svg { stroke: #2563eb; }
 .services-toggle.expanded svg { transform: rotate(180deg); }
+
+/* Quote Modal */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 99999;
+  justify-content: center;
+  align-items: center;
+}
+.modal-overlay.active {
+  display: flex;
+}
+.modal-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 32px;
+  width: 90%;
+  max-width: 480px;
+  position: relative;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #666;
+}
+.modal-close:hover {
+  color: #000;
+}
+.modal-box .form-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.modal-box input, .modal-box select, .modal-box textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: 'Noto Sans', sans-serif;
+}
+.modal-box select {
+  color: #999;
+}
+.modal-box select.selected {
+  color: #333;
+}
 </style>
 <link rel="icon" type="image/png" href="./favicon.png">
 </head>
@@ -2529,7 +2587,7 @@
         <h3>Warranty-Backed Work</h3>
         <p>Every job comes with a warranty. That means if something isn't right, we come back and make it right — no charge. We stand behind our work because cutting corners isn't how we built this company. Your home is your biggest investment. We protect it like it matters, because it does.</p>
 
-        <a href="#leadForm" class="why-cta">Get My Free Quote</a>
+        <a href="javascript:void(0)" class="why-cta" onclick="openModal()">Get My Free Quote</a>
       </div>
 
       <!-- Right: Photo Collage -->
@@ -3187,6 +3245,68 @@
     "availableLanguage": "English"
   }
 }
+</script>
+
+
+<!-- Quote Modal -->
+<div class="modal-overlay" id="quoteModal" onclick="if(event.target===this)closeModal()">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()">&times;</button>
+    <p class="form-heading">Get Your Free Quote</p>
+    <form id="modalForm" method="post">
+      <input type="text" name="cf-field[pdf-name]" placeholder="Full Name" required>
+      <input type="tel" name="cf-field[pdf-phone]" placeholder="Phone Number" required>
+      <input type="text" name="cf-field[pdf-zipcode]" placeholder="Zip Code" required>
+      <select name="cf-field[cf-51354]" required onchange="this.classList.toggle('selected', this.value !== '')">
+        <option value="" disabled selected>Select Service</option>
+        <option value="foundation-repair">Foundation Repair</option>
+        <option value="basement-waterproofing">Basement Waterproofing</option>
+        <option value="crawl-space-services">Crawl Space Services</option>
+        <option value="other">Other</option>
+      </select>
+      <textarea name="cf-field[cf-51368]" placeholder="Describe what you're seeing (cracks, water, uneven floors, etc.)" style="width:100%;padding:12px 14px;margin-bottom:12px;border:1px solid #d0d0d0;border-radius:6px;font-size:0.95rem;font-family:'Noto Sans',sans-serif;resize:vertical;min-height:60px;"></textarea>
+      <input type="hidden" name="api_key" value="QeqPmDWwFvlrHV9INQ5nSPZIBh1YdJTh">
+      <input type="hidden" name="hostname" id="modalHostname" value="">
+      <button type="submit" class="form-submit-btn">Get My Free Quote</button>
+    </form>
+    <div class="form-success" id="modalSuccess">
+      <p><strong>Thank You For Your Submission!</strong></p>
+      <p>A team member will be reaching out to you shortly.</p>
+    </div>
+  </div>
+</div>
+
+
+<script>
+document.getElementById('modalHostname').value = window.location.hostname;
+
+function openModal() {
+  document.getElementById('quoteModal').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  document.getElementById('quoteModal').classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+document.getElementById('modalForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  var btn = this.querySelector('.form-submit-btn');
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+  var formData = new FormData(this);
+  fetch('https://app.leadsnap.com/embed/store', {
+    method: 'POST',
+    body: formData
+  }).then(function() {
+    document.getElementById('modalForm').style.display = 'none';
+    document.getElementById('modalSuccess').style.display = 'block';
+  }).catch(function() {
+    document.getElementById('modalForm').style.display = 'none';
+    document.getElementById('modalSuccess').style.display = 'block';
+  });
+});
 </script>
 
 </body>
