@@ -915,13 +915,12 @@
      RESPONSIVE
      =========================== */
   
-  /* Why Choose heading: desktop = inline with image, mobile = above image */
-  .why-heading-top {
-    display: none;
-  }
-  .why-heading-inline {
-    display: block;
-  }
+  
+
+  
+  /* Why Choose heading: desktop vs mobile */
+  .why-heading-top { display: none; }
+  .why-heading-inline { display: block; }
 
   @media (max-width: 900px) {
     .hero-inner {
@@ -953,13 +952,7 @@
   }
 
   
-  /* Why Choose heading: desktop = inline with image, mobile = above image */
-  .why-heading-top {
-    display: none;
-  }
-  .why-heading-inline {
-    display: block;
-  }
+  
 
   @media (max-width: 900px) {
     .services-grid {
@@ -974,13 +967,7 @@
   }
 
   
-  /* Why Choose heading: desktop = inline with image, mobile = above image */
-  .why-heading-top {
-    display: none;
-  }
-  .why-heading-inline {
-    display: block;
-  }
+  
 
   @media (max-width: 900px) {
     .process-layout {
@@ -998,13 +985,18 @@
 
     /* Trust badges: 2 rows on mobile */
     .trust-bar-inner {
-      gap: 14px 18px;
+      gap: 10px 12px;
+      justify-content: center;
+    }
+    .trust-badge {
+      width: calc(25% - 12px);
+      min-width: 70px;
     }
     .trust-badge img {
-      height: 75px;
+      height: 60px;
     }
     .google-rating {
-      transform: scale(0.75);
+      transform: scale(0.65);
       transform-origin: center;
     }
 
@@ -1141,13 +1133,7 @@
   }
 
   
-  /* Why Choose heading: desktop = inline with image, mobile = above image */
-  .why-heading-top {
-    display: none;
-  }
-  .why-heading-inline {
-    display: block;
-  }
+  
 
   @media (max-width: 900px) {
     .faq-layout {
@@ -1539,13 +1525,7 @@
   }
 
   
-  /* Why Choose heading: desktop = inline with image, mobile = above image */
-  .why-heading-top {
-    display: none;
-  }
-  .why-heading-inline {
-    display: block;
-  }
+  
 
   @media (max-width: 900px) {
     .header-nav {
@@ -2527,10 +2507,18 @@
   <div class="why-inner">
     <div class="why-layout">
 
-      <!-- Left: Text -->
-      <div class="why-text">
+      <!-- Mobile heading (above image) -->
+      <div class="why-heading-top">
         <h2>Why Choose Queen Foundation Repair</h2>
         <p class="why-subtext">We treat your home like it's ours. That's not a tagline — it's how we show up to every job.</p>
+      </div>
+
+      <!-- Left: Text -->
+      <div class="why-text">
+        <div class="why-heading-inline">
+          <h2>Why Choose Queen Foundation Repair</h2>
+          <p class="why-subtext">We treat your home like it's ours. That's not a tagline — it's how we show up to every job.</p>
+        </div>
 
         <h3>We Show Up and Get It Done</h3>
         <p>When you call us, you get a real person. When we schedule an estimate, we show up on time. When we start a job, we finish it. No runaround, no excuses. Our crew has fixed foundations, waterproofed basements, and sealed crawl spaces across the Southeast and Midwest. We know what we're doing because we've done it hundreds of times.</p>
