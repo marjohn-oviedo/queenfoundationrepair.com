@@ -714,6 +714,29 @@
       text-align: center;
     }
   }
+
+  /* What We Do: desktop vs mobile heading */
+  .whatwedo-heading-top { display: none; }
+  .whatwedo-heading-inline { display: block; }
+
+  @media (max-width: 900px) {
+    .whatwedo-grid {
+      flex-direction: column;
+    }
+    .whatwedo-heading-top {
+      display: block;
+      order: 1;
+    }
+    .whatwedo-image {
+      order: 2;
+    }
+    .whatwedo-text {
+      order: 3;
+    }
+    .whatwedo-heading-inline {
+      display: none;
+    }
+  }
 </style>
 <link rel="icon" type="image/png" href="../favicon.png">
 
@@ -1012,8 +1035,16 @@
 <section class="whatwedo-section">
   <div class="whatwedo-inner">
     <div class="whatwedo-grid">
-      <div class="whatwedo-text">
+      <!-- Mobile heading (above image) -->
+      <div class="whatwedo-heading-top">
         <h2>What We Do</h2>
+      </div>
+
+      <div class="whatwedo-text">
+        <!-- Desktop heading (inline with text) -->
+        <div class="whatwedo-heading-inline">
+          <h2>What We Do</h2>
+        </div>
         <p>We specialize in the work that keeps your home standing strong. <a href="/services/foundation-repair/" style="color:#2563eb;">Foundation repair</a>, <a href="/services/basement-waterproofing/" style="color:#2563eb;">basement waterproofing</a>, <a href="/services/crawl-space-repair/" style="color:#2563eb;">crawl space repair</a> and encapsulation, sump pump installation, and French drain systems. If it's below your home, we handle it.</p>
         <p>Every job starts with a free estimate — no pressure, no sales pitch. We look at the problem, tell you what needs to happen, and give you a straightforward price. Then it's your call.</p>
         <p>We don't cut corners. We don't pad invoices. And we don't disappear after the work is done. That's why every repair comes with a warranty. If something isn't right, we come back and fix it.</p>
