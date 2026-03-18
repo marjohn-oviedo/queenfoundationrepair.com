@@ -1674,6 +1674,27 @@
   .service-area-links a:hover {
     color: #1d4fd8;
   }
+
+.services-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 24px auto 0;
+  padding: 12px 28px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.services-toggle:hover { background: #1d4ed8; }
+.services-toggle svg { width: 18px; height: 18px; transition: transform 0.2s; }
+.services-toggle.expanded svg { transform: rotate(180deg); }
 </style>
 </head>
 <body>
@@ -2190,7 +2211,7 @@
       </a>
 
 <!-- Service 7: Basement Wall Repair -->
-      <a href="/services/basement-wall-repair/" class="service-card">
+      <a href="/services/basement-wall-repair/" class="service-card service-extra" style="display:none;">
         <img class="service-card-image" src="./images/basement-wall-repair/rhino-carbon-fiber™_bowed_wall_repair_01.webp" alt="Carbon fiber strips reinforcing a bowed basement wall">
         <div class="service-card-body">
           <div class="service-card-title">Basement Wall Repair</div>
@@ -2200,7 +2221,7 @@
       </a>
 
       <!-- Service 8: Foundation Crack Repair -->
-      <a href="/services/foundation-crack-repair/" class="service-card">
+      <a href="/services/foundation-crack-repair/" class="service-card service-extra" style="display:none;">
         <img class="service-card-image" src="./images/foundation-crack-repair/foundation-crack-repair.png" alt="Cracked brick foundation wall near downspout">
         <div class="service-card-body">
           <div class="service-card-title">Foundation Crack Repair</div>
@@ -2210,7 +2231,7 @@
       </a>
 
       <!-- Service 9: Helical Pier Installation -->
-      <a href="/services/helical-pier-installation/" class="service-card">
+      <a href="/services/helical-pier-installation/" class="service-card service-extra" style="display:none;">
         <img class="service-card-image" src="./images/helical-pier-installation/Whisk_aee186b64c807d9a5044f7e3956200bbdr.webp" alt="Helical pier being installed for foundation support">
         <div class="service-card-body">
           <div class="service-card-title">Helical Pier Installation</div>
@@ -2220,7 +2241,7 @@
       </a>
 
       <!-- Service 10: Egress Window Installation -->
-      <a href="/services/egress-window-installation/" class="service-card">
+      <a href="/services/egress-window-installation/" class="service-card service-extra" style="display:none;">
         <img class="service-card-image" src="./images/egress-window-installation/egress-window-well-exterior.jpg" alt="Egress window well installed on exterior of home">
         <div class="service-card-body">
           <div class="service-card-title">Egress Window Installation</div>
@@ -2230,7 +2251,7 @@
       </a>
 
       <!-- Service 11: Concrete Leveling -->
-      <a href="/services/concrete-leveling/" class="service-card">
+      <a href="/services/concrete-leveling/" class="service-card service-extra" style="display:none;">
         <img class="service-card-image" src="./images/concrete-leveling/concrete-leveling.png" alt="Uneven concrete slab settlement near front porch">
         <div class="service-card-body">
           <div class="service-card-title">Concrete Leveling</div>
@@ -2241,8 +2262,32 @@
 
 
     </div>
+    <button class="services-toggle" id="servicesToggle">
+      Show More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+    </button>
+
   </div>
 </section>
+
+<script>
+(function(){
+  var btn = document.getElementById('servicesToggle');
+  var extras = document.querySelectorAll('.service-extra');
+  var open = false;
+  btn.addEventListener('click', function(){
+    open = !open;
+    for(var i=0;i<extras.length;i++){
+      extras[i].style.display = open ? 'flex' : 'none';
+    }
+    btn.firstChild.textContent = open ? 'Show Less ' : 'Show More ';
+    btn.classList.toggle('expanded', open);
+    if(!open){
+      btn.scrollIntoView({behavior:'smooth',block:'end'});
+    }
+  });
+})();
+</script>
+
 
 <!-- CTA: Call Us -->
 <div class="mid-cta">
