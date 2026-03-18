@@ -914,6 +914,15 @@
   /* ===========================
      RESPONSIVE
      =========================== */
+  
+  /* Why Choose heading: desktop = inline with image, mobile = above image */
+  .why-heading-top {
+    display: none;
+  }
+  .why-heading-inline {
+    display: block;
+  }
+
   @media (max-width: 900px) {
     .hero-inner {
       flex-direction: column;
@@ -943,6 +952,15 @@
     }
   }
 
+  
+  /* Why Choose heading: desktop = inline with image, mobile = above image */
+  .why-heading-top {
+    display: none;
+  }
+  .why-heading-inline {
+    display: block;
+  }
+
   @media (max-width: 900px) {
     .services-grid {
       grid-template-columns: repeat(2, 1fr);
@@ -955,6 +973,15 @@
     }
   }
 
+  
+  /* Why Choose heading: desktop = inline with image, mobile = above image */
+  .why-heading-top {
+    display: none;
+  }
+  .why-heading-inline {
+    display: block;
+  }
+
   @media (max-width: 900px) {
     .process-layout {
       flex-direction: column;
@@ -962,8 +989,41 @@
     .process-image-wrap {
       max-height: 300px;
     }
+    .process-step {
+      margin-bottom: 28px;
+    }
+    .process-step:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Trust badges: 2 rows on mobile */
+    .trust-bar-inner {
+      gap: 14px 18px;
+    }
+    .trust-badge img {
+      height: 75px;
+    }
+    .google-rating {
+      transform: scale(0.75);
+      transform-origin: center;
+    }
+
+    /* Why Choose Us: heading above image on mobile */
     .why-layout {
       flex-direction: column;
+    }
+    .collage-wrap {
+      order: 2;
+    }
+    .why-text {
+      order: 3;
+    }
+    .why-heading-top {
+      display: block;
+      order: 1;
+    }
+    .why-heading-inline {
+      display: none;
     }
   }
 
@@ -1078,6 +1138,15 @@
     color: #5f6368;
     line-height: 1.7;
     margin: 0;
+  }
+
+  
+  /* Why Choose heading: desktop = inline with image, mobile = above image */
+  .why-heading-top {
+    display: none;
+  }
+  .why-heading-inline {
+    display: block;
   }
 
   @media (max-width: 900px) {
@@ -1467,6 +1536,15 @@
     width: 15px;
     height: 15px;
     fill: #ffffff;
+  }
+
+  
+  /* Why Choose heading: desktop = inline with image, mobile = above image */
+  .why-heading-top {
+    display: none;
+  }
+  .why-heading-inline {
+    display: block;
   }
 
   @media (max-width: 900px) {
