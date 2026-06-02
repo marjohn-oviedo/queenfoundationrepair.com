@@ -3,14 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Asheville, NC Foundation Repair & Crawl Space Encapsulation | Basement Waterproofing, Concrete Leveling | Serving West Asheville, Montford, Biltmore Village | Free Estimates — Queen Foundation Repair</title>
-<meta name="description" content="Foundation repair in Asheville, NC. Crawl space encapsulation, basement waterproofing, crawl space repair, concrete leveling and more. Serving West Asheville, Montford, Grove Park and all of Buncombe County. Schedule your free inspection today.">
+<title>Asheville, NC Foundation Repair & Basement Waterproofing | Crawl Space Encapsulation, Concrete Leveling | Serving Biltmore Forest, Biltmore Lake, Malvern Hills & Asheville Neighborhoods | Free Inspection — Queen Foundation Repair</title>
+<meta name="description" content="Foundation repair, basement waterproofing, crawl space, concrete leveling in Asheville NC. Serving Biltmore Forest, Biltmore Lake, Malvern Hills. Free inspection.">
 <link rel="canonical" href="https://queenfoundationrepair.com/locations/foundation-repair-asheville-nc/">
 <meta name="robots" content="index, follow">
-<meta property="og:title" content="Asheville, NC Foundation Repair & Crawl Space Encapsulation | Basement Waterproofing, Concrete Leveling | Serving West Asheville, Montford, Biltmore Village | Free Estimates — Queen Foundation Repair">
-<meta property="og:description" content="Foundation repair in Asheville, NC. Crawl space encapsulation, basement waterproofing, crawl space repair, concrete leveling and more. Serving West Asheville, Montford, Grove Park and all of Buncombe County. Schedule your free inspection today.">
+<meta property="og:title" content="Asheville, NC Foundation Repair & Basement Waterproofing | Crawl Space Encapsulation, Concrete Leveling | Serving Biltmore Forest, Biltmore Lake, Malvern Hills & Asheville Neighborhoods | Free Inspection — Queen Foundation Repair">
+<meta property="og:description" content="Foundation repair, basement waterproofing, crawl space, concrete leveling in Asheville NC. Serving Biltmore Forest, Biltmore Lake, Malvern Hills. Free inspection.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://queenfoundationrepair.com/locations/foundation-repair-asheville-nc/">
+<!-- Google tag (gtag.js) - Google Ads: AW-18163599737 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18163599737"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18163599737');
+</script>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   * {
@@ -947,6 +955,7 @@
   }
 
   .step-title {
+    margin-top: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 1.1rem;
@@ -1802,6 +1811,62 @@
   .footer-social a { color: #666; transition: color 0.2s; }
   .footer-social a:hover { color: #fff; }
   .footer-social svg { width: 18px; height: 18px; fill: currentColor; }
+
+  /* SERVICE AREA SECTION */
+  .service-area {
+    background: #ffffff;
+    padding: 70px 30px;
+  }
+  .service-area-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .service-area-toggle {
+    width: 100%;
+    background: #fff;
+    border: none;
+    padding: 18px 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #1a1a1a;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  .service-area-toggle:hover { background: #f8f9fa; }
+  .service-area-arrow { font-size: 0.7rem; transition: transform 0.3s; }
+  .service-area-inner.active .service-area-arrow { transform: rotate(180deg); }
+  .service-area-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding: 0 24px;
+  }
+  .service-area-inner.active .service-area-content {
+    max-height: 1500px;
+    padding: 20px 24px 24px;
+  }
+  .service-area-desc {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  .service-area-list {
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.7;
+    margin: 0 0 12px 0;
+  }
+  .service-area-list strong { color: #1a1a1a; }
 </style>
 <link rel="icon" type="image/png" href="../../favicon.png">
 </head>
@@ -1930,7 +1995,7 @@
     <!-- Right: Form -->
     <div class="hero-form-wrap">
       <p class="form-heading">I'm Ready For A Free Quote</p>
-      <form id="leadForm" method="post" action="https://app.leadsnap.com/embed/store">
+      <form id="leadForm" method="post" action="/.netlify/functions/lead">
         <input type="text" name="cf-field[pdf-name]" placeholder="Full Name" required>
         <input type="tel" name="cf-field[pdf-phone]" placeholder="Phone Number" required>
         <input type="text" name="cf-field[pdf-zipcode]" placeholder="Zip Code" required>
@@ -1942,9 +2007,11 @@
           <option value="other">Other</option>
         </select>
         <textarea name="cf-field[cf-51368]" placeholder="Describe what you're seeing (cracks, water, uneven floors, etc.)" style="width:100%;padding:12px 14px;margin-bottom:10px;border:1px solid #d1d5db;border-radius:6px;font-family:'Noto Sans',sans-serif;font-size:0.9rem;color:#333;background:#fff;resize:vertical;min-height:60px;outline:none;-webkit-appearance:none;"></textarea>
-        <input type="hidden" name="api_key" value="pX2qKuXbvu59GPo1JNp3AJWX4VZZUz5J">
+        <input type="hidden" name="page_id" value="locations/foundation-repair-asheville-nc">
         <input type="hidden" name="hostname" id="hostname" value="">
+        <div style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;overflow:hidden;" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
         <button type="submit" class="form-submit-btn">Get My Free Quote</button>
+        <p class="sms-consent" style="font-size:11px;color:#888;line-height:1.4;margin-top:10px;text-align:center;">By submitting this form, you consent to receive text messages from Queen Foundation Repair regarding your inquiry. Reply STOP to opt out. Msg &amp; data rates may apply.</p>
       </form>
       <div class="form-success" id="formSuccess">
         <p><strong>Thank You For Your Submission!</strong></p>
@@ -1956,14 +2023,35 @@
       document.getElementById('hostname').value = window.location.hostname;
       document.getElementById('leadForm').addEventListener('submit', function(e) {
         e.preventDefault();
+        if (this.querySelector('[name="website"]').value !== '') {
+          document.getElementById('leadForm').style.display = 'none';
+          document.getElementById('formSuccess').style.display = 'block';
+          return;
+        }
+        var allText = '';
+        this.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea').forEach(function(el) { allText += el.value + ' '; });
+        if (/[\u0400-\u04FF\u0500-\u052F]/.test(allText)) {
+          document.getElementById('leadForm').style.display = 'none';
+          document.getElementById('formSuccess').style.display = 'block';
+          return;
+        }
         var btn = this.querySelector('.form-submit-btn');
         btn.disabled = true;
         btn.textContent = 'Sending...';
-        var formData = new FormData(this);
-        fetch('https://app.leadsnap.com/embed/store', {
+        var formData = new URLSearchParams(new FormData(this)).toString();
+        fetch('/.netlify/functions/lead', {
           method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body: formData
         }).then(function() {
+          // Google Ads conversion: Lead Form Submission
+          if (typeof gtag === 'function') {
+            gtag('event', 'conversion', {
+              'send_to': 'AW-18163599737/MKwoCJWO360cEPmSitVD',
+              'value': 300.0,
+              'currency': 'USD'
+            });
+          }
           document.getElementById('leadForm').style.display = 'none';
           document.getElementById('formSuccess').style.display = 'block';
         }).catch(function() {
@@ -2423,7 +2511,7 @@
             <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
           </div>
           <div class="step-number">Step 1</div>
-          <div class="step-title">Tell Us What You're Noticing</div>
+          <h3 class="step-title">Tell Us What You're Noticing</h3>
           <div class="step-desc">Cracks getting wider after rain? Floors that weren't uneven before? Musty smell that won't go away? Give us a call or fill out the form and describe what's going on. We'll set up a time to come out — no cost, no obligation.</div>
         </div>
 
@@ -2433,7 +2521,7 @@
             <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
           </div>
           <div class="step-number">Step 2</div>
-          <div class="step-title">We Inspect the Full Picture</div>
+          <h3 class="step-title">We Inspect the Full Picture</h3>
           <div class="step-desc">We check your foundation, crawl space, and basement top to bottom — including how the soil and hillside drainage are affecting your home specifically. We show you what we find and explain what it means in plain English.</div>
         </div>
 
@@ -2443,7 +2531,7 @@
             <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
           </div>
           <div class="step-number">Step 3</div>
-          <div class="step-title">You Get a Plan That Fits Your Home</div>
+          <h3 class="step-title">You Get a Plan That Fits Your Home</h3>
           <div class="step-desc">Older homes on shallow footings need different solutions than newer builds on slabs. Mountain lots drain differently than flat ones. We match the repair method to what's actually happening with your home and give you a clear price upfront.</div>
         </div>
 
@@ -2453,7 +2541,7 @@
             <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
           </div>
           <div class="step-number">Step 4</div>
-          <div class="step-title">We Fix It and Stand Behind It</div>
+          <h3 class="step-title">We Fix It and Stand Behind It</h3>
           <div class="step-desc">Our crew completes the repair and walks you through everything we did. Your home is stabilized, protected, and warrantied — so you're not worrying about the same problem coming back after the next storm season.</div>
         </div>
 
@@ -2563,13 +2651,13 @@
           <p class="why-subtext">This isn't flat ground with stable soil. You've got red clay that never stops moving, mountain slopes that send water straight at your foundation, and some of the oldest housing stock in western North Carolina. The company you hire needs to understand what that combination does to your home.</p>
         </div>
         <h3>We Tell You What You Actually Need — Nothing More</h3>
-        <p>A lot of homeowners tell us they're afraid of being sold a bigger job than they need. We get it. If your foundation doesn't need repair, we'll tell you. If a crack just needs sealing and not full pier installation, that's what we'll recommend. Our inspection is free and genuinely no-obligation — we're here to show you what's happening, not pressure you into a decision.</p>
+        <p>A lot of homeowners tell us they're afraid of being sold a bigger job than they need. We get it. If your foundation doesn't need repair, we'll tell you. If a crack just needs sealing and not full pier installation, that's what we'll recommend. If a basement crack is cosmetic, we'll explain why basement crack repair only makes sense when the wall is actually moving. If a basement leak is just a drainage issue, we'll show you that too — real basement leak repair starts with finding the source. Our inspection is free and genuinely no-obligation — we're here to show you what's happening, not pressure you into a decision.</p>
 
         <h3>Built for This Soil and Terrain</h3>
-        <p>The clay soil here swells with every rain and shrinks in dry spells. Hillside lots funnel water toward your foundation instead of away from it. Homes in Montford and West Asheville built in the early 1900s sit on shallow footings that weren't designed for this kind of soil movement. And after Hurricane Helene, many homes have hidden damage from flood-saturated ground that's still settling. We factor all of this into every inspection and every repair plan.</p>
+        <p>The clay soil here swells with every rain and shrinks in dry spells. Hillside lots funnel water toward your foundation instead of away from it. Homes in Montford, West Asheville, and Malvern Hills built in the early 1900s sit on shallow footings that weren't designed for this kind of soil movement. And after Hurricane Helene, many homes have hidden damage from flood-saturated ground that's still settling. We factor all of this into every inspection and every repair plan.</p>
 
         <h3>We Don't Disappear After the Job</h3>
-        <p>Foundation repair only matters if it holds. We warranty our work because we stand behind it. If something comes back, we come back. You shouldn't have to wonder whether a repair is going to last through the next storm season — and with us, you won't.</p>
+        <p>Foundation repair only matters if it holds. We warranty our work because we stand behind it. If something comes back, <a href="/" style="color:#2563eb;text-decoration:underline;font-style:italic;">Queen Foundation Repair</a> comes back. You shouldn't have to wonder whether a repair is going to last through the next storm season — and with us, you won't.</p>
 
         <a href="javascript:void(0)" onclick="openModal()" class="why-cta">Get My Free Quote</a>
       </div>
@@ -2721,7 +2809,7 @@
             <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
           </button>
           <div class="faq-answer">
-            <p>It comes down to what's under your home and around it. This area sits on red clay soil in the Blue Ridge Mountains. That clay swells every time it rains and shrinks when it dries out — and that constant push and pull moves your foundation. Add steep hillside lots that funnel water toward your home, freeze-thaw cycles in winter, and some of the highest humidity in the state, and your foundation takes pressure from every angle. Homes in older neighborhoods like Montford, West Asheville, and Grove Park were built before modern foundation standards, which makes them even more vulnerable.</p>
+            <p>It comes down to what's under your home and around it. This area sits on red clay soil in the Blue Ridge Mountains. That clay swells every time it rains and shrinks when it dries out — and that constant push and pull moves your foundation. Add steep hillside lots that funnel water toward your home, freeze-thaw cycles in winter, and some of the highest humidity in the state, and your foundation takes pressure from every angle. Homes in older neighborhoods like Montford, West Asheville, Grove Park, Biltmore Forest, and Biltmore Lake were built before modern foundation standards, which makes them even more vulnerable. When that pressure shows up as standing water in a basement or crawl space, basement waterproofing or crawl space waterproofing is usually the right next step before the damage spreads.</p>
           </div>
         </div>
 
@@ -2771,7 +2859,7 @@
             <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
           </button>
           <div class="faq-answer">
-            <p>Yes. We serve homeowners throughout Buncombe County and the surrounding areas, including West Asheville, Montford, Grove Park, Kenilworth, Biltmore Village, North Asheville, Haw Creek, Arden, Fletcher, Fairview, Weaverville, and Black Mountain. If you're not sure whether we cover your area, give us a call and we'll let you know.</p>
+            <p>Yes. We serve homeowners throughout Buncombe County and the surrounding areas, including West Asheville, Malvern Hills, Montford, Grove Park, Kenilworth, Biltmore Village, Biltmore Forest, Biltmore Lake, North Asheville, Haw Creek, Arden, Candler, Fletcher, Fairview, Weaverville, and Black Mountain. If you're searching for foundation contractors in any of these areas, we cover them all — if you're not sure whether we cover your area, give us a call and we'll let you know.</p>
           </div>
         </div>
       </div>
@@ -2794,6 +2882,22 @@
   });
 })();
 </script>
+
+<!-- ========================
+     SERVICE AREA
+     ======================== -->
+<section class="service-area">
+  <div class="service-area-inner" id="serviceAreaBox">
+    <button class="service-area-toggle" onclick="document.getElementById('serviceAreaBox').classList.toggle('active')">
+      <span class="service-area-arrow">&#9660;</span> Our Asheville Service Area
+    </button>
+    <div class="service-area-content">
+      <p class="service-area-desc">We serve homeowners across all of Asheville. If you don't see your specific neighborhood listed below, give us a call and we'll confirm.</p>
+      <p class="service-area-list"><strong>Neighborhoods:</strong> Bear Creek, Beaverdam, Biltmore Village, Burton Street, Chestnut Hill, Downtown, Enka, Five Points, Grove Park, Haw Creek, Kenilworth, Malvern Hills, Montford, North Asheville, Norwood Park, Oakley, River Arts District, Town Mountain, West Asheville</p>
+      <p class="service-area-list"><strong>ZIP codes:</strong> 28801, 28803, 28804, 28805, 28806</p>
+    </div>
+  </div>
+</section>
 
 <!-- ========================
      FOOTER
@@ -2848,13 +2952,12 @@
         <a href="/">Home</a>
         <a href="/about-us/">About Us</a>
         <a href="/contact-us/">Contact Us</a>
-        <a href="/locations/">Areas We Serve</a>
       </div>
 
     </div>
 
     <div class="footer-bottom">
-      <span>&copy; 2026 Queen Foundation Repair. All rights reserved.</span>
+      <span>&copy; 2026 Conversion Lab LLC dba Queen Foundation Repair. All rights reserved.</span>
       <a href="/privacy-policy/">Privacy Policy</a>
     </div>
   </div>
@@ -2879,9 +2982,11 @@
         <option value="other">Other</option>
       </select>
       <textarea name="cf-field[cf-51368]" placeholder="Describe what you're seeing (cracks, water, uneven floors, etc.)" style="width:100%;padding:12px 14px;margin-bottom:12px;border:1px solid #d0d0d0;border-radius:6px;font-size:0.95rem;font-family:'Noto Sans',sans-serif;resize:vertical;min-height:60px;"></textarea>
-      <input type="hidden" name="api_key" value="pX2qKuXbvu59GPo1JNp3AJWX4VZZUz5J">
+      <input type="hidden" name="page_id" value="locations/foundation-repair-asheville-nc">
       <input type="hidden" name="hostname" id="modalHostname" value="">
+      <div style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;overflow:hidden;" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
       <button type="submit" class="form-submit-btn">Get My Free Quote</button>
+      <p class="sms-consent" style="font-size:11px;color:#888;line-height:1.4;margin-top:10px;text-align:center;">By submitting this form, you consent to receive text messages from Queen Foundation Repair regarding your inquiry. Reply STOP to opt out. Msg &amp; data rates may apply.</p>
     </form>
     <div class="form-success" id="modalSuccess">
       <p><strong>Thank You For Your Submission!</strong></p>
@@ -2905,14 +3010,35 @@ function closeModal() {
 
 document.getElementById('modalForm').addEventListener('submit', function(e) {
   e.preventDefault();
+  if (this.querySelector('[name="website"]').value !== '') {
+    document.getElementById('modalForm').style.display = 'none';
+    document.getElementById('modalSuccess').style.display = 'block';
+    return;
+  }
+  var allText = '';
+  this.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea').forEach(function(el) { allText += el.value + ' '; });
+  if (/[\u0400-\u04FF\u0500-\u052F]/.test(allText)) {
+    document.getElementById('modalForm').style.display = 'none';
+    document.getElementById('modalSuccess').style.display = 'block';
+    return;
+  }
   var btn = this.querySelector('.form-submit-btn');
   btn.disabled = true;
   btn.textContent = 'Sending...';
-  var formData = new FormData(this);
-  fetch('https://app.leadsnap.com/embed/store', {
+  var formData = new URLSearchParams(new FormData(this)).toString();
+  fetch('/.netlify/functions/lead', {
     method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: formData
   }).then(function() {
+    // Google Ads conversion: Lead Form Submission
+    if (typeof gtag === 'function') {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18163599737/MKwoCJWO360cEPmSitVD',
+        'value': 300.0,
+        'currency': 'USD'
+      });
+    }
     document.getElementById('modalForm').style.display = 'none';
     document.getElementById('modalSuccess').style.display = 'block';
   }).catch(function() {
@@ -2947,24 +3073,34 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
       "sameAs": "https://en.wikipedia.org/wiki/Asheville,_North_Carolina"
     },
     {
-      "@type": "City",
-      "name": "West Asheville"
+      "@type": "Place",
+      "name": "Malvern Hills",
+      "containedInPlace": {"@type": "City", "name": "Asheville"}
     },
     {
-      "@type": "City",
-      "name": "Montford"
+      "@type": "Place",
+      "name": "Biltmore Forest",
+      "containedInPlace": {"@type": "City", "name": "Asheville"}
     },
     {
-      "@type": "City",
-      "name": "Biltmore Village"
+      "@type": "Place",
+      "name": "Biltmore Lake",
+      "containedInPlace": {"@type": "City", "name": "Asheville"}
     },
     {
-      "@type": "City",
-      "name": "Weaverville"
+      "@type": "Place",
+      "name": "Candler",
+      "containedInPlace": {"@type": "City", "name": "Asheville"}
     },
     {
-      "@type": "City",
-      "name": "Black Mountain"
+      "@type": "Place",
+      "name": "Fletcher",
+      "containedInPlace": {"@type": "City", "name": "Asheville"}
+    },
+    {
+      "@type": "Place",
+      "name": "Weaverville",
+      "containedInPlace": {"@type": "City", "name": "Asheville"}
     }
   ],
   "geo": {
@@ -3108,7 +3244,7 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
       "name": "Why do so many homes here have foundation problems?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It comes down to what's under your home and around it. This area sits on red clay soil in the Blue Ridge Mountains. That clay swells every time it rains and shrinks when it dries out \u2014 and that constant push and pull moves your foundation. Add steep hillside lots that funnel water toward your home, freeze-thaw cycles in winter, and some of the highest humidity in the state, and your foundation takes pressure from every angle. Homes in older neighborhoods like Montford, West Asheville, and Grove Park were built before modern foundation standards, which makes them even more vulnerable."
+        "text": "It comes down to what's under your home and around it. This area sits on red clay soil in the Blue Ridge Mountains. That clay swells every time it rains and shrinks when it dries out \u2014 and that constant push and pull moves your foundation. Add steep hillside lots that funnel water toward your home, freeze-thaw cycles in winter, and some of the highest humidity in the state, and your foundation takes pressure from every angle. Homes in older neighborhoods like Montford, West Asheville, Grove Park, Biltmore Forest, and Biltmore Lake were built before modern foundation standards, which makes them even more vulnerable. When that pressure shows up as standing water in a basement or crawl space, basement waterproofing or crawl space waterproofing is usually the right next step before the damage spreads."
       }
     },
     {
@@ -3148,7 +3284,7 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
       "name": "Do you serve areas outside of Asheville?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. We serve homeowners throughout Buncombe County and the surrounding areas, including West Asheville, Montford, Grove Park, Kenilworth, Biltmore Village, North Asheville, Haw Creek, Arden, Fletcher, Fairview, Weaverville, and Black Mountain. If you're not sure whether we cover your area, give us a call and we'll let you know."
+        "text": "Yes. We serve homeowners throughout Buncombe County and the surrounding areas, including West Asheville, Malvern Hills, Montford, Grove Park, Kenilworth, Biltmore Village, Biltmore Forest, Biltmore Lake, North Asheville, Haw Creek, Arden, Candler, Fletcher, Fairview, Weaverville, and Black Mountain. If you're searching for foundation contractors in any of these areas, we cover them all — if you're not sure whether we cover your area, give us a call and we'll let you know."
       }
     }
   ]
@@ -3405,8 +3541,9 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
         <input type="tel" name="cf-field[pdf-phone]" placeholder="Mobile number" required>
       </div>
       <textarea name="cf-field[cf-51368]" placeholder="Message"></textarea>
-      <input type="hidden" name="api_key" value="pX2qKuXbvu59GPo1JNp3AJWX4VZZUz5J">
+      <input type="hidden" name="page_id" value="locations/foundation-repair-asheville-nc">
       <input type="hidden" name="hostname" value="">
+      <div style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;overflow:hidden;" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
       <button type="submit" class="text-send-btn">Send</button>
     </form>
     <p class="text-widget-consent">By sending this message, you expressly consent to receive communications from us. You may opt out at any time.</p>
@@ -3431,11 +3568,23 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
 
   btn.addEventListener('click', function() {
     panel.classList.toggle('active');
+    sessionStorage.setItem('twSeen', '1');
   });
 
   closeBtn.addEventListener('click', function() {
     panel.classList.remove('active');
+    sessionStorage.setItem('twSeen', '1');
   });
+
+  // Auto-open after 20 seconds — once per session only
+  if (!sessionStorage.getItem('twSeen')) {
+    setTimeout(function() {
+      if (!panel.classList.contains('active')) {
+        panel.classList.add('active');
+        sessionStorage.setItem('twSeen', '1');
+      }
+    }, 60000);
+  }
 
   // Close on outside click
   document.addEventListener('click', function(e) {
@@ -3446,14 +3595,37 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
 
   form.addEventListener('submit', function(e) {
     e.preventDefault();
+    if (form.querySelector('[name="website"]').value !== '') {
+      form.style.display = 'none';
+      form.parentElement.querySelector('.text-widget-consent').style.display = 'none';
+      success.style.display = 'block';
+      return;
+    }
+    var allText = '';
+    form.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea').forEach(function(el) { allText += el.value + ' '; });
+    if (/[\u0400-\u04FF\u0500-\u052F]/.test(allText)) {
+      form.style.display = 'none';
+      form.parentElement.querySelector('.text-widget-consent').style.display = 'none';
+      success.style.display = 'block';
+      return;
+    }
     var submitBtn = form.querySelector('.text-send-btn');
     submitBtn.disabled = true;
     submitBtn.textContent = 'Sending...';
-    var formData = new FormData(form);
-    fetch('https://app.leadsnap.com/embed/store', {
+    var formData = new URLSearchParams(new FormData(form)).toString();
+    fetch('/.netlify/functions/lead', {
       method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: formData
     }).then(function() {
+      // Google Ads conversion: Lead Form Submission
+      if (typeof gtag === 'function') {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18163599737/MKwoCJWO360cEPmSitVD',
+          'value': 300.0,
+          'currency': 'USD'
+        });
+      }
       form.style.display = 'none';
       form.parentElement.querySelector('.text-widget-consent').style.display = 'none';
       success.style.display = 'block';
@@ -3466,5 +3638,30 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
 })();
 </script>
 
+<!-- Lead source tracking â captures Google Ads gclid, tags lead submissions -->
+<script>
+(function () {
+  function param(n) { return new URLSearchParams(location.search).get(n); }
+  function setCookie(n, v) {
+    var d = new Date(); d.setTime(d.getTime() + 90 * 864e5);
+    document.cookie = n + '=' + encodeURIComponent(v) + ';expires=' + d.toUTCString() + ';path=/;SameSite=Lax';
+  }
+  function getCookie(n) {
+    var m = document.cookie.match('(^|;)\\s*' + n + '\\s*=\\s*([^;]+)');
+    return m ? decodeURIComponent(m.pop()) : '';
+  }
+  var urlGclid = param('gclid');
+  if (urlGclid) setCookie('qfr_gclid', urlGclid);
+  function gclid() { return param('gclid') || getCookie('qfr_gclid') || ''; }
+
+  document.querySelectorAll('form').forEach(function (form) {
+    form.addEventListener('formdata', function (ev) {
+      var g = gclid();
+      ev.formData.set('gclid', g);
+      ev.formData.set('cf-field[pdf-lead_source]', g ? 'Google Ads' : 'Organic / Direct');
+    });
+  });
+})();
+</script>
 </body>
 </html>

@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Atlanta, GA Foundation Repair | Basement Waterproofing, Crawl Space Repair & Concrete Leveling Near Decatur, Marietta & Roswell | Get a Free Quote</title>
-<meta name="description" content="Foundation repair in Atlanta, GA. Basement waterproofing, crawl space encapsulation, crack repair, and concrete leveling for homes across metro Atlanta. Call for a free estimate — no obligation.">
-<link rel="canonical" href="https://queenfoundationrepair.com/foundation-repair-atlanta-ga/">
+<title>Atlanta, GA Foundation Repair, Basement Waterproofing & Crawl Space Repair | Buckhead, Inman Park & Virginia-Highland | Free Estimates</title>
+<meta name="description" content="Foundation repair, basement waterproofing & crawl space encapsulation in Atlanta, GA. Serving Buckhead, Inman Park & Virginia-Highland. Free Estimates.">
+<link rel="canonical" href="https://queenfoundationrepair.com/locations/foundation-repair-atlanta-ga/">
 <meta name="robots" content="index, follow">
-<meta property="og:title" content="Atlanta, GA Foundation Repair | Basement Waterproofing, Crawl Space Repair & Concrete Leveling Near Decatur, Marietta & Roswell | Get a Free Quote">
-<meta property="og:description" content="Foundation repair in Atlanta, GA. Basement waterproofing, crawl space encapsulation, crack repair, and concrete leveling for homes across metro Atlanta. Call for a free estimate — no obligation.">
+<meta property="og:title" content="Atlanta, GA Foundation Repair, Basement Waterproofing & Crawl Space Repair | Buckhead, Inman Park & Virginia-Highland | Free Estimates">
+<meta property="og:description" content="Foundation repair, basement waterproofing & crawl space encapsulation in Atlanta, GA. Serving Buckhead, Inman Park & Virginia-Highland. Free Estimates.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://queenfoundationrepair.com/foundation-repair-atlanta-ga/">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -947,6 +947,7 @@
   }
 
   .step-title {
+    margin-top: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 1.1rem;
@@ -1802,6 +1803,62 @@
   .footer-social a { color: #666; transition: color 0.2s; }
   .footer-social a:hover { color: #fff; }
   .footer-social svg { width: 18px; height: 18px; fill: currentColor; }
+
+  /* SERVICE AREA SECTION */
+  .service-area {
+    background: #ffffff;
+    padding: 70px 30px;
+  }
+  .service-area-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .service-area-toggle {
+    width: 100%;
+    background: #fff;
+    border: none;
+    padding: 18px 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #1a1a1a;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  .service-area-toggle:hover { background: #f8f9fa; }
+  .service-area-arrow { font-size: 0.7rem; transition: transform 0.3s; }
+  .service-area-inner.active .service-area-arrow { transform: rotate(180deg); }
+  .service-area-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding: 0 24px;
+  }
+  .service-area-inner.active .service-area-content {
+    max-height: 1500px;
+    padding: 20px 24px 24px;
+  }
+  .service-area-desc {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  .service-area-list {
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.7;
+    margin: 0 0 12px 0;
+  }
+  .service-area-list strong { color: #1a1a1a; }
 </style>
 <link rel="icon" type="image/png" href="../../favicon.png">
 </head>
@@ -1930,7 +1987,7 @@
     <!-- Right: Form -->
     <div class="hero-form-wrap">
       <p class="form-heading">I'm Ready For A Free Quote</p>
-      <form id="leadForm" method="post" action="https://app.leadsnap.com/embed/store">
+      <form id="leadForm" method="post" action="/.netlify/functions/lead">
         <input type="text" name="cf-field[pdf-name]" placeholder="Full Name" required>
         <input type="tel" name="cf-field[pdf-phone]" placeholder="Phone Number" required>
         <input type="text" name="cf-field[pdf-zipcode]" placeholder="Zip Code" required>
@@ -1942,9 +1999,11 @@
           <option value="other">Other</option>
         </select>
         <textarea name="cf-field[cf-51368]" placeholder="Describe what you're seeing (cracks, water, uneven floors, etc.)" style="width:100%;padding:12px 14px;margin-bottom:10px;border:1px solid #d1d5db;border-radius:6px;font-family:'Noto Sans',sans-serif;font-size:0.9rem;color:#333;background:#fff;resize:vertical;min-height:60px;outline:none;-webkit-appearance:none;"></textarea>
-        <input type="hidden" name="api_key" value="0XhqAEGoYlOOeME7hzRMicn7DqSeMJWW">
+        <input type="hidden" name="page_id" value="locations/foundation-repair-atlanta-ga">
         <input type="hidden" name="hostname" id="hostname" value="">
+        <div style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;overflow:hidden;" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
         <button type="submit" class="form-submit-btn">Get My Free Quote</button>
+        <p class="sms-consent" style="font-size:11px;color:#888;line-height:1.4;margin-top:10px;text-align:center;">By submitting this form, you consent to receive text messages from Queen Foundation Repair regarding your inquiry. Reply STOP to opt out. Msg &amp; data rates may apply.</p>
       </form>
       <div class="form-success" id="formSuccess">
         <p><strong>Thank You For Your Submission!</strong></p>
@@ -1956,12 +2015,25 @@
       document.getElementById('hostname').value = window.location.hostname;
       document.getElementById('leadForm').addEventListener('submit', function(e) {
         e.preventDefault();
+        if (this.querySelector('[name="website"]').value !== '') {
+          document.getElementById('leadForm').style.display = 'none';
+          document.getElementById('formSuccess').style.display = 'block';
+          return;
+        }
+        var allText = '';
+        this.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea').forEach(function(el) { allText += el.value + ' '; });
+        if (/[\u0400-\u04FF\u0500-\u052F]/.test(allText)) {
+          document.getElementById('leadForm').style.display = 'none';
+          document.getElementById('formSuccess').style.display = 'block';
+          return;
+        }
         var btn = this.querySelector('.form-submit-btn');
         btn.disabled = true;
         btn.textContent = 'Sending...';
-        var formData = new FormData(this);
-        fetch('https://app.leadsnap.com/embed/store', {
+        var formData = new URLSearchParams(new FormData(this)).toString();
+        fetch('/.netlify/functions/lead', {
           method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body: formData
         }).then(function() {
           document.getElementById('leadForm').style.display = 'none';
@@ -2423,7 +2495,7 @@
             <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
           </div>
           <div class="step-number">Step 1</div>
-          <div class="step-title">Schedule a Free Inspection</div>
+          <h3 class="step-title">Schedule a Free Inspection</h3>
           <div class="step-desc">Call or fill out the form. An inspector visits your home, checks the foundation, basement, or crawl space, and documents what they find.</div>
         </div>
 
@@ -2433,7 +2505,7 @@
             <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
           </div>
           <div class="step-number">Step 2</div>
-          <div class="step-title">Get a Clear Diagnosis</div>
+          <h3 class="step-title">Get a Clear Diagnosis</h3>
           <div class="step-desc">You get a written explanation of the problem, what is causing it, and which repair method fits. No jargon. No pressure.</div>
         </div>
 
@@ -2443,7 +2515,7 @@
             <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
           </div>
           <div class="step-number">Step 3</div>
-          <div class="step-title">Review Your Options</div>
+          <h3 class="step-title">Review Your Options</h3>
           <div class="step-desc">The proposal includes scope of work, cost, and financing options. Compare it with other quotes if you want — the estimate is yours to keep.</div>
         </div>
 
@@ -2453,7 +2525,7 @@
             <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
           </div>
           <div class="step-number">Step 4</div>
-          <div class="step-title">Repair and Warranty</div>
+          <h3 class="step-title">Repair and Warranty</h3>
           <div class="step-desc">Work is scheduled around your timeline. When the job is done, you get documentation and warranty coverage in writing.</div>
         </div>
 
@@ -2566,10 +2638,10 @@
         <p>If your foundation does not need repair, you will hear that. If it does, the proposal spells out exactly what is wrong, what fixes it, and what it costs. No upselling. No surprises on the invoice.</p>
 
         <h3>The Right Fix, Not the Expensive One</h3>
-        <p>Not every crack needs piers. Not every wet basement needs a full system. The inspection determines what is actually happening and the recommendation matches the problem — nothing more, nothing less.</p>
+        <p>Not every crack needs piers. Not every wet basement needs a full system. The inspection determines what is actually happening and the recommendation matches the problem — nothing more, nothing less. Most atlanta foundation repair calls in Buckhead start with a single inspection, not a full pier system.</p>
 
         <h3>Work That Holds Up After the Job Is Done</h3>
-        <p>A repair only matters if it lasts. Every method is matched to the soil conditions and structural load at your property. You get warranty documentation before the crew leaves, and the work is built to perform through every wet season and dry stretch that comes after.</p>
+        <p>A repair only matters if it lasts. <a href="/" style="color:#2563eb;text-decoration:underline;font-style:italic;">Queen Foundation Repair</a> matches every method to the soil conditions and structural load at your property. You get warranty documentation before the crew leaves, and the work is built to perform through every wet season and dry stretch that comes after.</p>
 
         <a href="javascript:void(0)" onclick="openModal()" class="why-cta">Get My Free Quote</a>
       </div>
@@ -2721,7 +2793,7 @@
             <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
           </button>
           <div class="faq-answer">
-            <p>It depends on the source of the water and how it is getting in. A single crack injection can cost a few hundred dollars. An interior French drain and sump pump system typically runs $3,000 to $8,000. Exterior waterproofing that includes excavation and membrane application can range from $8,000 to $20,000. A free inspection tells you which approach fits your situation and what it will cost.</p>
+            <p>It depends on the source of the water and how it is getting in. A single crack injection can cost a few hundred dollars. An interior French drain and sump pump system typically runs $3,000 to $8,000. Exterior waterproofing that includes excavation and membrane application can range from $8,000 to $20,000. A free inspection tells you which approach fits your situation and what it will cost. Basement leak repair in Atlanta runs cheaper when caught early. Commercial foundation repair in Inman Park scopes higher because of structural complexity.</p>
           </div>
         </div>
 
@@ -2731,7 +2803,7 @@
             <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
           </button>
           <div class="faq-answer">
-            <p>They are usually connected. Water weakens soil, soil movement damages the foundation, and foundation cracks let more water in. The inspection identifies what is driving the damage so the repair addresses the cause — not just the symptom you see first.</p>
+            <p>They are usually connected. Water weakens soil, soil movement damages the foundation, and foundation cracks let more water in. The inspection identifies what is driving the damage so the repair addresses the cause — not just the symptom you see first. Water and moisture control is the bigger half of the work in older Peachtree Hills and Virginia-Highland homes. Basement crack repair alone rarely fixes both.</p>
           </div>
         </div>
 
@@ -2771,7 +2843,7 @@
             <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
           </button>
           <div class="faq-answer">
-            <p>Yes. Queen Foundation Repair serves homeowners across metro Atlanta including Decatur, Marietta, Roswell, Sandy Springs, Buckhead, East Point, College Park, Kennesaw, Smyrna, Alpharetta, Johns Creek, Lawrenceville, and Duluth. If your area is not listed, call to find out — we may still be able to help.</p>
+            <p>Yes. Queen Foundation Repair serves homeowners across metro Atlanta including Decatur, Marietta, Roswell, Sandy Springs, Buckhead, East Point, College Park, Kennesaw, Smyrna, Alpharetta, Johns Creek, Lawrenceville, and Duluth. Inside Atlanta, basement foundation repair and cracked foundation repair calls run heavy through Morningside-Lenox Park. If your area is not listed, call to find out — we may still be able to help.</p>
           </div>
         </div>
       </div>
@@ -2794,6 +2866,22 @@
   });
 })();
 </script>
+
+<!-- ========================
+     SERVICE AREA
+     ======================== -->
+<section class="service-area">
+  <div class="service-area-inner" id="serviceAreaBox">
+    <button class="service-area-toggle" onclick="document.getElementById('serviceAreaBox').classList.toggle('active')">
+      <span class="service-area-arrow">&#9660;</span> Our Atlanta Service Area
+    </button>
+    <div class="service-area-content">
+      <p class="service-area-desc">We serve homeowners across all of Atlanta. If you don't see your specific neighborhood listed below, give us a call and we'll confirm.</p>
+      <p class="service-area-list"><strong>Neighborhoods:</strong> Adair Park, Adams Park, Almond Park, Ashview Heights, Atlanta University Center, Audobon Forest, Beecher Hills, Ben Hill Terrace, Berkeley Park, Blandtown, Bolton, Boulevard Heights, Browns Mill Park, Buckhead, Cabbagetown, Candler Park, Capitol View, Carey Park, Cascade Road, Castleberry Hill, Castlewood, Center Hill, Collier Heights, Downtown Atlanta, East Ardley Road, East Atlanta, East Atlanta Village, East Lake, Edgewood, English Avenue, English Park, Five Points, Florida Heights, Fort McPherson, Glenrose Heights, Greenbriar, Grove Park, Howell Station, Inman Park, Just Us, Kingswood, Kirkwood, Lakewood Heights, Lavista Park, Leila Valley, Lindridge-Martin Manor, Mangum Manor, Margaret Mitchell, Marietta Street Artery, Midtown, Midtown Atlanta, Morningside-Lenox Park, Mozley Park, North Buckhead, Northlake, Oak Grove Acres, Oakland City, Old Fourth Ward, Ormewood Park, Peachtree Heights West, Peachtree Hills, Peachtree Park, Peoplestown, Perkerson, Pittsburgh, Pleasant Hill, Polo Place, Poncey-Highland, Princeton Lakes, Reynoldstown, Rockdale, Sagamore Hills, SoNo, South Atlanta, South Downtown, South River Gardens, Southwest, Springlake, Sweet Auburn, Sylvan Hills, Thomasville Heights, Toco Hills, Tuxedo Park, Underground Atlanta, Virginia-Highland, West End, Wilson Mill Meadows</p>
+      <p class="service-area-list"><strong>ZIP codes:</strong> 30305, 30306, 30307, 30308, 30309, 30310, 30311, 30312, 30314, 30315, 30316, 30317, 30318, 30319, 30320, 30324, 30327, 30329, 30331, 30334, 30336, 30337, 30339, 30341, 30342, 30344, 30345, 30349, 30354</p>
+    </div>
+  </div>
+</section>
 
 <!-- ========================
      FOOTER
@@ -2848,13 +2936,12 @@
         <a href="/">Home</a>
         <a href="/about-us/">About Us</a>
         <a href="/contact-us/">Contact Us</a>
-        <a href="/locations/">Areas We Serve</a>
       </div>
 
     </div>
 
     <div class="footer-bottom">
-      <span>&copy; 2026 Queen Foundation Repair. All rights reserved.</span>
+      <span>&copy; 2026 Conversion Lab LLC dba Queen Foundation Repair. All rights reserved.</span>
       <a href="/privacy-policy/">Privacy Policy</a>
     </div>
   </div>
@@ -2879,9 +2966,11 @@
         <option value="other">Other</option>
       </select>
       <textarea name="cf-field[cf-51368]" placeholder="Describe what you're seeing (cracks, water, uneven floors, etc.)" style="width:100%;padding:12px 14px;margin-bottom:12px;border:1px solid #d0d0d0;border-radius:6px;font-size:0.95rem;font-family:'Noto Sans',sans-serif;resize:vertical;min-height:60px;"></textarea>
-      <input type="hidden" name="api_key" value="0XhqAEGoYlOOeME7hzRMicn7DqSeMJWW">
+      <input type="hidden" name="page_id" value="locations/foundation-repair-atlanta-ga">
       <input type="hidden" name="hostname" id="modalHostname" value="">
+      <div style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;overflow:hidden;" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
       <button type="submit" class="form-submit-btn">Get My Free Quote</button>
+      <p class="sms-consent" style="font-size:11px;color:#888;line-height:1.4;margin-top:10px;text-align:center;">By submitting this form, you consent to receive text messages from Queen Foundation Repair regarding your inquiry. Reply STOP to opt out. Msg &amp; data rates may apply.</p>
     </form>
     <div class="form-success" id="modalSuccess">
       <p><strong>Thank You For Your Submission!</strong></p>
@@ -2905,12 +2994,25 @@ function closeModal() {
 
 document.getElementById('modalForm').addEventListener('submit', function(e) {
   e.preventDefault();
+  if (this.querySelector('[name="website"]').value !== '') {
+    document.getElementById('modalForm').style.display = 'none';
+    document.getElementById('modalSuccess').style.display = 'block';
+    return;
+  }
+  var allText = '';
+  this.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea').forEach(function(el) { allText += el.value + ' '; });
+  if (/[\u0400-\u04FF\u0500-\u052F]/.test(allText)) {
+    document.getElementById('modalForm').style.display = 'none';
+    document.getElementById('modalSuccess').style.display = 'block';
+    return;
+  }
   var btn = this.querySelector('.form-submit-btn');
   btn.disabled = true;
   btn.textContent = 'Sending...';
-  var formData = new FormData(this);
-  fetch('https://app.leadsnap.com/embed/store', {
+  var formData = new URLSearchParams(new FormData(this)).toString();
+  fetch('/.netlify/functions/lead', {
     method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: formData
   }).then(function() {
     document.getElementById('modalForm').style.display = 'none';
@@ -2938,32 +3040,24 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
       "name": "Atlanta, GA"
     },
     {
-      "@type": "City",
-      "name": "Decatur, GA"
+      "@type": "Place",
+      "name": "Buckhead"
     },
     {
-      "@type": "City",
-      "name": "Marietta, GA"
+      "@type": "Place",
+      "name": "Peachtree Hills"
     },
     {
-      "@type": "City",
-      "name": "Roswell, GA"
+      "@type": "Place",
+      "name": "Inman Park"
     },
     {
-      "@type": "City",
-      "name": "Sandy Springs, GA"
+      "@type": "Place",
+      "name": "Virginia-Highland"
     },
     {
-      "@type": "City",
-      "name": "Kennesaw, GA"
-    },
-    {
-      "@type": "City",
-      "name": "Smyrna, GA"
-    },
-    {
-      "@type": "City",
-      "name": "Alpharetta, GA"
+      "@type": "Place",
+      "name": "Morningside-Lenox Park"
     }
   ],
   "geo": {
@@ -3014,7 +3108,7 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
       "name": "How much does it cost to waterproof a basement in Atlanta?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It depends on the source of the water and how it is getting in. A single crack injection can cost a few hundred dollars. An interior French drain and sump pump system typically runs $3,000 to $8,000. Exterior waterproofing that includes excavation and membrane application can range from $8,000 to $20,000. A free inspection tells you which approach fits your situation and what it will cost."
+        "text": "It depends on the source of the water and how it is getting in. A single crack injection can cost a few hundred dollars. An interior French drain and sump pump system typically runs $3,000 to $8,000. Exterior waterproofing that includes excavation and membrane application can range from $8,000 to $20,000. A free inspection tells you which approach fits your situation and what it will cost. Basement leak repair in Atlanta runs cheaper when caught early. Commercial foundation repair in Inman Park scopes higher because of structural complexity."
       }
     },
     {
@@ -3022,7 +3116,7 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
       "name": "Should I fix the foundation or the water problem first?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "They are usually connected. Water weakens soil, soil movement damages the foundation, and foundation cracks let more water in. The inspection identifies what is driving the damage so the repair addresses the cause — not just the symptom you see first."
+        "text": "They are usually connected. Water weakens soil, soil movement damages the foundation, and foundation cracks let more water in. The inspection identifies what is driving the damage so the repair addresses the cause — not just the symptom you see first. Water and moisture control is the bigger half of the work in older Peachtree Hills and Virginia-Highland homes. Basement crack repair alone rarely fixes both."
       }
     },
     {
@@ -3054,7 +3148,7 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
       "name": "Do you serve areas outside of Atlanta?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Queen Foundation Repair serves homeowners across metro Atlanta including Decatur, Marietta, Roswell, Sandy Springs, Buckhead, East Point, College Park, Kennesaw, Smyrna, Alpharetta, Johns Creek, Lawrenceville, and Duluth. If your area is not listed, call to find out — we may still be able to help."
+        "text": "Yes. Queen Foundation Repair serves homeowners across metro Atlanta including Decatur, Marietta, Roswell, Sandy Springs, Buckhead, East Point, College Park, Kennesaw, Smyrna, Alpharetta, Johns Creek, Lawrenceville, and Duluth. Inside Atlanta, basement foundation repair and cracked foundation repair calls run heavy through Morningside-Lenox Park. If your area is not listed, call to find out — we may still be able to help."
       }
     }
   ]
@@ -3311,8 +3405,9 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
         <input type="tel" name="cf-field[pdf-phone]" placeholder="Mobile number" required>
       </div>
       <textarea name="cf-field[cf-51368]" placeholder="Message"></textarea>
-      <input type="hidden" name="api_key" value="0XhqAEGoYlOOeME7hzRMicn7DqSeMJWW">
+      <input type="hidden" name="page_id" value="locations/foundation-repair-atlanta-ga">
       <input type="hidden" name="hostname" value="">
+      <div style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;overflow:hidden;" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
       <button type="submit" class="text-send-btn">Send</button>
     </form>
     <p class="text-widget-consent">By sending this message, you expressly consent to receive communications from us. You may opt out at any time.</p>
@@ -3337,11 +3432,23 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
 
   btn.addEventListener('click', function() {
     panel.classList.toggle('active');
+    sessionStorage.setItem('twSeen', '1');
   });
 
   closeBtn.addEventListener('click', function() {
     panel.classList.remove('active');
+    sessionStorage.setItem('twSeen', '1');
   });
+
+  // Auto-open after 20 seconds — once per session only
+  if (!sessionStorage.getItem('twSeen')) {
+    setTimeout(function() {
+      if (!panel.classList.contains('active')) {
+        panel.classList.add('active');
+        sessionStorage.setItem('twSeen', '1');
+      }
+    }, 60000);
+  }
 
   // Close on outside click
   document.addEventListener('click', function(e) {
@@ -3352,12 +3459,27 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
 
   form.addEventListener('submit', function(e) {
     e.preventDefault();
+    if (form.querySelector('[name="website"]').value !== '') {
+      form.style.display = 'none';
+      form.parentElement.querySelector('.text-widget-consent').style.display = 'none';
+      success.style.display = 'block';
+      return;
+    }
+    var allText = '';
+    form.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea').forEach(function(el) { allText += el.value + ' '; });
+    if (/[\u0400-\u04FF\u0500-\u052F]/.test(allText)) {
+      form.style.display = 'none';
+      form.parentElement.querySelector('.text-widget-consent').style.display = 'none';
+      success.style.display = 'block';
+      return;
+    }
     var submitBtn = form.querySelector('.text-send-btn');
     submitBtn.disabled = true;
     submitBtn.textContent = 'Sending...';
-    var formData = new FormData(form);
-    fetch('https://app.leadsnap.com/embed/store', {
+    var formData = new URLSearchParams(new FormData(form)).toString();
+    fetch('/.netlify/functions/lead', {
       method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: formData
     }).then(function() {
       form.style.display = 'none';

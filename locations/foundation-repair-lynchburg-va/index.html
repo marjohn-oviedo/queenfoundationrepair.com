@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lynchburg, VA Foundation Repair & Basement Waterproofing | Crawl Space Repair, Encapsulation | Roanoke, Bedford, Forest | Queen Foundation Repair</title>
-<meta name="description" content="Foundation repair in Lynchburg, VA. Basement waterproofing, crawl space encapsulation, crack repair, and sump pump installation for homes across the Hill City. Call for a free estimate.">
-<link rel="canonical" href="https://queenfoundationrepair.com/foundation-repair-lynchburg-va/">
+<title>Lynchburg, VA Foundation Repair, Basement Waterproofing & Crawl Space Repair | Downtown, Boonsboro & Rivermont | Free Estimates</title>
+<meta name="description" content="Foundation repair, basement waterproofing & crawl space services in Lynchburg — Downtown, Federal Hill, Boonsboro, Rivermont & Linkhorne. Free estimates, written quotes.">
+<link rel="canonical" href="https://queenfoundationrepair.com/locations/foundation-repair-lynchburg-va/">
 <meta name="robots" content="index, follow">
-<meta property="og:title" content="Lynchburg, VA Foundation Repair & Basement Waterproofing | Crawl Space Repair, Encapsulation | Roanoke, Bedford, Forest | Queen Foundation Repair">
-<meta property="og:description" content="Foundation repair in Lynchburg, VA. Basement waterproofing, crawl space encapsulation, crack repair, and sump pump installation for homes across the Hill City. Call for a free estimate.">
+<meta property="og:title" content="Lynchburg, VA Foundation Repair, Basement Waterproofing & Crawl Space Repair | Downtown, Boonsboro & Rivermont | Free Estimates">
+<meta property="og:description" content="Foundation repair, basement waterproofing & crawl space services in Lynchburg — Downtown, Federal Hill, Boonsboro, Rivermont & Linkhorne. Free estimates, written quotes.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://queenfoundationrepair.com/foundation-repair-lynchburg-va/">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -947,6 +947,7 @@
   }
 
   .step-title {
+    margin-top: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 1.1rem;
@@ -1802,6 +1803,62 @@
   .footer-social a { color: #666; transition: color 0.2s; }
   .footer-social a:hover { color: #fff; }
   .footer-social svg { width: 18px; height: 18px; fill: currentColor; }
+
+  /* SERVICE AREA SECTION */
+  .service-area {
+    background: #ffffff;
+    padding: 70px 30px;
+  }
+  .service-area-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .service-area-toggle {
+    width: 100%;
+    background: #fff;
+    border: none;
+    padding: 18px 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #1a1a1a;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  .service-area-toggle:hover { background: #f8f9fa; }
+  .service-area-arrow { font-size: 0.7rem; transition: transform 0.3s; }
+  .service-area-inner.active .service-area-arrow { transform: rotate(180deg); }
+  .service-area-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding: 0 24px;
+  }
+  .service-area-inner.active .service-area-content {
+    max-height: 1500px;
+    padding: 20px 24px 24px;
+  }
+  .service-area-desc {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  .service-area-list {
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.7;
+    margin: 0 0 12px 0;
+  }
+  .service-area-list strong { color: #1a1a1a; }
 </style>
 <link rel="icon" type="image/png" href="../../favicon.png">
 </head>
@@ -1930,7 +1987,7 @@
     <!-- Right: Form -->
     <div class="hero-form-wrap">
       <p class="form-heading">I'm Ready For A Free Quote</p>
-      <form id="leadForm" method="post" action="https://app.leadsnap.com/embed/store">
+      <form id="leadForm" method="post" action="/.netlify/functions/lead">
         <input type="text" name="cf-field[pdf-name]" placeholder="Full Name" required>
         <input type="tel" name="cf-field[pdf-phone]" placeholder="Phone Number" required>
         <input type="text" name="cf-field[pdf-zipcode]" placeholder="Zip Code" required>
@@ -1942,9 +1999,11 @@
           <option value="other">Other</option>
         </select>
         <textarea name="cf-field[cf-51368]" placeholder="Describe what you're seeing (cracks, water, uneven floors, etc.)" style="width:100%;padding:12px 14px;margin-bottom:10px;border:1px solid #d1d5db;border-radius:6px;font-family:'Noto Sans',sans-serif;font-size:0.9rem;color:#333;background:#fff;resize:vertical;min-height:60px;outline:none;-webkit-appearance:none;"></textarea>
-        <input type="hidden" name="api_key" value="tis8nCN5ylMg6TEhWVxxqDSB0BbmwE4z">
+        <input type="hidden" name="page_id" value="locations/foundation-repair-lynchburg-va">
         <input type="hidden" name="hostname" id="hostname" value="">
+        <div style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;overflow:hidden;" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
         <button type="submit" class="form-submit-btn">Get My Free Quote</button>
+        <p class="sms-consent" style="font-size:11px;color:#888;line-height:1.4;margin-top:10px;text-align:center;">By submitting this form, you consent to receive text messages from Queen Foundation Repair regarding your inquiry. Reply STOP to opt out. Msg &amp; data rates may apply.</p>
       </form>
       <div class="form-success" id="formSuccess">
         <p><strong>Thank You For Your Submission!</strong></p>
@@ -1956,12 +2015,25 @@
       document.getElementById('hostname').value = window.location.hostname;
       document.getElementById('leadForm').addEventListener('submit', function(e) {
         e.preventDefault();
+        if (this.querySelector('[name="website"]').value !== '') {
+          document.getElementById('leadForm').style.display = 'none';
+          document.getElementById('formSuccess').style.display = 'block';
+          return;
+        }
+        var allText = '';
+        this.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea').forEach(function(el) { allText += el.value + ' '; });
+        if (/[\u0400-\u04FF\u0500-\u052F]/.test(allText)) {
+          document.getElementById('leadForm').style.display = 'none';
+          document.getElementById('formSuccess').style.display = 'block';
+          return;
+        }
         var btn = this.querySelector('.form-submit-btn');
         btn.disabled = true;
         btn.textContent = 'Sending...';
-        var formData = new FormData(this);
-        fetch('https://app.leadsnap.com/embed/store', {
+        var formData = new URLSearchParams(new FormData(this)).toString();
+        fetch('/.netlify/functions/lead', {
           method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body: formData
         }).then(function() {
           document.getElementById('leadForm').style.display = 'none';
@@ -2423,7 +2495,7 @@
             <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
           </div>
           <div class="step-number">Step 1</div>
-          <div class="step-title">Call or Request a Quote</div>
+          <h3 class="step-title">Call or Request a Quote</h3>
           <div class="step-desc">Describe what you're seeing — cracks, water, uneven floors, a smell. That's all you need to know. We handle the rest.</div>
         </div>
 
@@ -2433,7 +2505,7 @@
             <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
           </div>
           <div class="step-number">Step 2</div>
-          <div class="step-title">Free On-Site Inspection</div>
+          <h3 class="step-title">Free On-Site Inspection</h3>
           <div class="step-desc">A foundation specialist inspects the interior, exterior, basement, or crawl space. You get a clear explanation of the problem, what's causing it, and what it takes to fix it.</div>
         </div>
 
@@ -2443,7 +2515,7 @@
             <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
           </div>
           <div class="step-number">Step 3</div>
-          <div class="step-title">Written Repair Plan</div>
+          <h3 class="step-title">Written Repair Plan</h3>
           <div class="step-desc">You receive a written scope of work before anything starts — specific methods, timeline, and cost. No surprises.</div>
         </div>
 
@@ -2453,7 +2525,7 @@
             <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
           </div>
           <div class="step-number">Step 4</div>
-          <div class="step-title">Professional Repair</div>
+          <h3 class="step-title">Professional Repair</h3>
           <div class="step-desc">The work is completed on schedule. The job site is cleaned up. You get documentation of everything that was done.</div>
         </div>
 
@@ -2569,7 +2641,9 @@
         <p>You get a written quote with the full scope of work before anything starts. No vague estimates. No "limited time" pressure. Compare it to other quotes and make the decision that's right for your home.</p>
 
         <h3>Built for Lynchburg Soil and Terrain</h3>
-        <p>Lynchburg sits on heavy clay soil in hilly terrain. That combination drives most of the foundation and water problems in this area. Every repair plan accounts for the soil conditions, drainage patterns, and foundation type specific to your property.</p>
+        <p>Lynchburg sits on heavy clay soil in hilly terrain. That combination drives most of the foundation and water problems in this area. Every repair plan accounts for the soil conditions, drainage patterns, and foundation type specific to your property. Foundation repair in Lynchburg works the same in Boonsboro as it does in Rivermont — fix the clay first.</p>
+
+        <p><a href="/" style="color:#2563eb;text-decoration:underline;font-style:italic;">Queen Foundation Repair</a> builds the plan around your property's soil and drainage, not a template.</p>
 
         <a href="javascript:void(0)" onclick="openModal()" class="why-cta">Get My Free Quote</a>
       </div>
@@ -2721,7 +2795,7 @@
             <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
           </button>
           <div class="faq-answer">
-            <p>It depends on the problem. A single crack repair can cost a few hundred dollars. Wall anchors or interior waterproofing typically fall between $3,000 and $10,000. Larger jobs involving piers or multiple systems can reach $15,000 to $25,000. The average foundation repair in this area runs around $3,000 to $5,000. A free inspection gives you the exact scope and cost for your situation.</p>
+            <p>It depends on the problem. A single crack repair can cost a few hundred dollars. Wall anchors or interior waterproofing typically fall between $3,000 and $10,000. Larger jobs involving piers or multiple systems can reach $15,000 to $25,000. The average foundation repair in this area runs around $3,000 to $5,000. A foundation crack repair runs at the low end. A basement crack repair on a bowed wall costs more. A free inspection gives you the exact scope and cost for your situation.</p>
           </div>
         </div>
 
@@ -2741,7 +2815,7 @@
             <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
           </button>
           <div class="faq-answer">
-            <p>Usually not. Standard homeowners policies do not cover damage caused by settling, clay soil movement, or poor drainage. Those are classified as maintenance issues. Insurance may cover damage from a sudden event like a burst pipe or a tree falling on the house. Check with your provider, but plan on this being an out-of-pocket repair for most situations.</p>
+            <p>Usually not. Standard homeowners policies do not cover damage caused by settling, clay soil movement, or poor drainage. Those are classified as maintenance issues. Insurance may cover damage from a sudden event like a burst pipe or a tree falling on the house. Check with your provider, but plan on this being an out-of-pocket repair for most situations. A basement leak repair runs the same way — insurance rarely covers it. Same for a foundation leak repair.</p>
           </div>
         </div>
 
@@ -2761,7 +2835,7 @@
             <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
           </button>
           <div class="faq-answer">
-            <p>Most residential repairs take one to three days. A crack injection is typically done in a few hours. Wall anchors or pier installation usually takes one to two days. Larger projects involving multiple repair methods — foundation piers plus waterproofing, for example — may take three to five days. You'll know the timeline before work begins.</p>
+            <p>Most residential repairs take one to three days. A crack injection is typically done in a few hours. Wall anchors or pier installation usually takes one to two days. Larger projects involving multiple repair methods — foundation piers plus waterproofing, for example — may take three to five days. You'll know the timeline before work begins. A crawl space service visit is usually one day. Basement waterproofing in Lynchburg runs two to three.</p>
           </div>
         </div>
 
@@ -2771,7 +2845,7 @@
             <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
           </button>
           <div class="faq-answer">
-            <p>Yes. We serve homeowners in Roanoke, Bedford, Forest, Madison Heights, Timberlake, Rustburg, Boonsboro, and surrounding communities in Bedford County, Campbell County, and Amherst County. If your area isn't listed, we may still be able to help — call to find out.</p>
+            <p>Yes. All of Lynchburg — Downtown, Federal Hill, Court House Hill, Boonsboro, Rivermont, Linkhorne, and Peakland. If your area isn't listed, call us.</p>
           </div>
         </div>
       </div>
@@ -2794,6 +2868,22 @@
   });
 })();
 </script>
+
+<!-- ========================
+     SERVICE AREA
+     ======================== -->
+<section class="service-area">
+  <div class="service-area-inner" id="serviceAreaBox">
+    <button class="service-area-toggle" onclick="document.getElementById('serviceAreaBox').classList.toggle('active')">
+      <span class="service-area-arrow">&#9660;</span> Our Lynchburg Service Area
+    </button>
+    <div class="service-area-content">
+      <p class="service-area-desc">We serve homeowners across all of Lynchburg. If you don't see your specific neighborhood listed below, give us a call and we'll confirm.</p>
+      <p class="service-area-list"><strong>Neighborhoods:</strong> Bedford Hills, Bethel Park, Blue Ridge Farms, Boonsboro, Central Business District, College Hill, Court House Hill, Daniels Hill, Dearington, Diamond Hill, Fairview Heights, Federal Hill, Franklin Hill, Garland Hill, Irvington Park, Linkhorne, Mill Bridge Court, Miller Park, Montview, Peakland, Pierce Street Renaissance, Rivermont, Royal Oaks, Sandusky, Sheffield, Tyreeanna, Vista Acres, White Rock Hill, Woodbine Village, Woodland</p>
+      <p class="service-area-list"><strong>ZIP codes:</strong> 24501, 24502, 24503, 24504, 24515</p>
+    </div>
+  </div>
+</section>
 
 <!-- ========================
      FOOTER
@@ -2848,13 +2938,12 @@
         <a href="/">Home</a>
         <a href="/about-us/">About Us</a>
         <a href="/contact-us/">Contact Us</a>
-        <a href="/locations/">Areas We Serve</a>
       </div>
 
     </div>
 
     <div class="footer-bottom">
-      <span>&copy; 2026 Queen Foundation Repair. All rights reserved.</span>
+      <span>&copy; 2026 Conversion Lab LLC dba Queen Foundation Repair. All rights reserved.</span>
       <a href="/privacy-policy/">Privacy Policy</a>
     </div>
   </div>
@@ -2879,9 +2968,11 @@
         <option value="other">Other</option>
       </select>
       <textarea name="cf-field[cf-51368]" placeholder="Describe what you're seeing (cracks, water, uneven floors, etc.)" style="width:100%;padding:12px 14px;margin-bottom:12px;border:1px solid #d0d0d0;border-radius:6px;font-size:0.95rem;font-family:'Noto Sans',sans-serif;resize:vertical;min-height:60px;"></textarea>
-      <input type="hidden" name="api_key" value="tis8nCN5ylMg6TEhWVxxqDSB0BbmwE4z">
+      <input type="hidden" name="page_id" value="locations/foundation-repair-lynchburg-va">
       <input type="hidden" name="hostname" id="modalHostname" value="">
+      <div style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;overflow:hidden;" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
       <button type="submit" class="form-submit-btn">Get My Free Quote</button>
+      <p class="sms-consent" style="font-size:11px;color:#888;line-height:1.4;margin-top:10px;text-align:center;">By submitting this form, you consent to receive text messages from Queen Foundation Repair regarding your inquiry. Reply STOP to opt out. Msg &amp; data rates may apply.</p>
     </form>
     <div class="form-success" id="modalSuccess">
       <p><strong>Thank You For Your Submission!</strong></p>
@@ -2905,12 +2996,25 @@ function closeModal() {
 
 document.getElementById('modalForm').addEventListener('submit', function(e) {
   e.preventDefault();
+  if (this.querySelector('[name="website"]').value !== '') {
+    document.getElementById('modalForm').style.display = 'none';
+    document.getElementById('modalSuccess').style.display = 'block';
+    return;
+  }
+  var allText = '';
+  this.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea').forEach(function(el) { allText += el.value + ' '; });
+  if (/[\u0400-\u04FF\u0500-\u052F]/.test(allText)) {
+    document.getElementById('modalForm').style.display = 'none';
+    document.getElementById('modalSuccess').style.display = 'block';
+    return;
+  }
   var btn = this.querySelector('.form-submit-btn');
   btn.disabled = true;
   btn.textContent = 'Sending...';
-  var formData = new FormData(this);
-  fetch('https://app.leadsnap.com/embed/store', {
+  var formData = new URLSearchParams(new FormData(this)).toString();
+  fetch('/.netlify/functions/lead', {
     method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: formData
   }).then(function() {
     document.getElementById('modalForm').style.display = 'none';
@@ -2935,36 +3039,16 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
   "areaServed": [
     {
       "@type": "City",
-      "name": "Lynchburg, VA"
+      "name": "Lynchburg",
+      "sameAs": "https://en.wikipedia.org/wiki/Lynchburg,_Virginia"
     },
-    {
-      "@type": "City",
-      "name": "Roanoke, VA"
-    },
-    {
-      "@type": "City",
-      "name": "Bedford, VA"
-    },
-    {
-      "@type": "City",
-      "name": "Forest, VA"
-    },
-    {
-      "@type": "City",
-      "name": "Madison Heights, VA"
-    },
-    {
-      "@type": "City",
-      "name": "Timberlake, VA"
-    },
-    {
-      "@type": "City",
-      "name": "Rustburg, VA"
-    },
-    {
-      "@type": "City",
-      "name": "Amherst, VA"
-    }
+    { "@type": "Place", "name": "Downtown" },
+    { "@type": "Place", "name": "Federal Hill" },
+    { "@type": "Place", "name": "Court House Hill" },
+    { "@type": "Place", "name": "Boonsboro" },
+    { "@type": "Place", "name": "Rivermont" },
+    { "@type": "Place", "name": "Linkhorne" },
+    { "@type": "Place", "name": "Peakland" }
   ],
   "geo": {
     "@type": "GeoCoordinates",
@@ -3014,7 +3098,7 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
       "name": "How much does foundation repair cost in Lynchburg, VA?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It depends on the problem. A single crack repair can cost a few hundred dollars. Wall anchors or interior waterproofing typically fall between $3,000 and $10,000. Larger jobs involving piers or multiple systems can reach $15,000 to $25,000. The average foundation repair in this area runs around $3,000 to $5,000. A free inspection gives you the exact scope and cost for your situation."
+        "text": "It depends on the problem. A single crack repair can cost a few hundred dollars. Wall anchors or interior waterproofing typically fall between $3,000 and $10,000. Larger jobs involving piers or multiple systems can reach $15,000 to $25,000. The average foundation repair in this area runs around $3,000 to $5,000. A foundation crack repair runs at the low end. A basement crack repair on a bowed wall costs more. A free inspection gives you the exact scope and cost for your situation."
       }
     },
     {
@@ -3030,7 +3114,7 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
       "name": "Does homeowners insurance cover foundation repair?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Usually not. Standard homeowners policies do not cover damage caused by settling, clay soil movement, or poor drainage. Those are classified as maintenance issues. Insurance may cover damage from a sudden event like a burst pipe or a tree falling on the house. Check with your provider, but plan on this being an out-of-pocket repair for most situations."
+        "text": "Usually not. Standard homeowners policies do not cover damage caused by settling, clay soil movement, or poor drainage. Those are classified as maintenance issues. Insurance may cover damage from a sudden event like a burst pipe or a tree falling on the house. Check with your provider, but plan on this being an out-of-pocket repair for most situations. A basement leak repair runs the same way — insurance rarely covers it. Same for a foundation leak repair."
       }
     },
     {
@@ -3046,7 +3130,7 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
       "name": "How long does foundation repair take?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Most residential repairs take one to three days. A crack injection is typically done in a few hours. Wall anchors or pier installation usually takes one to two days. Larger projects involving multiple repair methods — foundation piers plus waterproofing, for example — may take three to five days. You'll know the timeline before work begins."
+        "text": "Most residential repairs take one to three days. A crack injection is typically done in a few hours. Wall anchors or pier installation usually takes one to two days. Larger projects involving multiple repair methods — foundation piers plus waterproofing, for example — may take three to five days. You'll know the timeline before work begins. A crawl space service visit is usually one day. Basement waterproofing in Lynchburg runs two to three."
       }
     },
     {
@@ -3054,7 +3138,7 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
       "name": "Do you serve areas outside of Lynchburg?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. We serve homeowners in Roanoke, Bedford, Forest, Madison Heights, Timberlake, Rustburg, Boonsboro, and surrounding communities in Bedford County, Campbell County, and Amherst County. If your area isn't listed, we may still be able to help — call to find out."
+        "text": "Yes. All of Lynchburg — Downtown, Federal Hill, Court House Hill, Boonsboro, Rivermont, Linkhorne, and Peakland. If your area isn't listed, call us."
       }
     }
   ]
@@ -3311,8 +3395,9 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
         <input type="tel" name="cf-field[pdf-phone]" placeholder="Mobile number" required>
       </div>
       <textarea name="cf-field[cf-51368]" placeholder="Message"></textarea>
-      <input type="hidden" name="api_key" value="tis8nCN5ylMg6TEhWVxxqDSB0BbmwE4z">
+      <input type="hidden" name="page_id" value="locations/foundation-repair-lynchburg-va">
       <input type="hidden" name="hostname" value="">
+      <div style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;overflow:hidden;" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
       <button type="submit" class="text-send-btn">Send</button>
     </form>
     <p class="text-widget-consent">By sending this message, you expressly consent to receive communications from us. You may opt out at any time.</p>
@@ -3337,11 +3422,23 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
 
   btn.addEventListener('click', function() {
     panel.classList.toggle('active');
+    sessionStorage.setItem('twSeen', '1');
   });
 
   closeBtn.addEventListener('click', function() {
     panel.classList.remove('active');
+    sessionStorage.setItem('twSeen', '1');
   });
+
+  // Auto-open after 20 seconds — once per session only
+  if (!sessionStorage.getItem('twSeen')) {
+    setTimeout(function() {
+      if (!panel.classList.contains('active')) {
+        panel.classList.add('active');
+        sessionStorage.setItem('twSeen', '1');
+      }
+    }, 60000);
+  }
 
   // Close on outside click
   document.addEventListener('click', function(e) {
@@ -3352,12 +3449,27 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
 
   form.addEventListener('submit', function(e) {
     e.preventDefault();
+    if (form.querySelector('[name="website"]').value !== '') {
+      form.style.display = 'none';
+      form.parentElement.querySelector('.text-widget-consent').style.display = 'none';
+      success.style.display = 'block';
+      return;
+    }
+    var allText = '';
+    form.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea').forEach(function(el) { allText += el.value + ' '; });
+    if (/[\u0400-\u04FF\u0500-\u052F]/.test(allText)) {
+      form.style.display = 'none';
+      form.parentElement.querySelector('.text-widget-consent').style.display = 'none';
+      success.style.display = 'block';
+      return;
+    }
     var submitBtn = form.querySelector('.text-send-btn');
     submitBtn.disabled = true;
     submitBtn.textContent = 'Sending...';
-    var formData = new FormData(form);
-    fetch('https://app.leadsnap.com/embed/store', {
+    var formData = new URLSearchParams(new FormData(form)).toString();
+    fetch('/.netlify/functions/lead', {
       method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: formData
     }).then(function() {
       form.style.display = 'none';

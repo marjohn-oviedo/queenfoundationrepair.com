@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Foundation Repair Chesapeake, VA | Crawl Space Repair & Waterproofing Near Virginia Beach, Norfolk | Free Estimates – Queen Foundation Repair</title>
-<meta name="description" content="Foundation repair in Chesapeake, VA. Crawl space repair, crawl space encapsulation, basement waterproofing, and concrete leveling for homes across Hampton Roads. Schedule your free estimate today.">
+<title>Chesapeake, VA Foundation Repair & Basement Waterproofing | Crawl Space Encapsulation, Concrete Leveling | Serving Great Bridge, Greenbrier, Deep Creek & Chesapeake Neighborhoods | Free Inspection</title>
+<meta name="description" content="Foundation repair, basement waterproofing, crawl space, and concrete leveling in Chesapeake VA. Serving Great Bridge, Greenbrier, and Deep Creek. Free inspection.">
 <link rel="canonical" href="https://queenfoundationrepair.com/locations/foundation-repair-chesapeake-va/">
 <meta name="robots" content="index, follow">
-<meta property="og:title" content="Foundation Repair Chesapeake, VA | Crawl Space Repair & Waterproofing Near Virginia Beach, Norfolk | Free Estimates – Queen Foundation Repair">
-<meta property="og:description" content="Foundation repair in Chesapeake, VA. Crawl space repair, crawl space encapsulation, basement waterproofing, and concrete leveling for homes across Hampton Roads. Schedule your free estimate today.">
+<meta property="og:title" content="Chesapeake, VA Foundation Repair & Basement Waterproofing | Crawl Space Encapsulation, Concrete Leveling | Serving Great Bridge, Greenbrier, Deep Creek & Chesapeake Neighborhoods | Free Inspection">
+<meta property="og:description" content="Foundation repair, basement waterproofing, crawl space, and concrete leveling in Chesapeake VA. Serving Great Bridge, Greenbrier, and Deep Creek. Free inspection.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://queenfoundationrepair.com/locations/foundation-repair-chesapeake-va/">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -947,6 +947,7 @@
   }
 
   .step-title {
+    margin-top: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 1.1rem;
@@ -1802,6 +1803,62 @@
   .footer-social a { color: #666; transition: color 0.2s; }
   .footer-social a:hover { color: #fff; }
   .footer-social svg { width: 18px; height: 18px; fill: currentColor; }
+
+  /* SERVICE AREA SECTION */
+  .service-area {
+    background: #ffffff;
+    padding: 70px 30px;
+  }
+  .service-area-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .service-area-toggle {
+    width: 100%;
+    background: #fff;
+    border: none;
+    padding: 18px 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #1a1a1a;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  .service-area-toggle:hover { background: #f8f9fa; }
+  .service-area-arrow { font-size: 0.7rem; transition: transform 0.3s; }
+  .service-area-inner.active .service-area-arrow { transform: rotate(180deg); }
+  .service-area-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding: 0 24px;
+  }
+  .service-area-inner.active .service-area-content {
+    max-height: 1500px;
+    padding: 20px 24px 24px;
+  }
+  .service-area-desc {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  .service-area-list {
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.7;
+    margin: 0 0 12px 0;
+  }
+  .service-area-list strong { color: #1a1a1a; }
 </style>
 <link rel="icon" type="image/png" href="../../favicon.png">
 </head>
@@ -1930,7 +1987,7 @@
     <!-- Right: Form -->
     <div class="hero-form-wrap">
       <p class="form-heading">I'm Ready For A Free Quote</p>
-      <form id="leadForm" method="post" action="https://app.leadsnap.com/embed/store">
+      <form id="leadForm" method="post" action="/.netlify/functions/lead">
         <input type="text" name="cf-field[pdf-name]" placeholder="Full Name" required>
         <input type="tel" name="cf-field[pdf-phone]" placeholder="Phone Number" required>
         <input type="text" name="cf-field[pdf-zipcode]" placeholder="Zip Code" required>
@@ -1942,9 +1999,11 @@
           <option value="other">Other</option>
         </select>
         <textarea name="cf-field[cf-51368]" placeholder="Describe what you're seeing (cracks, water, uneven floors, etc.)" style="width:100%;padding:12px 14px;margin-bottom:10px;border:1px solid #d1d5db;border-radius:6px;font-family:'Noto Sans',sans-serif;font-size:0.9rem;color:#333;background:#fff;resize:vertical;min-height:60px;outline:none;-webkit-appearance:none;"></textarea>
-        <input type="hidden" name="api_key" value="HHeO7NY92vhxEvjwfsrKMrUSVAj4iqGa">
+        <input type="hidden" name="page_id" value="locations/foundation-repair-chesapeake-va">
         <input type="hidden" name="hostname" id="hostname" value="">
+        <div style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;overflow:hidden;" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
         <button type="submit" class="form-submit-btn">Get My Free Quote</button>
+        <p class="sms-consent" style="font-size:11px;color:#888;line-height:1.4;margin-top:10px;text-align:center;">By submitting this form, you consent to receive text messages from Queen Foundation Repair regarding your inquiry. Reply STOP to opt out. Msg &amp; data rates may apply.</p>
       </form>
       <div class="form-success" id="formSuccess">
         <p><strong>Thank You For Your Submission!</strong></p>
@@ -1956,12 +2015,25 @@
       document.getElementById('hostname').value = window.location.hostname;
       document.getElementById('leadForm').addEventListener('submit', function(e) {
         e.preventDefault();
+        if (this.querySelector('[name="website"]').value !== '') {
+          document.getElementById('leadForm').style.display = 'none';
+          document.getElementById('formSuccess').style.display = 'block';
+          return;
+        }
+        var allText = '';
+        this.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea').forEach(function(el) { allText += el.value + ' '; });
+        if (/[\u0400-\u04FF\u0500-\u052F]/.test(allText)) {
+          document.getElementById('leadForm').style.display = 'none';
+          document.getElementById('formSuccess').style.display = 'block';
+          return;
+        }
         var btn = this.querySelector('.form-submit-btn');
         btn.disabled = true;
         btn.textContent = 'Sending...';
-        var formData = new FormData(this);
-        fetch('https://app.leadsnap.com/embed/store', {
+        var formData = new URLSearchParams(new FormData(this)).toString();
+        fetch('/.netlify/functions/lead', {
           method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body: formData
         }).then(function() {
           document.getElementById('leadForm').style.display = 'none';
@@ -2423,7 +2495,7 @@
             <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
           </div>
           <div class="step-number">Step 1</div>
-          <div class="step-title">Schedule Your Free Inspection</div>
+          <h3 class="step-title">Schedule Your Free Inspection</h3>
           <div class="step-desc">Call us or fill out the form and we will set up a time that works for you. There is no cost and no obligation. We just come out and take a look.</div>
         </div>
 
@@ -2433,7 +2505,7 @@
             <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
           </div>
           <div class="step-number">Step 2</div>
-          <div class="step-title">We Inspect and Explain What We Find</div>
+          <h3 class="step-title">We Inspect and Explain What We Find</h3>
           <div class="step-desc">We walk through your home, then get under the house to check your crawl space or foundation. We take photos, measure everything, and show you exactly what is going on — no confusing jargon, just a straight answer.</div>
         </div>
 
@@ -2443,7 +2515,7 @@
             <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
           </div>
           <div class="step-number">Step 3</div>
-          <div class="step-title">Review Your Options</div>
+          <h3 class="step-title">Review Your Options</h3>
           <div class="step-desc">You get a written proposal that lays out the scope of work, the materials, the timeline, and the price. No surprises and no pressure. Take your time and compare with other companies if you want to.</div>
         </div>
 
@@ -2453,7 +2525,7 @@
             <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
           </div>
           <div class="step-number">Step 4</div>
-          <div class="step-title">We Fix It Right</div>
+          <h3 class="step-title">We Fix It Right</h3>
           <div class="step-desc">Our crew shows up on time, does the work, and cleans up before they leave. We walk you through everything we did and make sure you are completely satisfied before the job is closed out.</div>
         </div>
 
@@ -2563,13 +2635,13 @@
           <p class="why-subtext">Your home is likely the biggest investment you have. When something is wrong with the foundation or crawl space, you need someone who will be honest about what is actually going on and only fix what needs fixing.</p>
         </div>
         <h3>We Tell You What You Do Not Need</h3>
-        <p>Not every crack is a disaster. Not every damp crawl space needs a full overhaul. If something does not need to be repaired, we will tell you. We would rather earn your trust than sell you work you do not need. When you do need a repair, we explain the cause — not just the symptom — so you understand why it matters and what happens if you wait.</p>
+        <p>Not every crack is a disaster. Not every damp crawl space needs a full overhaul. If something does not need to be repaired, we will tell you. We would rather earn your trust than sell you work you do not need. When you do need a repair, we explain the cause — not just the symptom — so you understand why it matters and what happens if you wait. Real foundation leak repair starts with finding the source of the water — not just sealing what you can see. The same goes for our other foundation repair services: we won't push a fix until we know what is actually moving and why.</p>
 
         <h3>We Know What Chesapeake Soil Does to Homes</h3>
-        <p>Homes in Greenbrier, Great Bridge, and Western Branch sit on heavy clay that swells in the rain and shrinks in the summer. That back-and-forth movement is what cracks your brick and shifts your foundation. Near Deep Creek and the Great Dismal Swamp, the soil is soft and wet — homes slowly sink as the ground compresses underneath them. We have worked on both and know exactly how to handle each one.</p>
+        <p>Homes in Greenbrier, Great Bridge, Western Branch, Hickory, and South Norfolk sit on heavy clay that swells in the rain and shrinks in the summer. That back-and-forth movement is what cracks your brick and shifts your foundation. Near Deep Creek and the Great Dismal Swamp, the soil is soft and wet — homes slowly sink as the ground compresses underneath them. We have worked on both and know exactly how to handle each one. Whether the issue is a settling slab, a wet basement, or moisture trapped under the floor, our basement foundation repair and crawl space foundation repair work starts with finding the actual cause — not just patching the symptom.</p>
 
         <h3>Every Job Backed by Warranty</h3>
-        <p>We stand behind our work. Every repair we do comes with a warranty so you are not left on your own if anything comes up after we finish. We also follow up with you after the job is done to make sure everything is holding up the way it should.</p>
+        <p>We stand behind our work. Every repair <a href="/" style="color:#2563eb;text-decoration:underline;font-style:italic;">Queen Foundation Repair</a> does comes with a warranty so you are not left on your own if anything comes up after we finish. We also follow up with you after the job is done to make sure everything is holding up the way it should.</p>
 
         <a href="javascript:void(0)" onclick="openModal()" class="why-cta">Get My Free Quote</a>
       </div>
@@ -2721,7 +2793,7 @@
             <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
           </button>
           <div class="faq-answer">
-            <p>The most common signs are cracks in your brick or drywall — especially stair-step cracks in the mortar or diagonal cracks near window and door corners. Doors and windows that suddenly stick or will not close properly are another sign. Floors that slope, feel bouncy, or sag in certain areas usually point to a crawl space issue underneath. If you notice a musty smell on the first floor that will not go away, that is often moisture building up in the crawl space. Any one of these is worth getting checked out before it gets worse.</p>
+            <p>The most common signs are cracks in your brick or drywall — especially stair-step cracks in the mortar or diagonal cracks near window and door corners. Doors and windows that suddenly stick or will not close properly are another sign. Floors that slope, feel bouncy, or sag in certain areas usually point to a crawl space issue underneath. If you notice a musty smell on the first floor that will not go away, that is often moisture building up in the crawl space. Any one of these is worth getting checked out before it gets worse — catching them early is the difference between a manageable basement and foundation repair and a major structural rebuild.</p>
           </div>
         </div>
 
@@ -2771,7 +2843,7 @@
             <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
           </button>
           <div class="faq-answer">
-            <p>Yes. We serve homeowners across Hampton Roads including Virginia Beach, Norfolk, Suffolk, and Portsmouth, as well as communities throughout the surrounding region. If you are not sure whether we cover your area, just give us a call and we will let you know.</p>
+            <p>Yes. We serve homeowners across Hampton Roads including Virginia Beach, Norfolk, Suffolk, and Portsmouth, as well as communities throughout the surrounding region. Within Chesapeake itself, we work across Greenbrier, Great Bridge, Deep Creek, Western Branch, Hickory, and South Norfolk. If you are not sure whether we cover your area, just give us a call and we will let you know.</p>
           </div>
         </div>
       </div>
@@ -2794,6 +2866,22 @@
   });
 })();
 </script>
+
+<!-- ========================
+     SERVICE AREA
+     ======================== -->
+<section class="service-area">
+  <div class="service-area-inner" id="serviceAreaBox">
+    <button class="service-area-toggle" onclick="document.getElementById('serviceAreaBox').classList.toggle('active')">
+      <span class="service-area-arrow">&#9660;</span> Our Chesapeake Service Area
+    </button>
+    <div class="service-area-content">
+      <p class="service-area-desc">We serve homeowners across all of Chesapeake. If you don't see your specific neighborhood listed below, give us a call and we'll confirm.</p>
+      <p class="service-area-list"><strong>Neighborhoods:</strong> Butts Road, Butts Station, Deep Creek, Deep Creek North, Deep Creek South, Deep Creek West, Great Bridge, Great Bridge East, Greenbrier East, Greenbrier West, Indian River, Pleasant Grove, Pleasant Grove East, Pleasant Grove West, South Norfolk, Washington, Western Branch, Western Branch North, Western Branch South</p>
+      <p class="service-area-list"><strong>ZIP codes:</strong> 23320, 23321, 23322, 23323, 23324, 23325</p>
+    </div>
+  </div>
+</section>
 
 <!-- ========================
      FOOTER
@@ -2848,13 +2936,12 @@
         <a href="/">Home</a>
         <a href="/about-us/">About Us</a>
         <a href="/contact-us/">Contact Us</a>
-        <a href="/locations/">Areas We Serve</a>
       </div>
 
     </div>
 
     <div class="footer-bottom">
-      <span>&copy; 2026 Queen Foundation Repair. All rights reserved.</span>
+      <span>&copy; 2026 Conversion Lab LLC dba Queen Foundation Repair. All rights reserved.</span>
       <a href="/privacy-policy/">Privacy Policy</a>
     </div>
   </div>
@@ -2879,9 +2966,11 @@
         <option value="other">Other</option>
       </select>
       <textarea name="cf-field[cf-51368]" placeholder="Describe what you're seeing (cracks, water, uneven floors, etc.)" style="width:100%;padding:12px 14px;margin-bottom:12px;border:1px solid #d0d0d0;border-radius:6px;font-size:0.95rem;font-family:'Noto Sans',sans-serif;resize:vertical;min-height:60px;"></textarea>
-      <input type="hidden" name="api_key" value="HHeO7NY92vhxEvjwfsrKMrUSVAj4iqGa">
+      <input type="hidden" name="page_id" value="locations/foundation-repair-chesapeake-va">
       <input type="hidden" name="hostname" id="modalHostname" value="">
+      <div style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;overflow:hidden;" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
       <button type="submit" class="form-submit-btn">Get My Free Quote</button>
+      <p class="sms-consent" style="font-size:11px;color:#888;line-height:1.4;margin-top:10px;text-align:center;">By submitting this form, you consent to receive text messages from Queen Foundation Repair regarding your inquiry. Reply STOP to opt out. Msg &amp; data rates may apply.</p>
     </form>
     <div class="form-success" id="modalSuccess">
       <p><strong>Thank You For Your Submission!</strong></p>
@@ -2905,12 +2994,25 @@ function closeModal() {
 
 document.getElementById('modalForm').addEventListener('submit', function(e) {
   e.preventDefault();
+  if (this.querySelector('[name="website"]').value !== '') {
+    document.getElementById('modalForm').style.display = 'none';
+    document.getElementById('modalSuccess').style.display = 'block';
+    return;
+  }
+  var allText = '';
+  this.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea').forEach(function(el) { allText += el.value + ' '; });
+  if (/[\u0400-\u04FF\u0500-\u052F]/.test(allText)) {
+    document.getElementById('modalForm').style.display = 'none';
+    document.getElementById('modalSuccess').style.display = 'block';
+    return;
+  }
   var btn = this.querySelector('.form-submit-btn');
   btn.disabled = true;
   btn.textContent = 'Sending...';
-  var formData = new FormData(this);
-  fetch('https://app.leadsnap.com/embed/store', {
+  var formData = new URLSearchParams(new FormData(this)).toString();
+  fetch('/.netlify/functions/lead', {
     method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: formData
   }).then(function() {
     document.getElementById('modalForm').style.display = 'none';
@@ -2953,20 +3055,34 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
       "sameAs": "https://en.wikipedia.org/wiki/Chesapeake,_Virginia"
     },
     {
-      "@type": "City",
-      "name": "Virginia Beach"
+      "@type": "Place",
+      "name": "Great Bridge",
+      "containedInPlace": {"@type": "City", "name": "Chesapeake"}
     },
     {
-      "@type": "City",
-      "name": "Norfolk"
+      "@type": "Place",
+      "name": "Greenbrier",
+      "containedInPlace": {"@type": "City", "name": "Chesapeake"}
     },
     {
-      "@type": "City",
-      "name": "Suffolk"
+      "@type": "Place",
+      "name": "Deep Creek",
+      "containedInPlace": {"@type": "City", "name": "Chesapeake"}
     },
     {
-      "@type": "City",
-      "name": "Portsmouth"
+      "@type": "Place",
+      "name": "Western Branch",
+      "containedInPlace": {"@type": "City", "name": "Chesapeake"}
+    },
+    {
+      "@type": "Place",
+      "name": "Hickory",
+      "containedInPlace": {"@type": "City", "name": "Chesapeake"}
+    },
+    {
+      "@type": "Place",
+      "name": "South Norfolk",
+      "containedInPlace": {"@type": "City", "name": "Chesapeake"}
     }
   ],
   "geo": {
@@ -3094,7 +3210,7 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
       "name": "What are the warning signs that my home needs foundation repair?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The most common signs are cracks in your brick or drywall \u2014 especially stair-step cracks in the mortar or diagonal cracks near window and door corners. Doors and windows that suddenly stick or will not close properly are another sign. Floors that slope, feel bouncy, or sag in certain areas usually point to a crawl space issue underneath. If you notice a musty smell on the first floor that will not go away, that is often moisture building up in the crawl space. Any one of these is worth getting checked out before it gets worse."
+        "text": "The most common signs are cracks in your brick or drywall \u2014 especially stair-step cracks in the mortar or diagonal cracks near window and door corners. Doors and windows that suddenly stick or will not close properly are another sign. Floors that slope, feel bouncy, or sag in certain areas usually point to a crawl space issue underneath. If you notice a musty smell on the first floor that will not go away, that is often moisture building up in the crawl space. Any one of these is worth getting checked out before it gets worse — catching them early is the difference between a manageable basement and foundation repair and a major structural rebuild."
       }
     },
     {
@@ -3134,7 +3250,7 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
       "name": "Do you serve areas outside of Chesapeake?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. We serve homeowners across Hampton Roads including Virginia Beach, Norfolk, Suffolk, and Portsmouth, as well as communities throughout the surrounding region. If you are not sure whether we cover your area, just give us a call and we will let you know."
+        "text": "Yes. We serve homeowners across Hampton Roads including Virginia Beach, Norfolk, Suffolk, and Portsmouth, as well as communities throughout the surrounding region. Within Chesapeake itself, we work across Greenbrier, Great Bridge, Deep Creek, Western Branch, Hickory, and South Norfolk. If you are not sure whether we cover your area, just give us a call and we will let you know."
       }
     }
   ]
@@ -3393,8 +3509,9 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
         <input type="tel" name="cf-field[pdf-phone]" placeholder="Mobile number" required>
       </div>
       <textarea name="cf-field[cf-51368]" placeholder="Message"></textarea>
-      <input type="hidden" name="api_key" value="HHeO7NY92vhxEvjwfsrKMrUSVAj4iqGa">
+      <input type="hidden" name="page_id" value="locations/foundation-repair-chesapeake-va">
       <input type="hidden" name="hostname" value="">
+      <div style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;overflow:hidden;" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
       <button type="submit" class="text-send-btn">Send</button>
     </form>
     <p class="text-widget-consent">By sending this message, you expressly consent to receive communications from us. You may opt out at any time.</p>
@@ -3419,11 +3536,23 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
 
   btn.addEventListener('click', function() {
     panel.classList.toggle('active');
+    sessionStorage.setItem('twSeen', '1');
   });
 
   closeBtn.addEventListener('click', function() {
     panel.classList.remove('active');
+    sessionStorage.setItem('twSeen', '1');
   });
+
+  // Auto-open after 20 seconds — once per session only
+  if (!sessionStorage.getItem('twSeen')) {
+    setTimeout(function() {
+      if (!panel.classList.contains('active')) {
+        panel.classList.add('active');
+        sessionStorage.setItem('twSeen', '1');
+      }
+    }, 60000);
+  }
 
   // Close on outside click
   document.addEventListener('click', function(e) {
@@ -3434,12 +3563,27 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
 
   form.addEventListener('submit', function(e) {
     e.preventDefault();
+    if (form.querySelector('[name="website"]').value !== '') {
+      form.style.display = 'none';
+      form.parentElement.querySelector('.text-widget-consent').style.display = 'none';
+      success.style.display = 'block';
+      return;
+    }
+    var allText = '';
+    form.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea').forEach(function(el) { allText += el.value + ' '; });
+    if (/[\u0400-\u04FF\u0500-\u052F]/.test(allText)) {
+      form.style.display = 'none';
+      form.parentElement.querySelector('.text-widget-consent').style.display = 'none';
+      success.style.display = 'block';
+      return;
+    }
     var submitBtn = form.querySelector('.text-send-btn');
     submitBtn.disabled = true;
     submitBtn.textContent = 'Sending...';
-    var formData = new FormData(form);
-    fetch('https://app.leadsnap.com/embed/store', {
+    var formData = new URLSearchParams(new FormData(form)).toString();
+    fetch('/.netlify/functions/lead', {
       method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: formData
     }).then(function() {
       form.style.display = 'none';

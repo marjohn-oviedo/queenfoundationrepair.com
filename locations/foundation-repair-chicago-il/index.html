@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chicago, IL Foundation Repair & Basement Waterproofing | Crawl Space Repair, Sump Pump Installation, Concrete Leveling | Serving Oak Park, Evanston, Cicero & Surrounding Areas | Queen Foundation Repair — Call for a Free Estimate</title>
-<meta name="description" content="Foundation repair and basement waterproofing in Chicago, IL. Crawl space repair, sump pump installation, French drains, foundation crack repair, and concrete leveling. Licensed & insured. Call Queen Foundation Repair for a free estimate.">
+<title>Foundation Repair Chicago, IL | Basement Repair & Waterproofing | Lincoln Park, Lakeview, Hyde Park, Wicker Park, Oak Park, Evanston | Free Estimates – Queen Foundation Repair</title>
+<meta name="description" content="Foundation repair Chicago — basement repair, wall repair, crack repair and waterproofing for homes from Lincoln Park and Lakeview to Hyde Park, Wicker Park, Oak Park and Evanston. Free inspections, written quotes.">
 <link rel="canonical" href="https://queenfoundationrepair.com/locations/foundation-repair-chicago-il/">
 <meta name="robots" content="index, follow">
-<meta property="og:title" content="Chicago, IL Foundation Repair & Basement Waterproofing | Crawl Space Repair, Sump Pump Installation, Concrete Leveling | Serving Oak Park, Evanston, Cicero & Surrounding Areas | Queen Foundation Repair — Call for a Free Estimate">
-<meta property="og:description" content="Foundation repair and basement waterproofing in Chicago, IL. Crawl space repair, sump pump installation, French drains, foundation crack repair, and concrete leveling. Licensed & insured. Call Queen Foundation Repair for a free estimate.">
+<meta property="og:title" content="Foundation Repair Chicago, IL | Basement Repair & Waterproofing | Lincoln Park, Lakeview, Hyde Park, Wicker Park, Oak Park, Evanston | Free Estimates – Queen Foundation Repair">
+<meta property="og:description" content="Foundation repair Chicago — basement repair, wall repair, crack repair and waterproofing for homes from Lincoln Park and Lakeview to Hyde Park, Wicker Park, Oak Park and Evanston. Free inspections, written quotes.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://queenfoundationrepair.com/locations/foundation-repair-chicago-il/">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -947,6 +947,7 @@
   }
 
   .step-title {
+    margin-top: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 1.1rem;
@@ -1802,6 +1803,62 @@
   .footer-social a { color: #666; transition: color 0.2s; }
   .footer-social a:hover { color: #fff; }
   .footer-social svg { width: 18px; height: 18px; fill: currentColor; }
+
+  /* SERVICE AREA SECTION */
+  .service-area {
+    background: #ffffff;
+    padding: 70px 30px;
+  }
+  .service-area-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .service-area-toggle {
+    width: 100%;
+    background: #fff;
+    border: none;
+    padding: 18px 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #1a1a1a;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  .service-area-toggle:hover { background: #f8f9fa; }
+  .service-area-arrow { font-size: 0.7rem; transition: transform 0.3s; }
+  .service-area-inner.active .service-area-arrow { transform: rotate(180deg); }
+  .service-area-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding: 0 24px;
+  }
+  .service-area-inner.active .service-area-content {
+    max-height: 1500px;
+    padding: 20px 24px 24px;
+  }
+  .service-area-desc {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  .service-area-list {
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.7;
+    margin: 0 0 12px 0;
+  }
+  .service-area-list strong { color: #1a1a1a; }
 </style>
 <link rel="icon" type="image/png" href="../../favicon.png">
 </head>
@@ -1930,7 +1987,7 @@
     <!-- Right: Form -->
     <div class="hero-form-wrap">
       <p class="form-heading">I'm Ready For A Free Quote</p>
-      <form id="leadForm" method="post" action="https://app.leadsnap.com/embed/store">
+      <form id="leadForm" method="post" action="/.netlify/functions/lead">
         <input type="text" name="cf-field[pdf-name]" placeholder="Full Name" required>
         <input type="tel" name="cf-field[pdf-phone]" placeholder="Phone Number" required>
         <input type="text" name="cf-field[pdf-zipcode]" placeholder="Zip Code" required>
@@ -1942,9 +1999,11 @@
           <option value="other">Other</option>
         </select>
         <textarea name="cf-field[cf-51368]" placeholder="Describe what you're seeing (cracks, water, uneven floors, etc.)" style="width:100%;padding:12px 14px;margin-bottom:10px;border:1px solid #d1d5db;border-radius:6px;font-family:'Noto Sans',sans-serif;font-size:0.9rem;color:#333;background:#fff;resize:vertical;min-height:60px;outline:none;-webkit-appearance:none;"></textarea>
-        <input type="hidden" name="api_key" value="pxudqTkwFqYCmkIVUU9IyOSineY7YDTe">
+        <input type="hidden" name="page_id" value="locations/foundation-repair-chicago-il">
         <input type="hidden" name="hostname" id="hostname" value="">
+        <div style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;overflow:hidden;" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
         <button type="submit" class="form-submit-btn">Get My Free Quote</button>
+        <p class="sms-consent" style="font-size:11px;color:#888;line-height:1.4;margin-top:10px;text-align:center;">By submitting this form, you consent to receive text messages from Queen Foundation Repair regarding your inquiry. Reply STOP to opt out. Msg &amp; data rates may apply.</p>
       </form>
       <div class="form-success" id="formSuccess">
         <p><strong>Thank You For Your Submission!</strong></p>
@@ -1956,12 +2015,25 @@
       document.getElementById('hostname').value = window.location.hostname;
       document.getElementById('leadForm').addEventListener('submit', function(e) {
         e.preventDefault();
+        if (this.querySelector('[name="website"]').value !== '') {
+          document.getElementById('leadForm').style.display = 'none';
+          document.getElementById('formSuccess').style.display = 'block';
+          return;
+        }
+        var allText = '';
+        this.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea').forEach(function(el) { allText += el.value + ' '; });
+        if (/[\u0400-\u04FF\u0500-\u052F]/.test(allText)) {
+          document.getElementById('leadForm').style.display = 'none';
+          document.getElementById('formSuccess').style.display = 'block';
+          return;
+        }
         var btn = this.querySelector('.form-submit-btn');
         btn.disabled = true;
         btn.textContent = 'Sending...';
-        var formData = new FormData(this);
-        fetch('https://app.leadsnap.com/embed/store', {
+        var formData = new URLSearchParams(new FormData(this)).toString();
+        fetch('/.netlify/functions/lead', {
           method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body: formData
         }).then(function() {
           document.getElementById('leadForm').style.display = 'none';
@@ -2423,7 +2495,7 @@
             <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
           </div>
           <div class="step-number">Step 1</div>
-          <div class="step-title">Call or Request a Free Estimate</div>
+          <h3 class="step-title">Call or Request a Free Estimate</h3>
           <div class="step-desc">Tell us what you're seeing — cracks, water, uneven floors, anything. We'll ask a few questions and schedule a time to come out.</div>
         </div>
 
@@ -2433,7 +2505,7 @@
             <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
           </div>
           <div class="step-number">Step 2</div>
-          <div class="step-title">We Inspect Your Home</div>
+          <h3 class="step-title">We Inspect Your Home</h3>
           <div class="step-desc">A full inspection of your foundation, basement, or crawl space. We look at the walls, floors, grading, and drainage — inside and out.</div>
         </div>
 
@@ -2443,7 +2515,7 @@
             <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
           </div>
           <div class="step-number">Step 3</div>
-          <div class="step-title">You Get a Clear Proposal</div>
+          <h3 class="step-title">You Get a Clear Proposal</h3>
           <div class="step-desc">A written scope of work with a firm price. No vague estimates. You'll know exactly what needs to be done and what it costs before anything starts.</div>
         </div>
 
@@ -2453,7 +2525,7 @@
             <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
           </div>
           <div class="step-number">Step 4</div>
-          <div class="step-title">We Fix the Problem</div>
+          <h3 class="step-title">We Fix the Problem</h3>
           <div class="step-desc">The repair is completed, the site is cleaned up, and we walk you through everything that was done. You get documentation for your records.</div>
         </div>
 
@@ -2563,13 +2635,13 @@
           <p class="why-subtext">Most people calling about foundation or water problems have never dealt with this before. Here's what matters when choosing who to trust with your home.</p>
         </div>
         <h3>Honest Inspections, Not Sales Pitches</h3>
-        <p>If something doesn't need repair, we say so. The inspection covers your entire foundation, basement, or crawl space — and the proposal tells you exactly what's wrong, what fixes it, and what it costs. No pressure. No surprises on the invoice.</p>
+        <p>If something doesn't need repair, we say so. The inspection covers your entire foundation, basement, or crawl space — and the proposal tells you exactly what's wrong, what fixes it, and what it costs. No pressure. No surprises on the invoice. Same straight answer whether it's a small basement repair or a full structural job.</p>
 
         <h3>The Right Fix for How Chicago Homes Are Built</h3>
-        <p>Most homes here sit on clay soil that swells when wet and shrinks when dry. Add freeze-thaw cycles and a sewer system that backs up during heavy rain, and basements take a beating. We choose repair methods based on what's actually causing the damage — not a one-size-fits-all approach.</p>
+        <p>Most homes here sit on clay soil that swells when wet and shrinks when dry. Add freeze-thaw cycles and a sewer system that backs up during heavy rain, and basements take a beating. Greystones in Lincoln Park, bungalows in Oak Park, two-flats in Wicker Park — every Chicago neighborhood has its own way of breaking, and we've seen them all. We choose repair methods based on what's actually causing the damage — not a one-size-fits-all approach. That's what real foundation repair Chicago work looks like.</p>
 
         <h3>Affordable Options to Get Started</h3>
-        <p>Foundation and waterproofing work is rarely a planned expense. We price competitively and offer financing so the cost doesn't force you to put off a repair that's only going to get more expensive.</p>
+        <p>Foundation and waterproofing work is rarely a planned expense. <a href="/" style="color:#2563eb;text-decoration:underline;font-style:italic;">Queen Foundation Repair</a> prices competitively and offers financing so the cost doesn't force you to put off a repair that's only going to get more expensive. Same goes for basement waterproofing — wait too long and the scope grows.</p>
 
         <a href="javascript:void(0)" onclick="openModal()" class="why-cta">Get My Free Quote</a>
       </div>
@@ -2721,7 +2793,7 @@
             <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
           </button>
           <div class="faq-answer">
-            <p>It depends on the problem. Crack injection typically runs a few hundred dollars per crack. Interior waterproofing systems with a sump pump range from a few thousand up, depending on how much of the basement is affected. Structural work like piers or wall anchors costs more. Every home is different — the free inspection gives you a firm number, not a guess.</p>
+            <p>It depends on the problem. Crack injection typically runs a few hundred dollars per crack. Interior waterproofing systems with a sump pump range from a few thousand up, depending on how much of the basement is affected. Structural work like piers or wall anchors costs more. A basement crack repair runs at the low end; a full basement wall repair runs higher. Every home is different — the free inspection gives you a firm number, not a guess.</p>
           </div>
         </div>
 
@@ -2731,7 +2803,7 @@
             <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
           </button>
           <div class="faq-answer">
-            <p>Chicago uses a combined sewer system — storm runoff and sanitary sewage share the same pipes. During heavy rain, the system overloads and pushes water back into basements through floor drains. On top of that, clay soil holds water against foundation walls instead of draining it away. A properly designed interior drainage and sump pump system manages both problems.</p>
+            <p>Chicago uses a combined sewer system — storm runoff and sanitary sewage share the same pipes. During heavy rain, the system overloads and pushes water back into basements through floor drains. On top of that, clay soil holds water against foundation walls instead of draining it away. A properly designed interior drainage and sump pump system manages both problems. Most basement leak repair service calls fail because someone guessed at the entry point instead of finding it.</p>
           </div>
         </div>
 
@@ -2751,7 +2823,7 @@
             <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
           </button>
           <div class="faq-answer">
-            <p>Horizontal cracks and stair-step cracks in block walls usually mean the wall is under pressure from the soil outside — that's structural. Vertical hairline cracks in poured concrete are often from normal curing, but they still let water in. If a crack is wider than a quarter inch, growing, or letting water through, it should be inspected.</p>
+            <p>Horizontal cracks and stair-step cracks in block walls usually mean the wall is under pressure from the soil outside — that's structural. Vertical hairline cracks in poured concrete are often from normal curing, but they still let water in. The right basement crack repair depends on which kind of crack it is — patching the wrong one just hides it until the next freeze-thaw cycle. If a crack is wider than a quarter inch, growing, or letting water through, it should be inspected.</p>
           </div>
         </div>
 
@@ -2761,7 +2833,7 @@
             <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
           </button>
           <div class="faq-answer">
-            <p>Foundation problems don't stabilize on their own. Cracks widen. Walls bow further. Water damage compounds. A crack that costs a few hundred to seal now can become a wall replacement later. Every freeze-thaw cycle in Chicago makes existing damage worse. The earlier you address it, the smaller the scope and the lower the cost.</p>
+            <p>Foundation problems don't stabilize on their own. Cracks widen. Walls bow further. Water damage compounds. The cheap basement leak repair turns into basement wall repair turns into a basement foundation repair job. A crack that costs a few hundred to seal now can become a wall replacement later. Every freeze-thaw cycle in Chicago makes existing damage worse. The earlier you address it, the smaller the scope and the lower the cost.</p>
           </div>
         </div>
 
@@ -2771,7 +2843,7 @@
             <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
           </button>
           <div class="faq-answer">
-            <p>Yes. We serve Oak Park, Evanston, Cicero, Tinley Park, Bridgeview, Orland Park, Skokie, Des Plaines, Berwyn, Naperville, and communities throughout the greater Chicagoland area. If your area isn't listed, we may still be able to help — call to find out.</p>
+            <p>Yes. We work across Chicago and the close-in neighborhoods — Lincoln Park, Lakeview, Hyde Park and Wicker Park — plus Oak Park and Evanston in the inner-ring. If your area isn't listed, call us.</p>
           </div>
         </div>
       </div>
@@ -2794,6 +2866,22 @@
   });
 })();
 </script>
+
+<!-- ========================
+     SERVICE AREA
+     ======================== -->
+<section class="service-area">
+  <div class="service-area-inner" id="serviceAreaBox">
+    <button class="service-area-toggle" onclick="document.getElementById('serviceAreaBox').classList.toggle('active')">
+      <span class="service-area-arrow">&#9660;</span> Our Chicago Service Area
+    </button>
+    <div class="service-area-content">
+      <p class="service-area-desc">We serve homeowners across all of Chicago. If you don't see your specific neighborhood listed below, give us a call and we'll confirm.</p>
+      <p class="service-area-list"><strong>Neighborhoods:</strong> Albany Park, Andersonville, Archer Heights, Armour Square, Ashburn, Auburn Gresham, Austin, Avalon Park, Avondale, Belmont Cragin, Beverly, Boystown, Bridgeport, Brighton Park, Bronzeville, Bucktown, Burnside, Calumet Heights, Chatham, Chinatown, Clearing, Douglas, Dunning, East Garfield Park, East Side, Edgewater, Edison Park, Englewood, Forest Glen, Fuller Park, Gage Park, Garfield Ridge, Gold Coast, Grand Boulevard, Greater Grand Crossing, Greektown, Hegewisch, Hermosa, Humboldt Park, Hyde Park, Irving Park, Jefferson Park, Kenwood, Lake View, Lakeview, Lincoln Park, Lincoln Square, Little Village, Logan Square, Loop, Lower West Side, Magnificent Mile, McKinley Park, Montclare, Morgan Park, Mount Greenwood, Near North Side, Near South Side, Near West Side, New City, North Center, North Lawndale, North Park, Norwood Park, O'Hare, Oakland, Old Town, Pilsen, Portage Park, Pullman, River North, River West, Riverdale, Rogers Park, Roscoe Village, Roseland, South Chicago, South Deering, South Lawndale, South Loop, South Shore, Southport Corridor, Streeterville, Uptown, Washington Heights, Washington Park, West Elsdon, West Englewood, West Garfield Park, West Lawn, West Loop, West Pullman, West Ridge, West Town, Wicker Park, Woodlawn, Wrigleyville</p>
+      <p class="service-area-list"><strong>ZIP codes:</strong> 60601, 60602, 60603, 60604, 60605, 60606, 60607, 60608, 60609, 60610, 60611, 60612, 60613, 60614, 60615, 60616, 60617, 60618, 60619, 60620, 60621, 60622, 60623, 60624, 60625, 60626, 60628, 60629, 60630, 60631, 60632, 60633, 60634, 60636, 60637, 60638, 60639, 60640, 60641, 60642, 60643, 60644, 60645, 60646, 60647, 60649, 60651, 60652, 60653, 60654, 60655, 60656, 60657, 60659, 60660, 60661, 60707</p>
+    </div>
+  </div>
+</section>
 
 <!-- ========================
      FOOTER
@@ -2848,13 +2936,12 @@
         <a href="/">Home</a>
         <a href="/about-us/">About Us</a>
         <a href="/contact-us/">Contact Us</a>
-        <a href="/locations/">Areas We Serve</a>
       </div>
 
     </div>
 
     <div class="footer-bottom">
-      <span>&copy; 2026 Queen Foundation Repair. All rights reserved.</span>
+      <span>&copy; 2026 Conversion Lab LLC dba Queen Foundation Repair. All rights reserved.</span>
       <a href="/privacy-policy/">Privacy Policy</a>
     </div>
   </div>
@@ -2879,9 +2966,11 @@
         <option value="other">Other</option>
       </select>
       <textarea name="cf-field[cf-51368]" placeholder="Describe what you're seeing (cracks, water, uneven floors, etc.)" style="width:100%;padding:12px 14px;margin-bottom:12px;border:1px solid #d0d0d0;border-radius:6px;font-size:0.95rem;font-family:'Noto Sans',sans-serif;resize:vertical;min-height:60px;"></textarea>
-      <input type="hidden" name="api_key" value="pxudqTkwFqYCmkIVUU9IyOSineY7YDTe">
+      <input type="hidden" name="page_id" value="locations/foundation-repair-chicago-il">
       <input type="hidden" name="hostname" id="modalHostname" value="">
+      <div style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;overflow:hidden;" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
       <button type="submit" class="form-submit-btn">Get My Free Quote</button>
+      <p class="sms-consent" style="font-size:11px;color:#888;line-height:1.4;margin-top:10px;text-align:center;">By submitting this form, you consent to receive text messages from Queen Foundation Repair regarding your inquiry. Reply STOP to opt out. Msg &amp; data rates may apply.</p>
     </form>
     <div class="form-success" id="modalSuccess">
       <p><strong>Thank You For Your Submission!</strong></p>
@@ -2905,12 +2994,25 @@ function closeModal() {
 
 document.getElementById('modalForm').addEventListener('submit', function(e) {
   e.preventDefault();
+  if (this.querySelector('[name="website"]').value !== '') {
+    document.getElementById('modalForm').style.display = 'none';
+    document.getElementById('modalSuccess').style.display = 'block';
+    return;
+  }
+  var allText = '';
+  this.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea').forEach(function(el) { allText += el.value + ' '; });
+  if (/[\u0400-\u04FF\u0500-\u052F]/.test(allText)) {
+    document.getElementById('modalForm').style.display = 'none';
+    document.getElementById('modalSuccess').style.display = 'block';
+    return;
+  }
   var btn = this.querySelector('.form-submit-btn');
   btn.disabled = true;
   btn.textContent = 'Sending...';
-  var formData = new FormData(this);
-  fetch('https://app.leadsnap.com/embed/store', {
+  var formData = new URLSearchParams(new FormData(this)).toString();
+  fetch('/.netlify/functions/lead', {
     method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: formData
   }).then(function() {
     document.getElementById('modalForm').style.display = 'none';
@@ -2941,23 +3043,32 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
   "areaServed": [
     {
       "@type": "City",
-      "name": "Chicago"
+      "name": "Chicago",
+      "sameAs": "https://en.wikipedia.org/wiki/Chicago"
     },
     {
-      "@type": "City",
+      "@type": "Place",
+      "name": "Lincoln Park"
+    },
+    {
+      "@type": "Place",
+      "name": "Lakeview"
+    },
+    {
+      "@type": "Place",
+      "name": "Hyde Park"
+    },
+    {
+      "@type": "Place",
+      "name": "Wicker Park"
+    },
+    {
+      "@type": "Place",
       "name": "Oak Park"
     },
     {
-      "@type": "City",
+      "@type": "Place",
       "name": "Evanston"
-    },
-    {
-      "@type": "City",
-      "name": "Cicero"
-    },
-    {
-      "@type": "City",
-      "name": "Naperville"
     }
   ],
   "geo": {
@@ -3093,7 +3204,7 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
       "name": "How much does foundation repair cost in Chicago?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It depends on the problem. Crack injection typically runs a few hundred dollars per crack. Interior waterproofing systems with a sump pump range from a few thousand up, depending on how much of the basement is affected. Structural work like piers or wall anchors costs more. Every home is different \u2014 the free inspection gives you a firm number, not a guess."
+        "text": "It depends on the problem. Crack injection typically runs a few hundred dollars per crack. Interior waterproofing systems with a sump pump range from a few thousand up, depending on how much of the basement is affected. Structural work like piers or wall anchors costs more. A basement crack repair runs at the low end; a full basement wall repair runs higher. Every home is different \u2014 the free inspection gives you a firm number, not a guess."
       }
     },
     {
@@ -3101,7 +3212,7 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
       "name": "Why does my basement flood every time it rains?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chicago uses a combined sewer system \u2014 storm runoff and sanitary sewage share the same pipes. During heavy rain, the system overloads and pushes water back into basements through floor drains. On top of that, clay soil holds water against foundation walls instead of draining it away. A properly designed interior drainage and sump pump system manages both problems."
+        "text": "Chicago uses a combined sewer system \u2014 storm runoff and sanitary sewage share the same pipes. During heavy rain, the system overloads and pushes water back into basements through floor drains. On top of that, clay soil holds water against foundation walls instead of draining it away. A properly designed interior drainage and sump pump system manages both problems. Most basement leak repair service calls fail because someone guessed at the entry point instead of finding it."
       }
     },
     {
@@ -3117,7 +3228,7 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
       "name": "How do I know if a foundation crack is serious?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Horizontal cracks and stair-step cracks in block walls usually mean the wall is under pressure from the soil outside \u2014 that's structural. Vertical hairline cracks in poured concrete are often from normal curing, but they still let water in. If a crack is wider than a quarter inch, growing, or letting water through, it should be inspected."
+        "text": "Horizontal cracks and stair-step cracks in block walls usually mean the wall is under pressure from the soil outside \u2014 that's structural. Vertical hairline cracks in poured concrete are often from normal curing, but they still let water in. The right basement crack repair depends on which kind of crack it is \u2014 patching the wrong one just hides it until the next freeze-thaw cycle. If a crack is wider than a quarter inch, growing, or letting water through, it should be inspected."
       }
     },
     {
@@ -3125,7 +3236,7 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
       "name": "What happens if I wait to fix it?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Foundation problems don't stabilize on their own. Cracks widen. Walls bow further. Water damage compounds. A crack that costs a few hundred to seal now can become a wall replacement later. Every freeze-thaw cycle in Chicago makes existing damage worse. The earlier you address it, the smaller the scope and the lower the cost."
+        "text": "Foundation problems don't stabilize on their own. Cracks widen. Walls bow further. Water damage compounds. The cheap basement leak repair turns into basement wall repair turns into a basement foundation repair job. A crack that costs a few hundred to seal now can become a wall replacement later. Every freeze-thaw cycle in Chicago makes existing damage worse. The earlier you address it, the smaller the scope and the lower the cost."
       }
     },
     {
@@ -3133,7 +3244,7 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
       "name": "Do you serve areas outside of Chicago?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. We serve Oak Park, Evanston, Cicero, Tinley Park, Bridgeview, Orland Park, Skokie, Des Plaines, Berwyn, Naperville, and communities throughout the greater Chicagoland area. If your area isn't listed, we may still be able to help \u2014 call to find out."
+        "text": "Yes. We work across Chicago and the close-in neighborhoods \u2014 Lincoln Park, Lakeview, Hyde Park and Wicker Park \u2014 plus Oak Park and Evanston in the inner-ring. If your area isn't listed, call us."
       }
     }
   ]
@@ -3392,8 +3503,9 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
         <input type="tel" name="cf-field[pdf-phone]" placeholder="Mobile number" required>
       </div>
       <textarea name="cf-field[cf-51368]" placeholder="Message"></textarea>
-      <input type="hidden" name="api_key" value="pxudqTkwFqYCmkIVUU9IyOSineY7YDTe">
+      <input type="hidden" name="page_id" value="locations/foundation-repair-chicago-il">
       <input type="hidden" name="hostname" value="">
+      <div style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;overflow:hidden;" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
       <button type="submit" class="text-send-btn">Send</button>
     </form>
     <p class="text-widget-consent">By sending this message, you expressly consent to receive communications from us. You may opt out at any time.</p>
@@ -3418,11 +3530,23 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
 
   btn.addEventListener('click', function() {
     panel.classList.toggle('active');
+    sessionStorage.setItem('twSeen', '1');
   });
 
   closeBtn.addEventListener('click', function() {
     panel.classList.remove('active');
+    sessionStorage.setItem('twSeen', '1');
   });
+
+  // Auto-open after 20 seconds — once per session only
+  if (!sessionStorage.getItem('twSeen')) {
+    setTimeout(function() {
+      if (!panel.classList.contains('active')) {
+        panel.classList.add('active');
+        sessionStorage.setItem('twSeen', '1');
+      }
+    }, 60000);
+  }
 
   // Close on outside click
   document.addEventListener('click', function(e) {
@@ -3433,12 +3557,27 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
 
   form.addEventListener('submit', function(e) {
     e.preventDefault();
+    if (form.querySelector('[name="website"]').value !== '') {
+      form.style.display = 'none';
+      form.parentElement.querySelector('.text-widget-consent').style.display = 'none';
+      success.style.display = 'block';
+      return;
+    }
+    var allText = '';
+    form.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea').forEach(function(el) { allText += el.value + ' '; });
+    if (/[\u0400-\u04FF\u0500-\u052F]/.test(allText)) {
+      form.style.display = 'none';
+      form.parentElement.querySelector('.text-widget-consent').style.display = 'none';
+      success.style.display = 'block';
+      return;
+    }
     var submitBtn = form.querySelector('.text-send-btn');
     submitBtn.disabled = true;
     submitBtn.textContent = 'Sending...';
-    var formData = new FormData(form);
-    fetch('https://app.leadsnap.com/embed/store', {
+    var formData = new URLSearchParams(new FormData(form)).toString();
+    fetch('/.netlify/functions/lead', {
       method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: formData
     }).then(function() {
       form.style.display = 'none';

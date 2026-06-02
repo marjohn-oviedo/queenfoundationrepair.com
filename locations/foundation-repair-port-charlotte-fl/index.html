@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Port Charlotte, FL Foundation Repair, Basement Waterproofing & Crawl Space Repair | Concrete Leveling & Crack Repair Near Punta Gorda & North Port | Free Estimates — Queen Foundation Repair</title>
-<meta name="description" content="Foundation repair in Port Charlotte, FL. Slab settlement repair, concrete leveling, crawl space encapsulation, crack repair & French drain installation. Serving Charlotte County & surrounding areas. Call for a free estimate.">
+<title>Port Charlotte, FL Foundation Repair, Crawl Space Repair & Crawl Space Encapsulation | Riverwood, Deep Creek & Murdock | Free Estimates</title>
+<meta name="description" content="Foundation repair, crawl space repair, crawl space waterproofing & crawl space encapsulation in Port Charlotte, FL. Serving Riverwood, Deep Creek, South Gulf Cove, Murdock & Charlotte Harbor. Free estimates.">
 <link rel="canonical" href="https://queenfoundationrepair.com/locations/foundation-repair-port-charlotte-fl/">
 <meta name="robots" content="index, follow">
-<meta property="og:title" content="Port Charlotte, FL Foundation Repair, Basement Waterproofing & Crawl Space Repair | Concrete Leveling & Crack Repair Near Punta Gorda & North Port | Free Estimates — Queen Foundation Repair">
-<meta property="og:description" content="Foundation repair in Port Charlotte, FL. Slab settlement repair, concrete leveling, crawl space encapsulation, crack repair & French drain installation. Serving Charlotte County & surrounding areas. Call for a free estimate.">
+<meta property="og:title" content="Port Charlotte, FL Foundation Repair, Crawl Space Repair & Crawl Space Encapsulation | Riverwood, Deep Creek & Murdock | Free Estimates">
+<meta property="og:description" content="Foundation repair, crawl space repair, crawl space waterproofing & crawl space encapsulation in Port Charlotte, FL. Serving Riverwood, Deep Creek, South Gulf Cove, Murdock & Charlotte Harbor. Free estimates.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://queenfoundationrepair.com/locations/foundation-repair-port-charlotte-fl/">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -947,6 +947,7 @@
   }
 
   .step-title {
+    margin-top: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 1.1rem;
@@ -1802,6 +1803,62 @@
   .footer-social a { color: #666; transition: color 0.2s; }
   .footer-social a:hover { color: #fff; }
   .footer-social svg { width: 18px; height: 18px; fill: currentColor; }
+
+  /* SERVICE AREA SECTION */
+  .service-area {
+    background: #ffffff;
+    padding: 70px 30px;
+  }
+  .service-area-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .service-area-toggle {
+    width: 100%;
+    background: #fff;
+    border: none;
+    padding: 18px 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #1a1a1a;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  .service-area-toggle:hover { background: #f8f9fa; }
+  .service-area-arrow { font-size: 0.7rem; transition: transform 0.3s; }
+  .service-area-inner.active .service-area-arrow { transform: rotate(180deg); }
+  .service-area-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding: 0 24px;
+  }
+  .service-area-inner.active .service-area-content {
+    max-height: 1500px;
+    padding: 20px 24px 24px;
+  }
+  .service-area-desc {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  .service-area-list {
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.7;
+    margin: 0 0 12px 0;
+  }
+  .service-area-list strong { color: #1a1a1a; }
 </style>
 <link rel="icon" type="image/png" href="../../favicon.png">
 </head>
@@ -1930,7 +1987,7 @@
     <!-- Right: Form -->
     <div class="hero-form-wrap">
       <p class="form-heading">I'm Ready For A Free Quote</p>
-      <form id="leadForm" method="post" action="https://app.leadsnap.com/embed/store">
+      <form id="leadForm" method="post" action="/.netlify/functions/lead">
         <input type="text" name="cf-field[pdf-name]" placeholder="Full Name" required>
         <input type="tel" name="cf-field[pdf-phone]" placeholder="Phone Number" required>
         <input type="text" name="cf-field[pdf-zipcode]" placeholder="Zip Code" required>
@@ -1942,9 +1999,11 @@
           <option value="other">Other</option>
         </select>
         <textarea name="cf-field[cf-51368]" placeholder="Describe what you're seeing (cracks, water, uneven floors, etc.)" style="width:100%;padding:12px 14px;margin-bottom:10px;border:1px solid #d1d5db;border-radius:6px;font-family:'Noto Sans',sans-serif;font-size:0.9rem;color:#333;background:#fff;resize:vertical;min-height:60px;outline:none;-webkit-appearance:none;"></textarea>
-        <input type="hidden" name="api_key" value="QvMPDKm2A8H4uvtJbFFlV0IKICTZ3soJ">
+        <input type="hidden" name="page_id" value="locations/foundation-repair-port-charlotte-fl">
         <input type="hidden" name="hostname" id="hostname" value="">
+        <div style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;overflow:hidden;" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
         <button type="submit" class="form-submit-btn">Get My Free Quote</button>
+        <p class="sms-consent" style="font-size:11px;color:#888;line-height:1.4;margin-top:10px;text-align:center;">By submitting this form, you consent to receive text messages from Queen Foundation Repair regarding your inquiry. Reply STOP to opt out. Msg &amp; data rates may apply.</p>
       </form>
       <div class="form-success" id="formSuccess">
         <p><strong>Thank You For Your Submission!</strong></p>
@@ -1956,12 +2015,25 @@
       document.getElementById('hostname').value = window.location.hostname;
       document.getElementById('leadForm').addEventListener('submit', function(e) {
         e.preventDefault();
+        if (this.querySelector('[name="website"]').value !== '') {
+          document.getElementById('leadForm').style.display = 'none';
+          document.getElementById('formSuccess').style.display = 'block';
+          return;
+        }
+        var allText = '';
+        this.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea').forEach(function(el) { allText += el.value + ' '; });
+        if (/[\u0400-\u04FF\u0500-\u052F]/.test(allText)) {
+          document.getElementById('leadForm').style.display = 'none';
+          document.getElementById('formSuccess').style.display = 'block';
+          return;
+        }
         var btn = this.querySelector('.form-submit-btn');
         btn.disabled = true;
         btn.textContent = 'Sending...';
-        var formData = new FormData(this);
-        fetch('https://app.leadsnap.com/embed/store', {
+        var formData = new URLSearchParams(new FormData(this)).toString();
+        fetch('/.netlify/functions/lead', {
           method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body: formData
         }).then(function() {
           document.getElementById('leadForm').style.display = 'none';
@@ -2423,7 +2495,7 @@
             <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
           </div>
           <div class="step-number">Step 1</div>
-          <div class="step-title">Schedule a Free Inspection</div>
+          <h3 class="step-title">Schedule a Free Inspection</h3>
           <div class="step-desc">Call or submit a request online. We'll set a time for a thorough inspection of your foundation, floors, walls, and drainage — no cost, no obligation.</div>
         </div>
 
@@ -2433,7 +2505,7 @@
             <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
           </div>
           <div class="step-number">Step 2</div>
-          <div class="step-title">Get a Clear Diagnosis</div>
+          <h3 class="step-title">Get a Clear Diagnosis</h3>
           <div class="step-desc">The inspection covers the interior and exterior of your home. You'll get a plain-language explanation of what's happening, what's causing it, and whether it actually needs repair.</div>
         </div>
 
@@ -2443,7 +2515,7 @@
             <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
           </div>
           <div class="step-number">Step 3</div>
-          <div class="step-title">Review Your Repair Plan</div>
+          <h3 class="step-title">Review Your Repair Plan</h3>
           <div class="step-desc">You'll receive a written proposal with the recommended repair method, scope of work, timeline, and cost. Take it home, compare quotes, and decide on your own time.</div>
         </div>
 
@@ -2453,7 +2525,7 @@
             <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
           </div>
           <div class="step-number">Step 4</div>
-          <div class="step-title">Foundation Repaired</div>
+          <h3 class="step-title">Foundation Repaired</h3>
           <div class="step-desc">The repair is completed with minimal disruption to your home. When the work is done, you'll walk through the results and receive documentation of everything that was installed.</div>
         </div>
 
@@ -2563,13 +2635,13 @@
           <p class="why-subtext">Foundation problems are stressful enough without dealing with pressure tactics, vague pricing, or companies that can't explain what's wrong. Here's what to expect instead.</p>
         </div>
         <h3>Straight Answers, Not a Sales Pitch</h3>
-        <p>The inspection isn't a setup for a hard close. You get a written proposal with a clear scope, cost, and repair method — then you take it home and decide. No same-day pressure. No expiring discounts. If the inspection shows you don't need work, you'll hear that too.</p>
+        <p>The inspection isn't a setup for a hard close. You get a written proposal with a clear scope, cost, and repair method — then you take it home and decide. No same-day pressure. No expiring discounts. If the inspection shows you don't need work, you'll hear that too. Foundation repair in Port Charlotte starts with a real inspection. Homeowners in Riverwood call for a foundation inspection when settlement cracks first show.</p>
 
         <h3>Repairs Built for This Ground</h3>
-        <p>Port Charlotte sits on sandy soil over limestone. That soil erodes during heavy rain, compacts during dry months, and creates voids beneath slab foundations. Every repair recommendation accounts for what's actually happening underground — not a one-size-fits-all playbook.</p>
+        <p>Port Charlotte sits on sandy soil over limestone. That soil erodes during heavy rain, compacts during dry months, and creates voids beneath slab foundations. Every repair recommendation accounts for what's actually happening underground — not a one-size-fits-all playbook. Crawl space waterproofing handles moisture buildup under elevated homes. Crawl space encapsulation in Deep Creek seals the underside long-term once drainage is right.</p>
 
         <h3>The Problem Gets Fixed, Not Covered Up</h3>
-        <p>Some homes in Charlotte County had cosmetic repairs after Hurricane Ian — new drywall, fresh paint — while the foundation beneath kept shifting. A proper repair addresses the structural cause, not just the visible symptoms. That's the difference between a fix that holds and one that cracks again in a year.</p>
+        <p>Some homes in Charlotte County had cosmetic repairs after Hurricane Ian — new drywall, fresh paint — while the foundation beneath kept shifting. <a href="/" style="color:#2563eb;text-decoration:underline;font-style:italic;">Queen Foundation Repair</a> addresses the structural cause, not just the visible symptoms. That's the difference between a fix that holds and one that cracks again in a year. Foundation crack repair on slab homes in Murdock often starts after storms reopen old hairline cracks. Crawl space repair in Port Charlotte covers elevated homes near Charlotte Harbor and South Gulf Cove.</p>
 
         <a href="javascript:void(0)" onclick="openModal()" class="why-cta">Get My Free Quote</a>
       </div>
@@ -2796,6 +2868,22 @@
 </script>
 
 <!-- ========================
+     SERVICE AREA
+     ======================== -->
+<section class="service-area">
+  <div class="service-area-inner" id="serviceAreaBox">
+    <button class="service-area-toggle" onclick="document.getElementById('serviceAreaBox').classList.toggle('active')">
+      <span class="service-area-arrow">&#9660;</span> Our Port Charlotte Service Area
+    </button>
+    <div class="service-area-content">
+      <p class="service-area-desc">We serve homeowners across all of Port Charlotte. If you don't see your specific neighborhood listed below, give us a call and we'll confirm.</p>
+      <p class="service-area-list"><strong>Neighborhoods:</strong> Charlotte Harbor, Gardens of Gulf Cove, Heritage Oak Park, South Gulf Cove</p>
+      <p class="service-area-list"><strong>ZIP codes:</strong> 33948, 33952, 33953, 33954, 33980, 33981, 33983</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========================
      FOOTER
      ======================== -->
 <footer class="site-footer">
@@ -2848,13 +2936,12 @@
         <a href="/">Home</a>
         <a href="/about-us/">About Us</a>
         <a href="/contact-us/">Contact Us</a>
-        <a href="/locations/">Areas We Serve</a>
       </div>
 
     </div>
 
     <div class="footer-bottom">
-      <span>&copy; 2026 Queen Foundation Repair. All rights reserved.</span>
+      <span>&copy; 2026 Conversion Lab LLC dba Queen Foundation Repair. All rights reserved.</span>
       <a href="/privacy-policy/">Privacy Policy</a>
     </div>
   </div>
@@ -2879,9 +2966,11 @@
         <option value="other">Other</option>
       </select>
       <textarea name="cf-field[cf-51368]" placeholder="Describe what you're seeing (cracks, water, uneven floors, etc.)" style="width:100%;padding:12px 14px;margin-bottom:12px;border:1px solid #d0d0d0;border-radius:6px;font-size:0.95rem;font-family:'Noto Sans',sans-serif;resize:vertical;min-height:60px;"></textarea>
-      <input type="hidden" name="api_key" value="QvMPDKm2A8H4uvtJbFFlV0IKICTZ3soJ">
+      <input type="hidden" name="page_id" value="locations/foundation-repair-port-charlotte-fl">
       <input type="hidden" name="hostname" id="modalHostname" value="">
+      <div style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;overflow:hidden;" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
       <button type="submit" class="form-submit-btn">Get My Free Quote</button>
+      <p class="sms-consent" style="font-size:11px;color:#888;line-height:1.4;margin-top:10px;text-align:center;">By submitting this form, you consent to receive text messages from Queen Foundation Repair regarding your inquiry. Reply STOP to opt out. Msg &amp; data rates may apply.</p>
     </form>
     <div class="form-success" id="modalSuccess">
       <p><strong>Thank You For Your Submission!</strong></p>
@@ -2905,12 +2994,25 @@ function closeModal() {
 
 document.getElementById('modalForm').addEventListener('submit', function(e) {
   e.preventDefault();
+  if (this.querySelector('[name="website"]').value !== '') {
+    document.getElementById('modalForm').style.display = 'none';
+    document.getElementById('modalSuccess').style.display = 'block';
+    return;
+  }
+  var allText = '';
+  this.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea').forEach(function(el) { allText += el.value + ' '; });
+  if (/[\u0400-\u04FF\u0500-\u052F]/.test(allText)) {
+    document.getElementById('modalForm').style.display = 'none';
+    document.getElementById('modalSuccess').style.display = 'block';
+    return;
+  }
   var btn = this.querySelector('.form-submit-btn');
   btn.disabled = true;
   btn.textContent = 'Sending...';
-  var formData = new FormData(this);
-  fetch('https://app.leadsnap.com/embed/store', {
+  var formData = new URLSearchParams(new FormData(this)).toString();
+  fetch('/.netlify/functions/lead', {
     method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: formData
   }).then(function() {
     document.getElementById('modalForm').style.display = 'none';
@@ -2943,32 +3045,24 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
       "name": "Port Charlotte, FL"
     },
     {
-      "@type": "City",
-      "name": "Punta Gorda, FL"
+      "@type": "Place",
+      "name": "Riverwood"
     },
     {
-      "@type": "City",
-      "name": "North Port, FL"
+      "@type": "Place",
+      "name": "Deep Creek"
     },
     {
-      "@type": "City",
-      "name": "Englewood, FL"
+      "@type": "Place",
+      "name": "South Gulf Cove"
     },
     {
-      "@type": "City",
-      "name": "Deep Creek, FL"
+      "@type": "Place",
+      "name": "Murdock"
     },
     {
-      "@type": "City",
-      "name": "Rotonda West, FL"
-    },
-    {
-      "@type": "City",
-      "name": "Gulf Cove, FL"
-    },
-    {
-      "@type": "City",
-      "name": "Murdock, FL"
+      "@type": "Place",
+      "name": "Charlotte Harbor"
     }
   ],
   "openingHoursSpecification": {
@@ -3413,8 +3507,9 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
         <input type="tel" name="cf-field[pdf-phone]" placeholder="Mobile number" required>
       </div>
       <textarea name="cf-field[cf-51368]" placeholder="Message"></textarea>
-      <input type="hidden" name="api_key" value="QvMPDKm2A8H4uvtJbFFlV0IKICTZ3soJ">
+      <input type="hidden" name="page_id" value="locations/foundation-repair-port-charlotte-fl">
       <input type="hidden" name="hostname" value="">
+      <div style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;overflow:hidden;" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
       <button type="submit" class="text-send-btn">Send</button>
     </form>
     <p class="text-widget-consent">By sending this message, you expressly consent to receive communications from us. You may opt out at any time.</p>
@@ -3439,11 +3534,23 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
 
   btn.addEventListener('click', function() {
     panel.classList.toggle('active');
+    sessionStorage.setItem('twSeen', '1');
   });
 
   closeBtn.addEventListener('click', function() {
     panel.classList.remove('active');
+    sessionStorage.setItem('twSeen', '1');
   });
+
+  // Auto-open after 20 seconds — once per session only
+  if (!sessionStorage.getItem('twSeen')) {
+    setTimeout(function() {
+      if (!panel.classList.contains('active')) {
+        panel.classList.add('active');
+        sessionStorage.setItem('twSeen', '1');
+      }
+    }, 60000);
+  }
 
   // Close on outside click
   document.addEventListener('click', function(e) {
@@ -3454,12 +3561,27 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
 
   form.addEventListener('submit', function(e) {
     e.preventDefault();
+    if (form.querySelector('[name="website"]').value !== '') {
+      form.style.display = 'none';
+      form.parentElement.querySelector('.text-widget-consent').style.display = 'none';
+      success.style.display = 'block';
+      return;
+    }
+    var allText = '';
+    form.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea').forEach(function(el) { allText += el.value + ' '; });
+    if (/[\u0400-\u04FF\u0500-\u052F]/.test(allText)) {
+      form.style.display = 'none';
+      form.parentElement.querySelector('.text-widget-consent').style.display = 'none';
+      success.style.display = 'block';
+      return;
+    }
     var submitBtn = form.querySelector('.text-send-btn');
     submitBtn.disabled = true;
     submitBtn.textContent = 'Sending...';
-    var formData = new FormData(form);
-    fetch('https://app.leadsnap.com/embed/store', {
+    var formData = new URLSearchParams(new FormData(form)).toString();
+    fetch('/.netlify/functions/lead', {
       method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: formData
     }).then(function() {
       form.style.display = 'none';

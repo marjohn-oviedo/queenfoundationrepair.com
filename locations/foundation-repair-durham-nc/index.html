@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Durham NC Foundation Repair | Basement Waterproofing, Crawl Space Repair &amp; Encapsulation. Serving Surrounding Areas Like Raleigh, Cary, Apex &amp; More. Call Now for a Free Estimate.</title>
-<meta name="description" content="Foundation repair, basement waterproofing &amp; crawl space services in Durham, NC. Free inspections, honest estimates. Serving Trinity Park, Duke Park, Hope Valley &amp; all of Durham County.">
+<title>Durham, NC Foundation Repair, Basement Waterproofing & Crawl Space Repair | Hope Valley, Forest Hills & Trinity Park | Free Estimates</title>
+<meta name="description" content="Foundation repair, basement waterproofing, crawl space repair & basement sealing in Durham, NC. Serving Hope Valley, Forest Hills, Trinity Park & Duke Park. Free estimates.">
 <link rel="canonical" href="https://queenfoundationrepair.com/locations/foundation-repair-durham-nc/">
 <meta name="robots" content="index, follow">
-<meta property="og:title" content="Durham NC Foundation Repair | Basement Waterproofing, Crawl Space Repair &amp; Encapsulation. Serving Surrounding Areas Like Raleigh, Cary, Apex &amp; More. Call Now for a Free Estimate.">
-<meta property="og:description" content="Foundation repair, basement waterproofing &amp; crawl space services in Durham, NC. Free inspections, honest estimates. Serving Trinity Park, Duke Park, Hope Valley &amp; all of Durham County.">
+<meta property="og:title" content="Durham, NC Foundation Repair, Basement Waterproofing & Crawl Space Repair | Hope Valley, Forest Hills & Trinity Park | Free Estimates">
+<meta property="og:description" content="Foundation repair, basement waterproofing, crawl space repair & basement sealing in Durham, NC. Serving Hope Valley, Forest Hills, Trinity Park & Duke Park. Free estimates.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://queenfoundationrepair.com/locations/foundation-repair-durham-nc/">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -947,6 +947,7 @@
   }
 
   .step-title {
+    margin-top: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 1.1rem;
@@ -1802,6 +1803,62 @@
   .footer-social a { color: #666; transition: color 0.2s; }
   .footer-social a:hover { color: #fff; }
   .footer-social svg { width: 18px; height: 18px; fill: currentColor; }
+
+  /* SERVICE AREA SECTION */
+  .service-area {
+    background: #ffffff;
+    padding: 70px 30px;
+  }
+  .service-area-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .service-area-toggle {
+    width: 100%;
+    background: #fff;
+    border: none;
+    padding: 18px 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #1a1a1a;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  .service-area-toggle:hover { background: #f8f9fa; }
+  .service-area-arrow { font-size: 0.7rem; transition: transform 0.3s; }
+  .service-area-inner.active .service-area-arrow { transform: rotate(180deg); }
+  .service-area-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding: 0 24px;
+  }
+  .service-area-inner.active .service-area-content {
+    max-height: 1500px;
+    padding: 20px 24px 24px;
+  }
+  .service-area-desc {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  .service-area-list {
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.7;
+    margin: 0 0 12px 0;
+  }
+  .service-area-list strong { color: #1a1a1a; }
 </style>
 <link rel="icon" type="image/png" href="../../favicon.png">
 </head>
@@ -1930,7 +1987,7 @@
     <!-- Right: Form -->
     <div class="hero-form-wrap">
       <p class="form-heading">I'm Ready For A Free Quote</p>
-      <form id="leadForm" method="post" action="https://app.leadsnap.com/embed/store">
+      <form id="leadForm" method="post" action="/.netlify/functions/lead">
         <input type="text" name="cf-field[pdf-name]" placeholder="Full Name" required>
         <input type="tel" name="cf-field[pdf-phone]" placeholder="Phone Number" required>
         <input type="text" name="cf-field[pdf-zipcode]" placeholder="Zip Code" required>
@@ -1942,9 +1999,11 @@
           <option value="other">Other</option>
         </select>
         <textarea name="cf-field[cf-51368]" placeholder="Describe what you're seeing (cracks, water, uneven floors, etc.)" style="width:100%;padding:12px 14px;margin-bottom:10px;border:1px solid #d1d5db;border-radius:6px;font-family:'Noto Sans',sans-serif;font-size:0.9rem;color:#333;background:#fff;resize:vertical;min-height:60px;outline:none;-webkit-appearance:none;"></textarea>
-        <input type="hidden" name="api_key" value="Zr6l7VVdeErl8NQEhGuxyuO5dpJ8pEE1">
+        <input type="hidden" name="page_id" value="locations/foundation-repair-durham-nc">
         <input type="hidden" name="hostname" id="hostname" value="">
+        <div style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;overflow:hidden;" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
         <button type="submit" class="form-submit-btn">Get My Free Quote</button>
+        <p class="sms-consent" style="font-size:11px;color:#888;line-height:1.4;margin-top:10px;text-align:center;">By submitting this form, you consent to receive text messages from Queen Foundation Repair regarding your inquiry. Reply STOP to opt out. Msg &amp; data rates may apply.</p>
       </form>
       <div class="form-success" id="formSuccess">
         <p><strong>Thank You For Your Submission!</strong></p>
@@ -1956,12 +2015,25 @@
       document.getElementById('hostname').value = window.location.hostname;
       document.getElementById('leadForm').addEventListener('submit', function(e) {
         e.preventDefault();
+        if (this.querySelector('[name="website"]').value !== '') {
+          document.getElementById('leadForm').style.display = 'none';
+          document.getElementById('formSuccess').style.display = 'block';
+          return;
+        }
+        var allText = '';
+        this.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea').forEach(function(el) { allText += el.value + ' '; });
+        if (/[\u0400-\u04FF\u0500-\u052F]/.test(allText)) {
+          document.getElementById('leadForm').style.display = 'none';
+          document.getElementById('formSuccess').style.display = 'block';
+          return;
+        }
         var btn = this.querySelector('.form-submit-btn');
         btn.disabled = true;
         btn.textContent = 'Sending...';
-        var formData = new FormData(this);
-        fetch('https://app.leadsnap.com/embed/store', {
+        var formData = new URLSearchParams(new FormData(this)).toString();
+        fetch('/.netlify/functions/lead', {
           method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body: formData
         }).then(function() {
           document.getElementById('leadForm').style.display = 'none';
@@ -2423,7 +2495,7 @@
             <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
           </div>
           <div class="step-number">Step 1</div>
-          <div class="step-title">Book a Free Inspection</div>
+          <h3 class="step-title">Book a Free Inspection</h3>
           <div class="step-desc">We come to your home, check your foundation, crawl space, or basement, and show you exactly what&#39;s going on. No cost. No pressure. If it doesn&#39;t need repair, we&#39;ll tell you.</div>
         </div>
 
@@ -2433,7 +2505,7 @@
             <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
           </div>
           <div class="step-number">Step 2</div>
-          <div class="step-title">Get a Clear Repair Plan</div>
+          <h3 class="step-title">Get a Clear Repair Plan</h3>
           <div class="step-desc">Every home in Durham sits on different soil, has a different foundation type, and fails differently. We build a plan around your problem &#8212; not a one-size-fits-all quote.</div>
         </div>
 
@@ -2443,7 +2515,7 @@
             <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
           </div>
           <div class="step-number">Step 3</div>
-          <div class="step-title">We Handle the Repair</div>
+          <h3 class="step-title">We Handle the Repair</h3>
           <div class="step-desc">Our crew shows up on time, does the work, and cleans up. Most jobs finish in one to three days without tearing up your yard or turning your house upside down.</div>
         </div>
 
@@ -2453,7 +2525,7 @@
             <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
           </div>
           <div class="step-number">Step 4</div>
-          <div class="step-title">Your Home Is Stable Again</div>
+          <h3 class="step-title">Your Home Is Stable Again</h3>
           <div class="step-desc">No more cracks spreading. No more floors sloping. No more water where it shouldn&#39;t be. Your foundation is fixed and your home is protected.</div>
         </div>
 
@@ -2563,13 +2635,13 @@
           <p class="why-subtext">We fix the problems that come with owning a home on Piedmont red clay.</p>
         </div>
         <h3>Foundation Solutions Built for Durham&#39;s Soil</h3>
-        <p>A 1930s bungalow in Duke Park doesn&#39;t need the same fix as a 1990s home in Woodcroft. Durham sits on Cecil clay &#8212; the deep red Piedmont soil that swells when it rains and pulls away from your foundation when it dries. That wet-dry cycle has been pushing and pulling on homes here for decades. We match the repair to your foundation &#8212; helical piers for settling on deep clay, wall anchors for bowing walls under pressure, crawl space jacks for sagging floors in older homes. Your house, your fix.</p>
+        <p>A 1930s bungalow in Trinity Park doesn&#39;t need the same fix as a 1990s home in Woodcroft or a brick colonial in Forest Hills. Durham sits on Cecil clay &#8212; the deep red Piedmont soil that swells when it rains and pulls away from your foundation when it dries. That wet-dry cycle has been pushing and pulling on homes here for decades. We match the repair to your foundation &#8212; helical piers for settling on deep clay, wall anchors for bowing walls under pressure, crawl space jacks for sagging floors in older homes. Hire a foundation contractor who matches the method to the actual movement. That is what foundation repair Durham work should look like. Crawl space contractor calls in Duke Park usually start with sagging floors in older brick homes.</p>
 
         <h3>Crawl Space and Moisture Experts in the Triangle</h3>
-        <p>Durham gets over 46 inches of rain a year. Add 70-plus percent humidity from May through September, and crawl spaces take a beating. Homes from Trinity Park to Hope Valley deal with the same thing &#8212; moisture building up under the house, rotting the wood, and pushing musty air upstairs. If your floors feel soft or your allergies get worse inside, the crawl space is usually the source. We find where the moisture is getting in and shut it down.</p>
+        <p>Durham gets over 46 inches of rain a year. Add 70-plus percent humidity from May through September, and crawl spaces take a beating. Homes from Trinity Park to Hope Valley and Old North Durham deal with the same thing &#8212; moisture building up under the house, rotting the wood, and pushing musty air upstairs. If your floors feel soft or your allergies get worse inside, the crawl space is usually the source. We find where the moisture is getting in and shut it down. Crawl space waterproofing handles the water source &#8212; gutters, grading, drainage &#8212; not just the air. If you already see soft floors or musty smell, you may need a dry rot specialist before encapsulation will help. Basement sealing handles the wall side. Crawl space repairs handle the floor side.</p>
 
         <h3>Free Inspections, Honest Estimates</h3>
-        <p>We tell you what&#39;s wrong and what it costs to fix. No scare tactics. No inflated quotes. If something doesn&#39;t need repair, we&#39;ll say so. Queen Foundation Repair gives every homeowner the same deal &#8212; a free inspection, a written plan, and a crew that shows up and follows through.</p>
+        <p>We tell you what&#39;s wrong and what it costs to fix. No scare tactics. No inflated quotes. If something doesn&#39;t need repair, we&#39;ll say so. Same with basement waterproofing Durham &#8212; written quote first, work after. <a href="/" style="color:#2563eb;text-decoration:underline;font-style:italic;">Queen Foundation Repair</a> serves Chapel Hill and central Durham the same way &#8212; a free inspection, a written plan, and a crew that shows up and follows through. A basement waterproofing contractor in Durham gets called in when water reappears after the first fix. Basement repairs follow the same diagnostic order. Basement waterproofing repair stops at the actual leak source.</p>
 
         <a href="javascript:void(0)" onclick="openModal()" class="why-cta">Get My Free Quote</a>
       </div>
@@ -2761,7 +2833,7 @@
             <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
           </button>
           <div class="faq-answer">
-            <p>It depends on the problem. A single crack seal might run a few hundred dollars. A moderate repair with four to six piers typically falls between four and ten thousand. Major structural work with multiple piers, wall anchors, and drainage can go higher. We give you an exact written number during your free inspection &#8212; no ranges, no surprises.</p>
+            <p>It depends on the problem. A single crack seal might run a few hundred dollars. A small basement repair sits at the low end. A full basement foundation repair runs higher. A moderate repair with four to six piers typically falls between four and ten thousand. Major structural work with multiple piers, wall anchors, and drainage can go higher. We give you an exact written number during your free inspection &#8212; no ranges, no surprises.</p>
           </div>
         </div>
 
@@ -2794,6 +2866,22 @@
   });
 })();
 </script>
+
+<!-- ========================
+     SERVICE AREA
+     ======================== -->
+<section class="service-area">
+  <div class="service-area-inner" id="serviceAreaBox">
+    <button class="service-area-toggle" onclick="document.getElementById('serviceAreaBox').classList.toggle('active')">
+      <span class="service-area-arrow">&#9660;</span> Our Durham Service Area
+    </button>
+    <div class="service-area-content">
+      <p class="service-area-desc">We serve homeowners across all of Durham. If you don't see your specific neighborhood listed below, give us a call and we'll confirm.</p>
+      <p class="service-area-list"><strong>Neighborhoods:</strong> Bishop's Gate, Buckingham Lake, Downtown, Duke Forest, Duke Park, Dunes, Forest Hills, Helderberg, Hope Valley, Hope Valley Forest, Lakewood, Old North Durham, Old West Durham, Trinity Park, Tuscaloosa-Lakewood, Watts-Hillandale, Woodcroft</p>
+      <p class="service-area-list"><strong>ZIP codes:</strong> 27701, 27703, 27704, 27705, 27707, 27709, 27712, 27713</p>
+    </div>
+  </div>
+</section>
 
 <!-- ========================
      FOOTER
@@ -2848,13 +2936,12 @@
         <a href="/">Home</a>
         <a href="/about-us/">About Us</a>
         <a href="/contact-us/">Contact Us</a>
-        <a href="/locations/">Areas We Serve</a>
       </div>
 
     </div>
 
     <div class="footer-bottom">
-      <span>&copy; 2026 Queen Foundation Repair. All rights reserved.</span>
+      <span>&copy; 2026 Conversion Lab LLC dba Queen Foundation Repair. All rights reserved.</span>
       <a href="/privacy-policy/">Privacy Policy</a>
     </div>
   </div>
@@ -2879,9 +2966,11 @@
         <option value="other">Other</option>
       </select>
       <textarea name="cf-field[cf-51368]" placeholder="Describe what you're seeing (cracks, water, uneven floors, etc.)" style="width:100%;padding:12px 14px;margin-bottom:12px;border:1px solid #d0d0d0;border-radius:6px;font-size:0.95rem;font-family:'Noto Sans',sans-serif;resize:vertical;min-height:60px;"></textarea>
-      <input type="hidden" name="api_key" value="Zr6l7VVdeErl8NQEhGuxyuO5dpJ8pEE1">
+      <input type="hidden" name="page_id" value="locations/foundation-repair-durham-nc">
       <input type="hidden" name="hostname" id="modalHostname" value="">
+      <div style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;overflow:hidden;" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
       <button type="submit" class="form-submit-btn">Get My Free Quote</button>
+      <p class="sms-consent" style="font-size:11px;color:#888;line-height:1.4;margin-top:10px;text-align:center;">By submitting this form, you consent to receive text messages from Queen Foundation Repair regarding your inquiry. Reply STOP to opt out. Msg &amp; data rates may apply.</p>
     </form>
     <div class="form-success" id="modalSuccess">
       <p><strong>Thank You For Your Submission!</strong></p>
@@ -2905,12 +2994,25 @@ function closeModal() {
 
 document.getElementById('modalForm').addEventListener('submit', function(e) {
   e.preventDefault();
+  if (this.querySelector('[name="website"]').value !== '') {
+    document.getElementById('modalForm').style.display = 'none';
+    document.getElementById('modalSuccess').style.display = 'block';
+    return;
+  }
+  var allText = '';
+  this.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea').forEach(function(el) { allText += el.value + ' '; });
+  if (/[\u0400-\u04FF\u0500-\u052F]/.test(allText)) {
+    document.getElementById('modalForm').style.display = 'none';
+    document.getElementById('modalSuccess').style.display = 'block';
+    return;
+  }
   var btn = this.querySelector('.form-submit-btn');
   btn.disabled = true;
   btn.textContent = 'Sending...';
-  var formData = new FormData(this);
-  fetch('https://app.leadsnap.com/embed/store', {
+  var formData = new URLSearchParams(new FormData(this)).toString();
+  fetch('/.netlify/functions/lead', {
     method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: formData
   }).then(function() {
     document.getElementById('modalForm').style.display = 'none';
@@ -2936,35 +3038,24 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
   "areaServed": [
     {
       "@type": "City",
-      "name": "Durham, NC"
+      "name": "Durham",
+      "sameAs": "https://en.wikipedia.org/wiki/Durham,_North_Carolina"
     },
     {
-      "@type": "City",
-      "name": "Chapel Hill, NC"
+      "@type": "Place",
+      "name": "Hope Valley"
     },
     {
-      "@type": "City",
-      "name": "Raleigh, NC"
+      "@type": "Place",
+      "name": "Forest Hills"
     },
     {
-      "@type": "City",
-      "name": "Cary, NC"
+      "@type": "Place",
+      "name": "Trinity Park"
     },
     {
-      "@type": "City",
-      "name": "Morrisville, NC"
-    },
-    {
-      "@type": "City",
-      "name": "Research Triangle Park, NC"
-    },
-    {
-      "@type": "City",
-      "name": "Hillsborough, NC"
-    },
-    {
-      "@type": "City",
-      "name": "Creedmoor, NC"
+      "@type": "Place",
+      "name": "Duke Park"
     }
   ],
   "openingHoursSpecification": [
@@ -3237,7 +3328,7 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
       "name": "How much does foundation repair cost in Durham?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It depends on the problem. A single crack seal might run a few hundred dollars. A moderate repair with four to six piers typically falls between four and ten thousand. Major structural work with multiple piers, wall anchors, and drainage can go higher. We give you an exact written number during your free inspection \u2014 no ranges, no surprises."
+        "text": "It depends on the problem. A single crack seal might run a few hundred dollars. A small basement repair sits at the low end. A full basement foundation repair runs higher. A moderate repair with four to six piers typically falls between four and ten thousand. Major structural work with multiple piers, wall anchors, and drainage can go higher. We give you an exact written number during your free inspection \u2014 no ranges, no surprises."
       }
     },
     {
@@ -3502,8 +3593,9 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
         <input type="tel" name="cf-field[pdf-phone]" placeholder="Mobile number" required>
       </div>
       <textarea name="cf-field[cf-51368]" placeholder="Message"></textarea>
-      <input type="hidden" name="api_key" value="Zr6l7VVdeErl8NQEhGuxyuO5dpJ8pEE1">
+      <input type="hidden" name="page_id" value="locations/foundation-repair-durham-nc">
       <input type="hidden" name="hostname" value="">
+      <div style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;overflow:hidden;" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
       <button type="submit" class="text-send-btn">Send</button>
     </form>
     <p class="text-widget-consent">By sending this message, you expressly consent to receive communications from us. You may opt out at any time.</p>
@@ -3528,11 +3620,23 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
 
   btn.addEventListener('click', function() {
     panel.classList.toggle('active');
+    sessionStorage.setItem('twSeen', '1');
   });
 
   closeBtn.addEventListener('click', function() {
     panel.classList.remove('active');
+    sessionStorage.setItem('twSeen', '1');
   });
+
+  // Auto-open after 20 seconds — once per session only
+  if (!sessionStorage.getItem('twSeen')) {
+    setTimeout(function() {
+      if (!panel.classList.contains('active')) {
+        panel.classList.add('active');
+        sessionStorage.setItem('twSeen', '1');
+      }
+    }, 60000);
+  }
 
   // Close on outside click
   document.addEventListener('click', function(e) {
@@ -3543,12 +3647,27 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
 
   form.addEventListener('submit', function(e) {
     e.preventDefault();
+    if (form.querySelector('[name="website"]').value !== '') {
+      form.style.display = 'none';
+      form.parentElement.querySelector('.text-widget-consent').style.display = 'none';
+      success.style.display = 'block';
+      return;
+    }
+    var allText = '';
+    form.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea').forEach(function(el) { allText += el.value + ' '; });
+    if (/[\u0400-\u04FF\u0500-\u052F]/.test(allText)) {
+      form.style.display = 'none';
+      form.parentElement.querySelector('.text-widget-consent').style.display = 'none';
+      success.style.display = 'block';
+      return;
+    }
     var submitBtn = form.querySelector('.text-send-btn');
     submitBtn.disabled = true;
     submitBtn.textContent = 'Sending...';
-    var formData = new FormData(form);
-    fetch('https://app.leadsnap.com/embed/store', {
+    var formData = new URLSearchParams(new FormData(form)).toString();
+    fetch('/.netlify/functions/lead', {
       method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: formData
     }).then(function() {
       form.style.display = 'none';

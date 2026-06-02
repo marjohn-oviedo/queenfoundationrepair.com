@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Foundation Repair & Basement Waterproofing in Cleveland, OH | Crawl Space Repair, Sump Pump Installation | Serving Lakewood, Parma & Cleveland Heights | Free Inspection</title>
-<meta name="description" content="Foundation repair and basement waterproofing in Cleveland, OH. Crawl space repair, sump pump installation, crack repair, and concrete leveling. Serving Lakewood, Parma, Cleveland Heights & all of Cuyahoga County. Schedule your free inspection today.">
+<title>Cleveland, OH Foundation Repair & Basement Waterproofing | Crawl Space Encapsulation, Concrete Leveling | Serving Brooklyn Centre, Old Brooklyn, Woodland Hills, Kamm's Corners, Lakewood & Cleveland Heights | Free Inspection — Queen Foundation Repair</title>
+<meta name="description" content="Foundation repair, basement waterproofing, crawl space, concrete leveling in Cleveland OH. Serving Brooklyn Centre, Old Brooklyn, Woodland Hills, Kamm's Corners, Lakewood, Cleveland Heights. Free inspection.">
 <link rel="canonical" href="https://queenfoundationrepair.com/locations/foundation-repair-cleveland-oh/">
 <meta name="robots" content="index, follow">
-<meta property="og:title" content="Foundation Repair & Basement Waterproofing in Cleveland, OH | Crawl Space Repair, Sump Pump Installation | Serving Lakewood, Parma & Cleveland Heights | Free Inspection">
-<meta property="og:description" content="Foundation repair and basement waterproofing in Cleveland, OH. Crawl space repair, sump pump installation, crack repair, and concrete leveling. Serving Lakewood, Parma, Cleveland Heights & all of Cuyahoga County. Schedule your free inspection today.">
+<meta property="og:title" content="Cleveland, OH Foundation Repair & Basement Waterproofing | Crawl Space Encapsulation, Concrete Leveling | Serving Brooklyn Centre, Old Brooklyn, Woodland Hills, Kamm's Corners, Lakewood & Cleveland Heights | Free Inspection — Queen Foundation Repair">
+<meta property="og:description" content="Foundation repair, basement waterproofing, crawl space, concrete leveling in Cleveland OH. Serving Brooklyn Centre, Old Brooklyn, Woodland Hills, Kamm's Corners, Lakewood, Cleveland Heights. Free inspection.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://queenfoundationrepair.com/locations/foundation-repair-cleveland-oh/">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -947,6 +947,7 @@
   }
 
   .step-title {
+    margin-top: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 1.1rem;
@@ -1802,6 +1803,62 @@
   .footer-social a { color: #666; transition: color 0.2s; }
   .footer-social a:hover { color: #fff; }
   .footer-social svg { width: 18px; height: 18px; fill: currentColor; }
+
+  /* SERVICE AREA SECTION */
+  .service-area {
+    background: #ffffff;
+    padding: 70px 30px;
+  }
+  .service-area-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .service-area-toggle {
+    width: 100%;
+    background: #fff;
+    border: none;
+    padding: 18px 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #1a1a1a;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  .service-area-toggle:hover { background: #f8f9fa; }
+  .service-area-arrow { font-size: 0.7rem; transition: transform 0.3s; }
+  .service-area-inner.active .service-area-arrow { transform: rotate(180deg); }
+  .service-area-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding: 0 24px;
+  }
+  .service-area-inner.active .service-area-content {
+    max-height: 1500px;
+    padding: 20px 24px 24px;
+  }
+  .service-area-desc {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  .service-area-list {
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.7;
+    margin: 0 0 12px 0;
+  }
+  .service-area-list strong { color: #1a1a1a; }
 </style>
 <link rel="icon" type="image/png" href="../../favicon.png">
 </head>
@@ -1930,7 +1987,7 @@
     <!-- Right: Form -->
     <div class="hero-form-wrap">
       <p class="form-heading">I'm Ready For A Free Quote</p>
-      <form id="leadForm" method="post" action="https://app.leadsnap.com/embed/store">
+      <form id="leadForm" method="post" action="/.netlify/functions/lead">
         <input type="text" name="cf-field[pdf-name]" placeholder="Full Name" required>
         <input type="tel" name="cf-field[pdf-phone]" placeholder="Phone Number" required>
         <input type="text" name="cf-field[pdf-zipcode]" placeholder="Zip Code" required>
@@ -1942,9 +1999,11 @@
           <option value="other">Other</option>
         </select>
         <textarea name="cf-field[cf-51368]" placeholder="Describe what you're seeing (cracks, water, uneven floors, etc.)" style="width:100%;padding:12px 14px;margin-bottom:10px;border:1px solid #d1d5db;border-radius:6px;font-family:'Noto Sans',sans-serif;font-size:0.9rem;color:#333;background:#fff;resize:vertical;min-height:60px;outline:none;-webkit-appearance:none;"></textarea>
-        <input type="hidden" name="api_key" value="QriIca7znpsJIJ66GZzDDSv3KxSzTjdh">
+        <input type="hidden" name="page_id" value="locations/foundation-repair-cleveland-oh">
         <input type="hidden" name="hostname" id="hostname" value="">
+        <div style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;overflow:hidden;" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
         <button type="submit" class="form-submit-btn">Get My Free Quote</button>
+        <p class="sms-consent" style="font-size:11px;color:#888;line-height:1.4;margin-top:10px;text-align:center;">By submitting this form, you consent to receive text messages from Queen Foundation Repair regarding your inquiry. Reply STOP to opt out. Msg &amp; data rates may apply.</p>
       </form>
       <div class="form-success" id="formSuccess">
         <p><strong>Thank You For Your Submission!</strong></p>
@@ -1956,12 +2015,25 @@
       document.getElementById('hostname').value = window.location.hostname;
       document.getElementById('leadForm').addEventListener('submit', function(e) {
         e.preventDefault();
+        if (this.querySelector('[name="website"]').value !== '') {
+          document.getElementById('leadForm').style.display = 'none';
+          document.getElementById('formSuccess').style.display = 'block';
+          return;
+        }
+        var allText = '';
+        this.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea').forEach(function(el) { allText += el.value + ' '; });
+        if (/[\u0400-\u04FF\u0500-\u052F]/.test(allText)) {
+          document.getElementById('leadForm').style.display = 'none';
+          document.getElementById('formSuccess').style.display = 'block';
+          return;
+        }
         var btn = this.querySelector('.form-submit-btn');
         btn.disabled = true;
         btn.textContent = 'Sending...';
-        var formData = new FormData(this);
-        fetch('https://app.leadsnap.com/embed/store', {
+        var formData = new URLSearchParams(new FormData(this)).toString();
+        fetch('/.netlify/functions/lead', {
           method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body: formData
         }).then(function() {
           document.getElementById('leadForm').style.display = 'none';
@@ -2423,7 +2495,7 @@
             <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
           </div>
           <div class="step-number">Step 1</div>
-          <div class="step-title">Schedule Your Free Inspection</div>
+          <h3 class="step-title">Schedule Your Free Inspection</h3>
           <div class="step-desc">Tell us what you’re seeing — water, cracks, uneven floors, whatever it is. We’ll set up a time to come look at it. No cost, no obligation.</div>
         </div>
 
@@ -2433,7 +2505,7 @@
             <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
           </div>
           <div class="step-number">Step 2</div>
-          <div class="step-title">We Inspect and Explain What’s Happening</div>
+          <h3 class="step-title">We Inspect and Explain What’s Happening</h3>
           <div class="step-desc">Our inspector spends real time in your basement or crawl space. We show you exactly where the problem is, what’s causing it, and what your options are — in plain language, not contractor jargon. If you don’t need repair, we’ll tell you.</div>
         </div>
 
@@ -2443,7 +2515,7 @@
             <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
           </div>
           <div class="step-number">Step 3</div>
-          <div class="step-title">You Pick a Plan That Works for You</div>
+          <h3 class="step-title">You Pick a Plan That Works for You</h3>
           <div class="step-desc">We give you a written proposal with the scope, method, timeline, and cost. No pressure to decide on the spot. Compare us to anyone. We also offer flexible financing so the cost doesn’t have to stop you from fixing the problem.</div>
         </div>
 
@@ -2453,7 +2525,7 @@
             <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
           </div>
           <div class="step-number">Step 4</div>
-          <div class="step-title">We Do the Work and Back It Up</div>
+          <h3 class="step-title">We Do the Work and Back It Up</h3>
           <div class="step-desc">Our crew shows up on time, does the job, and walks you through everything when it’s done. You get a lifetime transferable warranty on structural repairs. If you sell the house, the warranty goes with it.</div>
         </div>
 
@@ -2563,13 +2635,13 @@
           <p class="why-subtext">Most of the homes in this city were built before 1970. They’re sitting on heavy clay soil that swells when it rains and shrinks when it dries. Every year, freeze-thaw cycles push and pull against your foundation walls. That’s not going to stop. But the damage can.</p>
         </div>
         <h3>We Tell You What You Actually Need — Not the Biggest Job We Can Sell</h3>
-        <p>A hairline crack in a 70-year-old foundation is normal. Not every crack means your house is falling apart. When we inspect your home, we tell you what needs fixing now, what can wait, and what doesn’t need fixing at all. If your foundation is fine, we’ll say so. You’ll never get a scare pitch from us.</p>
+        <p>A hairline crack in a 70-year-old foundation is normal. Not every crack means your house is falling apart. When we inspect your home, we tell you what needs fixing now, what can wait, and what doesn’t need fixing at all. If your foundation is fine, we’ll say so. You’ll never get a scare pitch from us. If you only need basement repair on a single section instead of a full foundation contractor job, that is the recommendation you'll get — even if the invoice is smaller.</p>
 
         <h3>We Know What Cleveland Soil Does to Foundations</h3>
-        <p>The glacial clay underneath Cleveland homes is the main reason basements leak and walls bow. It holds water like a sponge, expands with massive force against your walls, then shrinks and pulls away — leaving gaps for the next rain to fill. We design every repair around this soil. The fix has to work against what the ground is doing, not just patch over what you see inside.</p>
+        <p>The glacial clay underneath Cleveland homes is the main reason basements leak and walls bow. It holds water like a sponge, expands with massive force against your walls, then shrinks and pulls away — leaving gaps for the next rain to fill. We design every repair around this soil. The fix has to work against what the ground is doing, not just patch over what you see inside. It's the same pattern that's been working on 1900s-built foundations from Brooklyn Centre down through Old Brooklyn for decades — foundation repair in Cleveland and across Ohio has to start with what the soil is doing underneath, not just the crack on the wall.</p>
 
         <h3>Small Fix Now or Big Problem Later — Your Call</h3>
-        <p>Foundation problems don’t hold still. A crack that leaks a little after rain this year will leak more next year. A wall that’s bowed one inch will bow further. Homeowners who catch it early pay a fraction of what it costs to fix the same problem three years later. Every winter that passes adds another round of freeze-thaw damage. The best time to fix it is before the next one.</p>
+        <p>Foundation problems don’t hold still. A crack that leaks a little after rain this year will leak more next year. A wall that’s bowed one inch will bow further. Homeowners who catch it early pay a fraction of what it costs to fix the same problem three years later. Every winter that passes adds another round of freeze-thaw damage. The best time to fix it is before the next one. <a href="/" style="color:#2563eb;text-decoration:underline;font-style:italic;">Queen Foundation Repair</a> has worked across the metro — from Kamm's Corners out west to Cleveland Heights on the east, and Woodland Hills on the southeast — and the homes that caught it early always cost less to fix.</p>
 
         <a href="javascript:void(0)" onclick="openModal()" class="why-cta">Get My Free Quote</a>
       </div>
@@ -2721,7 +2793,7 @@
             <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
           </button>
           <div class="faq-answer">
-            <p>It comes down to three things working together. The soil here is heavy glacial clay that doesn’t drain — it holds water and pushes it against your foundation. The city gets around 38 inches of rain a year plus snowmelt. And most homes were built with concrete block walls that weaken at the mortar joints over decades. Add in Cleveland’s combined sewer system, which can back up during heavy storms and push water through your floor drain, and you’ve got a city where basement water issues are extremely common.</p>
+            <p>It comes down to three things working together. The soil here is heavy glacial clay that doesn’t drain — it holds water and pushes it against your foundation. The city gets around 38 inches of rain a year plus snowmelt. And most homes were built with concrete block walls that weaken at the mortar joints over decades. Add in Cleveland’s combined sewer system, which can back up during heavy storms and push water through your floor drain, and you’ve got a city where basement water issues are extremely common. Older neighborhoods like Lakewood and Old Brooklyn see this most often because their housing stock has been through more of these cycles than newer construction.</p>
           </div>
         </div>
 
@@ -2731,7 +2803,7 @@
             <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
           </button>
           <div class="faq-answer">
-            <p>A thin vertical crack in poured concrete is usually from the concrete curing when the house was built. It may let some water in, but it’s not structural. What you want to watch for is horizontal cracks in block walls — that means soil pressure is pushing the wall inward. Stair-step cracks along mortar joints, diagonal cracks from window corners, and any crack that’s wider at one end than the other all point to movement. If your doors are sticking or your floors are sloping, that’s another sign the foundation has shifted. When in doubt, get it inspected — the inspection is free and we’ll tell you straight whether it needs attention.</p>
+            <p>A thin vertical crack in poured concrete is usually from the concrete curing when the house was built. It may let some water in, but it’s not structural. What you want to watch for is horizontal cracks in block walls — that means soil pressure is pushing the wall inward. Stair-step cracks along mortar joints, diagonal cracks from window corners, and any crack that’s wider at one end than the other all point to movement. If you see active cracking on a foundation wall, cracked foundation repair done early prevents the kind of structural damage that turns into a much bigger job later. If your doors are sticking or your floors are sloping, that’s another sign the foundation has shifted. When in doubt, get it inspected — the inspection is free and we’ll tell you straight whether it needs attention.</p>
           </div>
         </div>
 
@@ -2761,7 +2833,7 @@
             <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
           </button>
           <div class="faq-answer">
-            <p>It depends on what’s needed. A single crack repair can be done in a few hours. An interior drainage system with a sump pump usually takes two to five days. Structural work like piers or wall anchors typically takes two to four days. Most jobs are done from inside the basement with no need to dig up your yard. You can stay in your home during the work.</p>
+            <p>It depends on what’s needed. A single crack repair can be done in a few hours. An interior drainage system with a sump pump usually takes two to five days. Structural work like piers or wall anchors typically takes two to four days. Most jobs are done from inside the basement with no need to dig up your yard. You can stay in your home during the work. Crawl space waterproofing pairs with encapsulation when standing water is part of the problem — the vapor barrier handles humidity, the waterproofing handles the actual water.</p>
           </div>
         </div>
 
@@ -2771,7 +2843,7 @@
             <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
           </button>
           <div class="faq-answer">
-            <p>Yes. We serve all of Cuyahoga County and the surrounding communities, including Lakewood, Parma, Cleveland Heights, Shaker Heights, Old Brooklyn, Tremont, Ohio City, West Park, Garfield Heights, Maple Heights, Brooklyn, and East Cleveland. If you’re not sure whether we cover your area, just ask when you schedule your inspection.</p>
+            <p>Yes. We serve homeowners across Cuyahoga County including Brooklyn Centre, Old Brooklyn, Woodland Hills, Kamm's Corners, Lakewood, and Cleveland Heights. If you’re searching for a foundation contractor in any of these areas, we cover them all. If you’re not sure whether we cover your area, just ask when you schedule your inspection.</p>
           </div>
         </div>
       </div>
@@ -2794,6 +2866,22 @@
   });
 })();
 </script>
+
+<!-- ========================
+     SERVICE AREA
+     ======================== -->
+<section class="service-area">
+  <div class="service-area-inner" id="serviceAreaBox">
+    <button class="service-area-toggle" onclick="document.getElementById('serviceAreaBox').classList.toggle('active')">
+      <span class="service-area-arrow">&#9660;</span> Our Cleveland Service Area
+    </button>
+    <div class="service-area-content">
+      <p class="service-area-desc">We serve homeowners across all of Cleveland. If you don't see your specific neighborhood listed below, give us a call and we'll confirm.</p>
+      <p class="service-area-list"><strong>Neighborhoods:</strong> Bellaire–Puritas, Broadway–Slavic Village, Brooklyn Centre, Buckeye–Shaker, Buckeye–Woodhill, Central, Clark–Fulton, Collinwood–Nottingham, Cudell, Cuyahoga Valley, Detroit–Shoreway, Downtown, Edgewater, Euclid–Green, Fairfax, Glenville, Goodrich–Kirtland Park, Hopkins, Hough, Jefferson, Kamm's Corners, Kinsman, Lee–Harvard, Lee–Seville, Mount Pleasant, North Shore Collinwood, Ohio City, Old Brooklyn, South Collinwood, St. Clair–Superior, Stockyards, The Flats, Tremont, Union–Miles Park, University, University Circle, Waterloo Arts District, West Boulevard, Woodland Hills</p>
+      <p class="service-area-list"><strong>ZIP codes:</strong> 44102, 44103, 44104, 44105, 44106, 44108, 44109, 44110, 44111, 44113, 44114, 44115, 44119, 44120, 44125, 44127, 44128, 44135, 44144</p>
+    </div>
+  </div>
+</section>
 
 <!-- ========================
      FOOTER
@@ -2848,13 +2936,12 @@
         <a href="/">Home</a>
         <a href="/about-us/">About Us</a>
         <a href="/contact-us/">Contact Us</a>
-        <a href="/locations/">Areas We Serve</a>
       </div>
 
     </div>
 
     <div class="footer-bottom">
-      <span>&copy; 2026 Queen Foundation Repair. All rights reserved.</span>
+      <span>&copy; 2026 Conversion Lab LLC dba Queen Foundation Repair. All rights reserved.</span>
       <a href="/privacy-policy/">Privacy Policy</a>
     </div>
   </div>
@@ -2879,9 +2966,11 @@
         <option value="other">Other</option>
       </select>
       <textarea name="cf-field[cf-51368]" placeholder="Describe what you're seeing (cracks, water, uneven floors, etc.)" style="width:100%;padding:12px 14px;margin-bottom:12px;border:1px solid #d0d0d0;border-radius:6px;font-size:0.95rem;font-family:'Noto Sans',sans-serif;resize:vertical;min-height:60px;"></textarea>
-      <input type="hidden" name="api_key" value="QriIca7znpsJIJ66GZzDDSv3KxSzTjdh">
+      <input type="hidden" name="page_id" value="locations/foundation-repair-cleveland-oh">
       <input type="hidden" name="hostname" id="modalHostname" value="">
+      <div style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;overflow:hidden;" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
       <button type="submit" class="form-submit-btn">Get My Free Quote</button>
+      <p class="sms-consent" style="font-size:11px;color:#888;line-height:1.4;margin-top:10px;text-align:center;">By submitting this form, you consent to receive text messages from Queen Foundation Repair regarding your inquiry. Reply STOP to opt out. Msg &amp; data rates may apply.</p>
     </form>
     <div class="form-success" id="modalSuccess">
       <p><strong>Thank You For Your Submission!</strong></p>
@@ -2905,12 +2994,25 @@ function closeModal() {
 
 document.getElementById('modalForm').addEventListener('submit', function(e) {
   e.preventDefault();
+  if (this.querySelector('[name="website"]').value !== '') {
+    document.getElementById('modalForm').style.display = 'none';
+    document.getElementById('modalSuccess').style.display = 'block';
+    return;
+  }
+  var allText = '';
+  this.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea').forEach(function(el) { allText += el.value + ' '; });
+  if (/[\u0400-\u04FF\u0500-\u052F]/.test(allText)) {
+    document.getElementById('modalForm').style.display = 'none';
+    document.getElementById('modalSuccess').style.display = 'block';
+    return;
+  }
   var btn = this.querySelector('.form-submit-btn');
   btn.disabled = true;
   btn.textContent = 'Sending...';
-  var formData = new FormData(this);
-  fetch('https://app.leadsnap.com/embed/store', {
+  var formData = new URLSearchParams(new FormData(this)).toString();
+  fetch('/.netlify/functions/lead', {
     method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: formData
   }).then(function() {
     document.getElementById('modalForm').style.display = 'none';
@@ -2945,24 +3047,34 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
       "sameAs": "https://en.wikipedia.org/wiki/Cleveland"
     },
     {
-      "@type": "City",
-      "name": "Lakewood"
+      "@type": "Place",
+      "name": "Brooklyn Centre",
+      "containedInPlace": {"@type": "City", "name": "Cleveland"}
     },
     {
-      "@type": "City",
-      "name": "Parma"
+      "@type": "Place",
+      "name": "Old Brooklyn",
+      "containedInPlace": {"@type": "City", "name": "Cleveland"}
     },
     {
-      "@type": "City",
-      "name": "Cleveland Heights"
+      "@type": "Place",
+      "name": "Woodland Hills",
+      "containedInPlace": {"@type": "City", "name": "Cleveland"}
     },
     {
-      "@type": "City",
-      "name": "Shaker Heights"
+      "@type": "Place",
+      "name": "Kamm's Corners",
+      "containedInPlace": {"@type": "City", "name": "Cleveland"}
     },
     {
-      "@type": "City",
-      "name": "Old Brooklyn"
+      "@type": "Place",
+      "name": "Lakewood",
+      "containedInPlace": {"@type": "City", "name": "Cleveland"}
+    },
+    {
+      "@type": "Place",
+      "name": "Cleveland Heights",
+      "containedInPlace": {"@type": "City", "name": "Cleveland"}
     }
   ],
   "openingHoursSpecification": [
@@ -3403,8 +3515,9 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
         <input type="tel" name="cf-field[pdf-phone]" placeholder="Mobile number" required>
       </div>
       <textarea name="cf-field[cf-51368]" placeholder="Message"></textarea>
-      <input type="hidden" name="api_key" value="QriIca7znpsJIJ66GZzDDSv3KxSzTjdh">
+      <input type="hidden" name="page_id" value="locations/foundation-repair-cleveland-oh">
       <input type="hidden" name="hostname" value="">
+      <div style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;overflow:hidden;" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
       <button type="submit" class="text-send-btn">Send</button>
     </form>
     <p class="text-widget-consent">By sending this message, you expressly consent to receive communications from us. You may opt out at any time.</p>
@@ -3429,11 +3542,23 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
 
   btn.addEventListener('click', function() {
     panel.classList.toggle('active');
+    sessionStorage.setItem('twSeen', '1');
   });
 
   closeBtn.addEventListener('click', function() {
     panel.classList.remove('active');
+    sessionStorage.setItem('twSeen', '1');
   });
+
+  // Auto-open after 20 seconds — once per session only
+  if (!sessionStorage.getItem('twSeen')) {
+    setTimeout(function() {
+      if (!panel.classList.contains('active')) {
+        panel.classList.add('active');
+        sessionStorage.setItem('twSeen', '1');
+      }
+    }, 60000);
+  }
 
   // Close on outside click
   document.addEventListener('click', function(e) {
@@ -3444,12 +3569,27 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
 
   form.addEventListener('submit', function(e) {
     e.preventDefault();
+    if (form.querySelector('[name="website"]').value !== '') {
+      form.style.display = 'none';
+      form.parentElement.querySelector('.text-widget-consent').style.display = 'none';
+      success.style.display = 'block';
+      return;
+    }
+    var allText = '';
+    form.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea').forEach(function(el) { allText += el.value + ' '; });
+    if (/[\u0400-\u04FF\u0500-\u052F]/.test(allText)) {
+      form.style.display = 'none';
+      form.parentElement.querySelector('.text-widget-consent').style.display = 'none';
+      success.style.display = 'block';
+      return;
+    }
     var submitBtn = form.querySelector('.text-send-btn');
     submitBtn.disabled = true;
     submitBtn.textContent = 'Sending...';
-    var formData = new FormData(form);
-    fetch('https://app.leadsnap.com/embed/store', {
+    var formData = new URLSearchParams(new FormData(form)).toString();
+    fetch('/.netlify/functions/lead', {
       method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: formData
     }).then(function() {
       form.style.display = 'none';

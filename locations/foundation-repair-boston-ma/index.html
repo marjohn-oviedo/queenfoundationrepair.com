@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Boston, MA Foundation Repair & Basement Waterproofing | Crawl Space Repair, Sump Pump & French Drain Installation | Serving Brookline, Cambridge & Quincy | Queen Foundation Repair — Free Estimates</title>
-<meta name="description" content="Foundation repair and basement waterproofing in Boston, MA. Crawl space repair, sump pump installation, French drains, crack repair & concrete leveling. Serving Greater Boston. Call for a free estimate.">
+<title>Boston, MA Foundation Repair & Basement Waterproofing | Crawl Space Encapsulation, Concrete Leveling | Serving Brookline, South Boston, East Boston & Boston Neighborhoods | Free Inspection</title>
+<meta name="description" content="Foundation repair, basement waterproofing, crawl space, and concrete leveling in Boston MA. Serving Brookline, South Boston, and East Boston. Free inspection.">
 <link rel="canonical" href="https://queenfoundationrepair.com/locations/foundation-repair-boston-ma/">
 <meta name="robots" content="index, follow">
-<meta property="og:title" content="Boston, MA Foundation Repair & Basement Waterproofing | Crawl Space Repair, Sump Pump & French Drain Installation | Serving Brookline, Cambridge & Quincy | Queen Foundation Repair — Free Estimates">
-<meta property="og:description" content="Foundation repair and basement waterproofing in Boston, MA. Crawl space repair, sump pump installation, French drains, crack repair & concrete leveling. Serving Greater Boston. Call for a free estimate.">
+<meta property="og:title" content="Boston, MA Foundation Repair & Basement Waterproofing | Crawl Space Encapsulation, Concrete Leveling | Serving Brookline, South Boston, East Boston & Boston Neighborhoods | Free Inspection">
+<meta property="og:description" content="Foundation repair, basement waterproofing, crawl space, and concrete leveling in Boston MA. Serving Brookline, South Boston, and East Boston. Free inspection.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://queenfoundationrepair.com/locations/foundation-repair-boston-ma/">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -947,6 +947,7 @@
   }
 
   .step-title {
+    margin-top: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 1.1rem;
@@ -1802,6 +1803,62 @@
   .footer-social a { color: #666; transition: color 0.2s; }
   .footer-social a:hover { color: #fff; }
   .footer-social svg { width: 18px; height: 18px; fill: currentColor; }
+
+  /* SERVICE AREA SECTION */
+  .service-area {
+    background: #ffffff;
+    padding: 70px 30px;
+  }
+  .service-area-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .service-area-toggle {
+    width: 100%;
+    background: #fff;
+    border: none;
+    padding: 18px 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #1a1a1a;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  .service-area-toggle:hover { background: #f8f9fa; }
+  .service-area-arrow { font-size: 0.7rem; transition: transform 0.3s; }
+  .service-area-inner.active .service-area-arrow { transform: rotate(180deg); }
+  .service-area-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding: 0 24px;
+  }
+  .service-area-inner.active .service-area-content {
+    max-height: 1500px;
+    padding: 20px 24px 24px;
+  }
+  .service-area-desc {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  .service-area-list {
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.7;
+    margin: 0 0 12px 0;
+  }
+  .service-area-list strong { color: #1a1a1a; }
 </style>
 <link rel="icon" type="image/png" href="../../favicon.png">
 </head>
@@ -1930,7 +1987,7 @@
     <!-- Right: Form -->
     <div class="hero-form-wrap">
       <p class="form-heading">I'm Ready For A Free Quote</p>
-      <form id="leadForm" method="post" action="https://app.leadsnap.com/embed/store">
+      <form id="leadForm" method="post" action="/.netlify/functions/lead">
         <input type="text" name="cf-field[pdf-name]" placeholder="Full Name" required>
         <input type="tel" name="cf-field[pdf-phone]" placeholder="Phone Number" required>
         <input type="text" name="cf-field[pdf-zipcode]" placeholder="Zip Code" required>
@@ -1942,9 +1999,11 @@
           <option value="other">Other</option>
         </select>
         <textarea name="cf-field[cf-51368]" placeholder="Describe what you're seeing (cracks, water, uneven floors, etc.)" style="width:100%;padding:12px 14px;margin-bottom:10px;border:1px solid #d1d5db;border-radius:6px;font-family:'Noto Sans',sans-serif;font-size:0.9rem;color:#333;background:#fff;resize:vertical;min-height:60px;outline:none;-webkit-appearance:none;"></textarea>
-        <input type="hidden" name="api_key" value="sHBCpqYtIeXVPvf6wzdNUDlHqA67yoaK">
+        <input type="hidden" name="page_id" value="locations/foundation-repair-boston-ma">
         <input type="hidden" name="hostname" id="hostname" value="">
+        <div style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;overflow:hidden;" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
         <button type="submit" class="form-submit-btn">Get My Free Quote</button>
+        <p class="sms-consent" style="font-size:11px;color:#888;line-height:1.4;margin-top:10px;text-align:center;">By submitting this form, you consent to receive text messages from Queen Foundation Repair regarding your inquiry. Reply STOP to opt out. Msg &amp; data rates may apply.</p>
       </form>
       <div class="form-success" id="formSuccess">
         <p><strong>Thank You For Your Submission!</strong></p>
@@ -1956,12 +2015,25 @@
       document.getElementById('hostname').value = window.location.hostname;
       document.getElementById('leadForm').addEventListener('submit', function(e) {
         e.preventDefault();
+        if (this.querySelector('[name="website"]').value !== '') {
+          document.getElementById('leadForm').style.display = 'none';
+          document.getElementById('formSuccess').style.display = 'block';
+          return;
+        }
+        var allText = '';
+        this.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea').forEach(function(el) { allText += el.value + ' '; });
+        if (/[\u0400-\u04FF\u0500-\u052F]/.test(allText)) {
+          document.getElementById('leadForm').style.display = 'none';
+          document.getElementById('formSuccess').style.display = 'block';
+          return;
+        }
         var btn = this.querySelector('.form-submit-btn');
         btn.disabled = true;
         btn.textContent = 'Sending...';
-        var formData = new FormData(this);
-        fetch('https://app.leadsnap.com/embed/store', {
+        var formData = new URLSearchParams(new FormData(this)).toString();
+        fetch('/.netlify/functions/lead', {
           method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body: formData
         }).then(function() {
           document.getElementById('leadForm').style.display = 'none';
@@ -2423,7 +2495,7 @@
             <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
           </div>
           <div class="step-number">Step 1</div>
-          <div class="step-title">Request Your Free Estimate</div>
+          <h3 class="step-title">Request Your Free Estimate</h3>
           <div class="step-desc">Call or fill out the form. Tell us what you're seeing — water, cracks, uneven floors — and we'll set up a time to come out.</div>
         </div>
 
@@ -2433,7 +2505,7 @@
             <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
           </div>
           <div class="step-number">Step 2</div>
-          <div class="step-title">We Inspect the Problem</div>
+          <h3 class="step-title">We Inspect the Problem</h3>
           <div class="step-desc">We assess the basement, crawl space, or foundation and give you a clear explanation of the problem, what's causing it, and what needs to happen.</div>
         </div>
 
@@ -2443,7 +2515,7 @@
             <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
           </div>
           <div class="step-number">Step 3</div>
-          <div class="step-title">Review Your Options</div>
+          <h3 class="step-title">Review Your Options</h3>
           <div class="step-desc">You get a written scope of work with transparent pricing. No pressure. Take the time you need to compare and decide.</div>
         </div>
 
@@ -2453,7 +2525,7 @@
             <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
           </div>
           <div class="step-number">Step 4</div>
-          <div class="step-title">We Fix It</div>
+          <h3 class="step-title">We Fix It</h3>
           <div class="step-desc">We complete the repair. Most jobs take one to three days with minimal disruption. You get full documentation and warranty coverage when the work is done.</div>
         </div>
 
@@ -2563,13 +2635,15 @@
           <p class="why-subtext">Foundation problems here aren't random. They have specific causes — and fixing them starts with understanding why they're happening.</p>
         </div>
         <h3>We Know What This Soil Does to Foundations</h3>
-        <p>Boston sits on Blue Clay — a soft glacial marine clay that holds water, shifts under load, and pushes against basement walls with constant pressure. Large sections of the city were built on filled land that was never compacted to modern standards. That's why basements leak, walls bow, and foundations settle in ways other cities don't deal with. We know these conditions, and we know which methods hold up in this soil.</p>
+        <p>Boston sits on Blue Clay — a soft glacial marine clay that holds water, shifts under load, and pushes against basement walls with constant pressure. Large sections of the city were built on filled land that was never compacted to modern standards. That's why basements leak, walls bow, and foundations settle in ways other cities don't deal with. We know these conditions, and we know which methods hold up in this soil. That's also the reason basement waterproofing in Boston rarely works as a one-step fix — the water moving through Blue Clay is the actual force pushing against your wall, so sealing the inside without managing the outside drainage means the wall keeps moving.</p>
 
         <h3>Straight Answers, Not Sales Pitches</h3>
-        <p>Not every crack needs a major repair. Some problems start with fixing the grading and extending the downspouts. We tell you what's actually wrong, what it takes to fix it, and what can wait. You get a written proposal with real pricing and zero pressure to sign on the spot.</p>
+        <p>Not every crack needs a major repair. Some problems start with fixing the grading and extending the downspouts. We tell you what's actually wrong, what it takes to fix it, and what can wait. You get a written proposal with real pricing and zero pressure to sign on the spot. Same goes for crawl space repair in Boston — older homes here often have unconditioned crawl spaces that look worse than they are. We'll tell you when it needs encapsulation versus when it just needs a vapor barrier and better drainage.</p>
 
         <h3>Every Winter Makes It Worse</h3>
-        <p>Boston gets 20 to 100 freeze-thaw cycles between November and March. Each one pushes water into foundation cracks, freezes, expands, and widens the damage. A crack that costs a few hundred to seal this year becomes a structural problem that costs thousands after another winter. The best time to fix it is before the next freeze.</p>
+        <p>Boston gets 20 to 100 freeze-thaw cycles between November and March. Each one pushes water into foundation cracks, freezes, expands, and widens the damage. A crack that costs a few hundred to seal this year becomes a structural problem that costs thousands after another winter. The best time to fix it is before the next freeze. A lot of the foundation repair in Boston we end up doing started as a small basement repair the homeowner put off through one or two winters. The same goes for the basement waterproofers we replace mid-project — most of them sealed the wrong side of the wall and the water came right back the next spring.</p>
+
+        <p><a href="/" style="color:#2563eb;text-decoration:underline;font-style:italic;">Queen Foundation Repair</a> seals the wall from the right side the first time, so the water does not come back the next spring.</p>
 
         <a href="javascript:void(0)" onclick="openModal()" class="why-cta">Get My Free Quote</a>
       </div>
@@ -2721,7 +2795,7 @@
             <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
           </button>
           <div class="faq-answer">
-            <p>It depends on the problem. Crack repairs typically run $500 to $2,000. Interior waterproofing with a French drain and sump pump ranges from $3,000 to $8,000. Structural work involving piers or wall anchors can run $5,000 to $25,000 depending on scope. The biggest factor is how far the damage has progressed — early repairs always cost less.</p>
+            <p>It depends on the problem. Crack repairs typically run $500 to $2,000. Interior waterproofing with a French drain and sump pump ranges from $3,000 to $8,000. Structural work involving piers or wall anchors can run $5,000 to $25,000 depending on scope. The biggest factor is how far the damage has progressed — early repairs always cost less. Foundation crack repair in Boston usually breaks down into two paths — straight epoxy injection on a hairline crack runs a few hundred dollars, but real foundation crack repair services on a moving wall mean carbon fiber straps, wall anchors, or full pier work, and the number jumps quickly. The inspection tells you which one you're actually looking at, not the symptom.</p>
           </div>
         </div>
 
@@ -2771,7 +2845,7 @@
             <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
           </button>
           <div class="faq-answer">
-            <p>Yes. We serve Brookline, Cambridge, Somerville, Quincy, Dorchester, South Boston, Jamaica Plain, East Boston, Charlestown, Medford, Malden, Watertown, Newton, Waltham, Milton, Arlington, and other communities across Greater Boston. We also serve Worcester and surrounding areas. If your area isn't listed, we may still be able to help — call to find out.</p>
+            <p>Yes. We serve Brookline, Cambridge, Somerville, Quincy, Dorchester, South Boston, Jamaica Plain, East Boston, Hyde Park, Roxbury, Charlestown, Medford, Malden, Watertown, Newton, Waltham, Milton, Arlington, and other communities across Greater Boston. If your area isn't listed, we may still be able to help — call to find out.</p>
           </div>
         </div>
       </div>
@@ -2794,6 +2868,22 @@
   });
 })();
 </script>
+
+<!-- ========================
+     SERVICE AREA
+     ======================== -->
+<section class="service-area">
+  <div class="service-area-inner" id="serviceAreaBox">
+    <button class="service-area-toggle" onclick="document.getElementById('serviceAreaBox').classList.toggle('active')">
+      <span class="service-area-arrow">&#9660;</span> Our Boston Service Area
+    </button>
+    <div class="service-area-content">
+      <p class="service-area-desc">We serve homeowners across all of Boston. If you don't see your specific neighborhood listed below, give us a call and we'll confirm.</p>
+      <p class="service-area-list"><strong>Neighborhoods:</strong> Allston, Back Bay, Bay Village, Beacon Hill, Brighton, Bunker Hill, Charlestown, Chinatown–Leather District, City Point, Dorchester, Downtown, East Boston, Fenway–Kenmore, Government Center, Hyde Park, Jamaica Plain, Jeffries Point, Lower Allston, Mattapan, Mission Hill, North End, Orient Heights, Roslindale, Roxbury, South Boston, South End, West End, West Roxbury, Wharf District</p>
+      <p class="service-area-list"><strong>ZIP codes:</strong> 02108, 02109, 02110, 02111, 02113, 02114, 02115, 02116, 02118, 02119, 02120, 02121, 02122, 02124, 02125, 02126, 02127, 02128, 02129, 02130, 02131, 02132, 02134, 02135, 02136, 02203</p>
+    </div>
+  </div>
+</section>
 
 <!-- ========================
      FOOTER
@@ -2848,13 +2938,12 @@
         <a href="/">Home</a>
         <a href="/about-us/">About Us</a>
         <a href="/contact-us/">Contact Us</a>
-        <a href="/locations/">Areas We Serve</a>
       </div>
 
     </div>
 
     <div class="footer-bottom">
-      <span>&copy; 2026 Queen Foundation Repair. All rights reserved.</span>
+      <span>&copy; 2026 Conversion Lab LLC dba Queen Foundation Repair. All rights reserved.</span>
       <a href="/privacy-policy/">Privacy Policy</a>
     </div>
   </div>
@@ -2879,9 +2968,11 @@
         <option value="other">Other</option>
       </select>
       <textarea name="cf-field[cf-51368]" placeholder="Describe what you're seeing (cracks, water, uneven floors, etc.)" style="width:100%;padding:12px 14px;margin-bottom:12px;border:1px solid #d0d0d0;border-radius:6px;font-size:0.95rem;font-family:'Noto Sans',sans-serif;resize:vertical;min-height:60px;"></textarea>
-      <input type="hidden" name="api_key" value="sHBCpqYtIeXVPvf6wzdNUDlHqA67yoaK">
+      <input type="hidden" name="page_id" value="locations/foundation-repair-boston-ma">
       <input type="hidden" name="hostname" id="modalHostname" value="">
+      <div style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;overflow:hidden;" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
       <button type="submit" class="form-submit-btn">Get My Free Quote</button>
+      <p class="sms-consent" style="font-size:11px;color:#888;line-height:1.4;margin-top:10px;text-align:center;">By submitting this form, you consent to receive text messages from Queen Foundation Repair regarding your inquiry. Reply STOP to opt out. Msg &amp; data rates may apply.</p>
     </form>
     <div class="form-success" id="modalSuccess">
       <p><strong>Thank You For Your Submission!</strong></p>
@@ -2905,12 +2996,25 @@ function closeModal() {
 
 document.getElementById('modalForm').addEventListener('submit', function(e) {
   e.preventDefault();
+  if (this.querySelector('[name="website"]').value !== '') {
+    document.getElementById('modalForm').style.display = 'none';
+    document.getElementById('modalSuccess').style.display = 'block';
+    return;
+  }
+  var allText = '';
+  this.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea').forEach(function(el) { allText += el.value + ' '; });
+  if (/[\u0400-\u04FF\u0500-\u052F]/.test(allText)) {
+    document.getElementById('modalForm').style.display = 'none';
+    document.getElementById('modalSuccess').style.display = 'block';
+    return;
+  }
   var btn = this.querySelector('.form-submit-btn');
   btn.disabled = true;
   btn.textContent = 'Sending...';
-  var formData = new FormData(this);
-  fetch('https://app.leadsnap.com/embed/store', {
+  var formData = new URLSearchParams(new FormData(this)).toString();
+  fetch('/.netlify/functions/lead', {
     method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: formData
   }).then(function() {
     document.getElementById('modalForm').style.display = 'none';
@@ -2941,23 +3045,38 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
   "areaServed": [
     {
       "@type": "City",
-      "name": "Boston"
+      "name": "Boston",
+      "sameAs": "https://en.wikipedia.org/wiki/Boston"
     },
     {
-      "@type": "City",
-      "name": "Brookline"
+      "@type": "Place",
+      "name": "Brookline",
+      "containedInPlace": {"@type": "AdministrativeArea", "name": "Greater Boston"}
     },
     {
-      "@type": "City",
-      "name": "Cambridge"
+      "@type": "Place",
+      "name": "South Boston",
+      "containedInPlace": {"@type": "City", "name": "Boston"}
     },
     {
-      "@type": "City",
-      "name": "Quincy"
+      "@type": "Place",
+      "name": "East Boston",
+      "containedInPlace": {"@type": "City", "name": "Boston"}
     },
     {
-      "@type": "City",
-      "name": "Somerville"
+      "@type": "Place",
+      "name": "Hyde Park",
+      "containedInPlace": {"@type": "City", "name": "Boston"}
+    },
+    {
+      "@type": "Place",
+      "name": "Roxbury",
+      "containedInPlace": {"@type": "City", "name": "Boston"}
+    },
+    {
+      "@type": "Place",
+      "name": "Jamaica Plain",
+      "containedInPlace": {"@type": "City", "name": "Boston"}
     }
   ],
   "geo": {
@@ -3133,7 +3252,7 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
       "name": "Do you serve areas outside of Boston?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. We serve Brookline, Cambridge, Somerville, Quincy, Dorchester, South Boston, Jamaica Plain, East Boston, Charlestown, Medford, Malden, Watertown, Newton, Waltham, Milton, Arlington, and other communities across Greater Boston. We also serve Worcester and surrounding areas. If your area isn't listed, we may still be able to help \u2014 call to find out."
+        "text": "Yes. We serve Brookline, Cambridge, Somerville, Quincy, Dorchester, South Boston, Jamaica Plain, East Boston, Hyde Park, Roxbury, Charlestown, Medford, Malden, Watertown, Newton, Waltham, Milton, Arlington, and other communities across Greater Boston. If your area isn't listed, we may still be able to help \u2014 call to find out."
       }
     }
   ]
@@ -3392,8 +3511,9 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
         <input type="tel" name="cf-field[pdf-phone]" placeholder="Mobile number" required>
       </div>
       <textarea name="cf-field[cf-51368]" placeholder="Message"></textarea>
-      <input type="hidden" name="api_key" value="sHBCpqYtIeXVPvf6wzdNUDlHqA67yoaK">
+      <input type="hidden" name="page_id" value="locations/foundation-repair-boston-ma">
       <input type="hidden" name="hostname" value="">
+      <div style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;overflow:hidden;" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
       <button type="submit" class="text-send-btn">Send</button>
     </form>
     <p class="text-widget-consent">By sending this message, you expressly consent to receive communications from us. You may opt out at any time.</p>
@@ -3418,11 +3538,23 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
 
   btn.addEventListener('click', function() {
     panel.classList.toggle('active');
+    sessionStorage.setItem('twSeen', '1');
   });
 
   closeBtn.addEventListener('click', function() {
     panel.classList.remove('active');
+    sessionStorage.setItem('twSeen', '1');
   });
+
+  // Auto-open after 20 seconds — once per session only
+  if (!sessionStorage.getItem('twSeen')) {
+    setTimeout(function() {
+      if (!panel.classList.contains('active')) {
+        panel.classList.add('active');
+        sessionStorage.setItem('twSeen', '1');
+      }
+    }, 60000);
+  }
 
   // Close on outside click
   document.addEventListener('click', function(e) {
@@ -3433,12 +3565,27 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
 
   form.addEventListener('submit', function(e) {
     e.preventDefault();
+    if (form.querySelector('[name="website"]').value !== '') {
+      form.style.display = 'none';
+      form.parentElement.querySelector('.text-widget-consent').style.display = 'none';
+      success.style.display = 'block';
+      return;
+    }
+    var allText = '';
+    form.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea').forEach(function(el) { allText += el.value + ' '; });
+    if (/[\u0400-\u04FF\u0500-\u052F]/.test(allText)) {
+      form.style.display = 'none';
+      form.parentElement.querySelector('.text-widget-consent').style.display = 'none';
+      success.style.display = 'block';
+      return;
+    }
     var submitBtn = form.querySelector('.text-send-btn');
     submitBtn.disabled = true;
     submitBtn.textContent = 'Sending...';
-    var formData = new FormData(form);
-    fetch('https://app.leadsnap.com/embed/store', {
+    var formData = new URLSearchParams(new FormData(form)).toString();
+    fetch('/.netlify/functions/lead', {
       method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: formData
     }).then(function() {
       form.style.display = 'none';

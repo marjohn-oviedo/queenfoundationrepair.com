@@ -85,6 +85,18 @@
     <loc>https://queenfoundationrepair.com/locations/foundation-repair-cleveland-oh/</loc>
   </url>
   <url>
+    <loc>https://queenfoundationrepair.com/locations/foundation-repair-youngstown-oh/</loc>
+  </url>
+  <url>
+    <loc>https://queenfoundationrepair.com/locations/foundation-repair-rock-hill-sc/</loc>
+  </url>
+  <url>
+    <loc>https://queenfoundationrepair.com/locations/foundation-repair-jacksonville-nc/</loc>
+  </url>
+  <url>
+    <loc>https://queenfoundationrepair.com/locations/foundation-repair-mansfield-tx/</loc>
+  </url>
+  <url>
     <loc>https://queenfoundationrepair.com/locations/foundation-repair-columbia-sc/</loc>
   </url>
   <url>
@@ -173,5 +185,18 @@
   </url>
   <url>
     <loc>https://queenfoundationrepair.com/locations/foundation-repair-worcester-ma/</loc>
+  </url>
+  <url>
+    <loc>https://queenfoundationrepair.com/privacy-policy/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://queenfoundationrepair.com/locations/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://queenfoundationrepair.com/locations/foundation-repair-chattanooga-tn/</loc>
   </url>
 </urlset>

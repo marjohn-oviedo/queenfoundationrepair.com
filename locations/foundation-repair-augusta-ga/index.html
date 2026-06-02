@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Augusta, GA Foundation Repair & Crawl Space Encapsulation | Basement Waterproofing, Concrete Leveling | Evans, Martinez, Grovetown | Free Estimates – Queen Foundation Repair</title>
-<meta name="description" content="Augusta, GA foundation repair and crawl space encapsulation experts. Crawl space repair, basement waterproofing, concrete leveling and more. Serving Evans, Martinez, Grovetown and North Augusta. Schedule your free inspection today.">
+<title>Augusta, GA Foundation Repair & Basement Waterproofing | Crawl Space Encapsulation, Concrete Leveling | Serving Evans, Martinez, Aiken & Augusta Neighborhoods | Free Inspection — Queen Foundation Repair</title>
+<meta name="description" content="Foundation repair, basement waterproofing, crawl space, concrete leveling in Augusta GA. Serving Evans, Martinez, Aiken SC. Free inspection.">
 <link rel="canonical" href="https://queenfoundationrepair.com/locations/foundation-repair-augusta-ga/">
 <meta name="robots" content="index, follow">
-<meta property="og:title" content="Augusta, GA Foundation Repair & Crawl Space Encapsulation | Basement Waterproofing, Concrete Leveling | Evans, Martinez, Grovetown | Free Estimates – Queen Foundation Repair">
-<meta property="og:description" content="Augusta, GA foundation repair and crawl space encapsulation experts. Crawl space repair, basement waterproofing, concrete leveling and more. Serving Evans, Martinez, Grovetown and North Augusta. Schedule your free inspection today.">
+<meta property="og:title" content="Augusta, GA Foundation Repair & Basement Waterproofing | Crawl Space Encapsulation, Concrete Leveling | Serving Evans, Martinez, Aiken & Augusta Neighborhoods | Free Inspection — Queen Foundation Repair">
+<meta property="og:description" content="Foundation repair, basement waterproofing, crawl space, concrete leveling in Augusta GA. Serving Evans, Martinez, Aiken SC. Free inspection.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://queenfoundationrepair.com/locations/foundation-repair-augusta-ga/">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -947,6 +947,7 @@
   }
 
   .step-title {
+    margin-top: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 1.1rem;
@@ -1802,6 +1803,62 @@
   .footer-social a { color: #666; transition: color 0.2s; }
   .footer-social a:hover { color: #fff; }
   .footer-social svg { width: 18px; height: 18px; fill: currentColor; }
+
+  /* SERVICE AREA SECTION */
+  .service-area {
+    background: #ffffff;
+    padding: 70px 30px;
+  }
+  .service-area-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .service-area-toggle {
+    width: 100%;
+    background: #fff;
+    border: none;
+    padding: 18px 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #1a1a1a;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  .service-area-toggle:hover { background: #f8f9fa; }
+  .service-area-arrow { font-size: 0.7rem; transition: transform 0.3s; }
+  .service-area-inner.active .service-area-arrow { transform: rotate(180deg); }
+  .service-area-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding: 0 24px;
+  }
+  .service-area-inner.active .service-area-content {
+    max-height: 1500px;
+    padding: 20px 24px 24px;
+  }
+  .service-area-desc {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  .service-area-list {
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.7;
+    margin: 0 0 12px 0;
+  }
+  .service-area-list strong { color: #1a1a1a; }
 </style>
 <link rel="icon" type="image/png" href="../../favicon.png">
 </head>
@@ -1930,7 +1987,7 @@
     <!-- Right: Form -->
     <div class="hero-form-wrap">
       <p class="form-heading">I'm Ready For A Free Quote</p>
-      <form id="leadForm" method="post" action="https://app.leadsnap.com/embed/store">
+      <form id="leadForm" method="post" action="/.netlify/functions/lead">
         <input type="text" name="cf-field[pdf-name]" placeholder="Full Name" required>
         <input type="tel" name="cf-field[pdf-phone]" placeholder="Phone Number" required>
         <input type="text" name="cf-field[pdf-zipcode]" placeholder="Zip Code" required>
@@ -1942,9 +1999,11 @@
           <option value="other">Other</option>
         </select>
         <textarea name="cf-field[cf-51368]" placeholder="Describe what you're seeing (cracks, water, uneven floors, etc.)" style="width:100%;padding:12px 14px;margin-bottom:10px;border:1px solid #d1d5db;border-radius:6px;font-family:'Noto Sans',sans-serif;font-size:0.9rem;color:#333;background:#fff;resize:vertical;min-height:60px;outline:none;-webkit-appearance:none;"></textarea>
-        <input type="hidden" name="api_key" value="k4nmedaZbkxQugZ5PJ0L4zPjHFHmrhPk">
+        <input type="hidden" name="page_id" value="locations/foundation-repair-augusta-ga">
         <input type="hidden" name="hostname" id="hostname" value="">
+        <div style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;overflow:hidden;" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
         <button type="submit" class="form-submit-btn">Get My Free Quote</button>
+        <p class="sms-consent" style="font-size:11px;color:#888;line-height:1.4;margin-top:10px;text-align:center;">By submitting this form, you consent to receive text messages from Queen Foundation Repair regarding your inquiry. Reply STOP to opt out. Msg &amp; data rates may apply.</p>
       </form>
       <div class="form-success" id="formSuccess">
         <p><strong>Thank You For Your Submission!</strong></p>
@@ -1956,12 +2015,25 @@
       document.getElementById('hostname').value = window.location.hostname;
       document.getElementById('leadForm').addEventListener('submit', function(e) {
         e.preventDefault();
+        if (this.querySelector('[name="website"]').value !== '') {
+          document.getElementById('leadForm').style.display = 'none';
+          document.getElementById('formSuccess').style.display = 'block';
+          return;
+        }
+        var allText = '';
+        this.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea').forEach(function(el) { allText += el.value + ' '; });
+        if (/[\u0400-\u04FF\u0500-\u052F]/.test(allText)) {
+          document.getElementById('leadForm').style.display = 'none';
+          document.getElementById('formSuccess').style.display = 'block';
+          return;
+        }
         var btn = this.querySelector('.form-submit-btn');
         btn.disabled = true;
         btn.textContent = 'Sending...';
-        var formData = new FormData(this);
-        fetch('https://app.leadsnap.com/embed/store', {
+        var formData = new URLSearchParams(new FormData(this)).toString();
+        fetch('/.netlify/functions/lead', {
           method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body: formData
         }).then(function() {
           document.getElementById('leadForm').style.display = 'none';
@@ -2423,7 +2495,7 @@
             <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
           </div>
           <div class="step-number">Step 1</div>
-          <div class="step-title">Schedule Your Free Inspection</div>
+          <h3 class="step-title">Schedule Your Free Inspection</h3>
           <div class="step-desc">We come to your home and look at everything — the foundation, the crawl space, the walls, the floors. No obligation. If your home doesn’t need repair, we’ll tell you.</div>
         </div>
 
@@ -2433,7 +2505,7 @@
             <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
           </div>
           <div class="step-number">Step 2</div>
-          <div class="step-title">Get a Written Repair Plan</div>
+          <h3 class="step-title">Get a Written Repair Plan</h3>
           <div class="step-desc">After the inspection, you get a written proposal that covers what needs to be fixed, how we’ll fix it, and what it costs. Take it home, talk it over, and decide on your own time.</div>
         </div>
 
@@ -2443,7 +2515,7 @@
             <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
           </div>
           <div class="step-number">Step 3</div>
-          <div class="step-title">We Fix the Problem</div>
+          <h3 class="step-title">We Fix the Problem</h3>
           <div class="step-desc">Our crew shows up on the scheduled day, on time, and gets to work. We keep you updated through the job so you always know what’s happening at your home.</div>
         </div>
 
@@ -2453,7 +2525,7 @@
             <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
           </div>
           <div class="step-number">Step 4</div>
-          <div class="step-title">Your Home Is Protected</div>
+          <h3 class="step-title">Your Home Is Protected</h3>
           <div class="step-desc">When the work is done, we walk you through everything we did. Your foundation is stable, your crawl space is dry, and the repair is backed by our warranty.</div>
         </div>
 
@@ -2563,13 +2635,13 @@
           <p class="why-subtext">Your home is your biggest investment. You deserve a team that treats it that way.</p>
         </div>
         <h3>We Know What Augusta’s Red Clay Does to Homes</h3>
-        <p>Augusta sits on the Fall Line where Georgia’s red clay Piedmont soil meets the sandy Coastal Plain. That clay swells when the spring rains hit and shrinks in the summer heat. Year after year, that cycle pushes on foundations, opens cracks, and causes floors to sag. Most homes in Augusta were built in the 1960s and 70s, which means they’ve been through decades of this. We see it every day and know exactly what to look for.</p>
+        <p>Augusta sits on the Fall Line where Georgia’s red clay Piedmont soil meets the sandy Coastal Plain. That clay swells when the spring rains hit and shrinks in the summer heat. Year after year, that cycle pushes on foundations, opens cracks, and causes floors to sag. Most homes in Augusta were built in the 1960s and 70s, which means they’ve been through decades of this. We see it every day and know exactly what to look for. From Evans to Martinez to Aiken across the river in South Carolina, the soil pattern is the same — and so is the way foundation repair in Augusta GA has to address it: at the source, not the surface.</p>
 
         <h3>Honest Inspections, No Pressure</h3>
-        <p>We’re not here to scare you into work you don’t need. If your foundation is fine, we’ll tell you that. If it does need repair, we explain what’s going on in plain language, hand you a written proposal, and let you decide on your own time. No rush, no pressure.</p>
+        <p>We’re not here to scare you into work you don’t need. If your foundation is fine, we’ll tell you that. If it does need repair, we explain what’s going on in plain language, hand you a written proposal, and let you decide on your own time. No rush, no pressure. If you’ve been calling around to companies that repair foundations and getting wildly different quotes, we’ll show you what each method actually does so you can compare them apples to apples.</p>
 
         <h3>Repairs That Last</h3>
-        <p>Every repair we do comes with a warranty. We use proven methods — from push piers and helical piers to full crawl space encapsulation systems — built for the soil conditions in this part of Georgia. When the job is done, you shouldn’t have to think about your foundation again.</p>
+        <p>Every repair <a href="/" style="color:#2563eb;text-decoration:underline;font-style:italic;">Queen Foundation Repair</a> does comes with a warranty. We use proven methods — from push piers and helical piers to full crawl space encapsulation systems — built for the soil conditions in this part of Georgia. When the job is done, you shouldn’t have to think about your foundation again. As a foundation specialist serving the CSRA region, we focus on permanent fixes that hold through every rainy season — not patches that look good for six months.</p>
 
         <a href="javascript:void(0)" onclick="openModal()" class="why-cta">Get My Free Quote</a>
       </div>
@@ -2751,7 +2823,7 @@
             <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
           </button>
           <div class="faq-answer">
-            <p>In Augusta’s humid climate, an open crawl space lets moisture in constantly. That moisture leads to mold growth, wood rot on your floor joists, pest problems, and musty smells that come up through your floors. Encapsulation seals the space off with a vapor barrier and controls the humidity. Homeowners typically notice the musty smell is gone, temperatures are more even throughout the house, and the space under their home stays dry.</p>
+            <p>In Augusta’s humid climate, an open crawl space lets moisture in constantly. That moisture leads to mold growth, wood rot on your floor joists, pest problems, and musty smells that come up through your floors. Encapsulation seals the space off with a vapor barrier and controls the humidity. Homeowners typically notice the musty smell is gone, temperatures are more even throughout the house, and the space under their home stays dry. For homes with standing water on top of humidity, foundation waterproofing services and crawl space waterproofing pair with encapsulation — the vapor barrier handles air moisture, the waterproofing handles the actual water.</p>
           </div>
         </div>
 
@@ -2771,7 +2843,7 @@
             <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
           </button>
           <div class="faq-answer">
-            <p>Yes. We serve homeowners throughout the Augusta metro including Evans, Martinez, Grovetown, Hephzibah, and North Augusta. Whether you’re in Summerville, National Hills, Midtown, or anywhere in Richmond County and the surrounding communities, we’re here to help.</p>
+            <p>Yes. We serve homeowners throughout the Augusta metro including Evans, Martinez, Grovetown, Hephzibah, North Augusta, and Aiken across the river in South Carolina. Whether you’re in Summerville, National Hills, Midtown, or anywhere in Richmond County and the surrounding communities, we’re here to help. If you’re searching for a foundation contractor in any of these areas, we cover them all.</p>
           </div>
         </div>
       </div>
@@ -2794,6 +2866,22 @@
   });
 })();
 </script>
+
+<!-- ========================
+     SERVICE AREA
+     ======================== -->
+<section class="service-area">
+  <div class="service-area-inner" id="serviceAreaBox">
+    <button class="service-area-toggle" onclick="document.getElementById('serviceAreaBox').classList.toggle('active')">
+      <span class="service-area-arrow">&#9660;</span> Our Augusta Service Area
+    </button>
+    <div class="service-area-content">
+      <p class="service-area-desc">We serve homeowners across all of Augusta. If you don't see your specific neighborhood listed below, give us a call and we'll confirm.</p>
+      <p class="service-area-list"><strong>Neighborhoods:</strong> Apple Valley, Arcadia, Bethlehem, Downtown Augusta, East Augusta, Forest Hills, Glenn Hills, Greenbrier, Harrisburg-West End, Kingston, Laney-Walker North, Meadowbrook, Medical District, Montclair, National Hills, Olde Town, Paine College, Pepperidge, Sand Hills, South Augusta, Summerville, Turpin Hill, Waverly, Woodlawn</p>
+      <p class="service-area-list"><strong>ZIP codes:</strong> 30901, 30904, 30905, 30906, 30909, 30912</p>
+    </div>
+  </div>
+</section>
 
 <!-- ========================
      FOOTER
@@ -2848,13 +2936,12 @@
         <a href="/">Home</a>
         <a href="/about-us/">About Us</a>
         <a href="/contact-us/">Contact Us</a>
-        <a href="/locations/">Areas We Serve</a>
       </div>
 
     </div>
 
     <div class="footer-bottom">
-      <span>&copy; 2026 Queen Foundation Repair. All rights reserved.</span>
+      <span>&copy; 2026 Conversion Lab LLC dba Queen Foundation Repair. All rights reserved.</span>
       <a href="/privacy-policy/">Privacy Policy</a>
     </div>
   </div>
@@ -2879,9 +2966,11 @@
         <option value="other">Other</option>
       </select>
       <textarea name="cf-field[cf-51368]" placeholder="Describe what you're seeing (cracks, water, uneven floors, etc.)" style="width:100%;padding:12px 14px;margin-bottom:12px;border:1px solid #d0d0d0;border-radius:6px;font-size:0.95rem;font-family:'Noto Sans',sans-serif;resize:vertical;min-height:60px;"></textarea>
-      <input type="hidden" name="api_key" value="k4nmedaZbkxQugZ5PJ0L4zPjHFHmrhPk">
+      <input type="hidden" name="page_id" value="locations/foundation-repair-augusta-ga">
       <input type="hidden" name="hostname" id="modalHostname" value="">
+      <div style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;overflow:hidden;" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
       <button type="submit" class="form-submit-btn">Get My Free Quote</button>
+      <p class="sms-consent" style="font-size:11px;color:#888;line-height:1.4;margin-top:10px;text-align:center;">By submitting this form, you consent to receive text messages from Queen Foundation Repair regarding your inquiry. Reply STOP to opt out. Msg &amp; data rates may apply.</p>
     </form>
     <div class="form-success" id="modalSuccess">
       <p><strong>Thank You For Your Submission!</strong></p>
@@ -2905,12 +2994,25 @@ function closeModal() {
 
 document.getElementById('modalForm').addEventListener('submit', function(e) {
   e.preventDefault();
+  if (this.querySelector('[name="website"]').value !== '') {
+    document.getElementById('modalForm').style.display = 'none';
+    document.getElementById('modalSuccess').style.display = 'block';
+    return;
+  }
+  var allText = '';
+  this.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea').forEach(function(el) { allText += el.value + ' '; });
+  if (/[\u0400-\u04FF\u0500-\u052F]/.test(allText)) {
+    document.getElementById('modalForm').style.display = 'none';
+    document.getElementById('modalSuccess').style.display = 'block';
+    return;
+  }
   var btn = this.querySelector('.form-submit-btn');
   btn.disabled = true;
   btn.textContent = 'Sending...';
-  var formData = new FormData(this);
-  fetch('https://app.leadsnap.com/embed/store', {
+  var formData = new URLSearchParams(new FormData(this)).toString();
+  fetch('/.netlify/functions/lead', {
     method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: formData
   }).then(function() {
     document.getElementById('modalForm').style.display = 'none';
@@ -2946,24 +3048,34 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
       "sameAs": "https://en.wikipedia.org/wiki/Augusta,_Georgia"
     },
     {
-      "@type": "City",
-      "name": "Evans"
+      "@type": "Place",
+      "name": "Evans",
+      "containedInPlace": {"@type": "City", "name": "Augusta"}
     },
     {
-      "@type": "City",
-      "name": "Martinez"
+      "@type": "Place",
+      "name": "Martinez",
+      "containedInPlace": {"@type": "City", "name": "Augusta"}
     },
     {
-      "@type": "City",
-      "name": "Grovetown"
+      "@type": "Place",
+      "name": "Grovetown",
+      "containedInPlace": {"@type": "City", "name": "Augusta"}
     },
     {
-      "@type": "City",
-      "name": "North Augusta"
+      "@type": "Place",
+      "name": "Aiken",
+      "containedInPlace": {"@type": "City", "name": "Augusta"}
     },
     {
-      "@type": "City",
-      "name": "Hephzibah"
+      "@type": "Place",
+      "name": "North Augusta",
+      "containedInPlace": {"@type": "City", "name": "Augusta"}
+    },
+    {
+      "@type": "Place",
+      "name": "Hephzibah",
+      "containedInPlace": {"@type": "City", "name": "Augusta"}
     }
   ],
   "openingHoursSpecification": [
@@ -3411,8 +3523,9 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
         <input type="tel" name="cf-field[pdf-phone]" placeholder="Mobile number" required>
       </div>
       <textarea name="cf-field[cf-51368]" placeholder="Message"></textarea>
-      <input type="hidden" name="api_key" value="k4nmedaZbkxQugZ5PJ0L4zPjHFHmrhPk">
+      <input type="hidden" name="page_id" value="locations/foundation-repair-augusta-ga">
       <input type="hidden" name="hostname" value="">
+      <div style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;overflow:hidden;" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
       <button type="submit" class="text-send-btn">Send</button>
     </form>
     <p class="text-widget-consent">By sending this message, you expressly consent to receive communications from us. You may opt out at any time.</p>
@@ -3437,11 +3550,23 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
 
   btn.addEventListener('click', function() {
     panel.classList.toggle('active');
+    sessionStorage.setItem('twSeen', '1');
   });
 
   closeBtn.addEventListener('click', function() {
     panel.classList.remove('active');
+    sessionStorage.setItem('twSeen', '1');
   });
+
+  // Auto-open after 20 seconds — once per session only
+  if (!sessionStorage.getItem('twSeen')) {
+    setTimeout(function() {
+      if (!panel.classList.contains('active')) {
+        panel.classList.add('active');
+        sessionStorage.setItem('twSeen', '1');
+      }
+    }, 60000);
+  }
 
   // Close on outside click
   document.addEventListener('click', function(e) {
@@ -3452,12 +3577,27 @@ document.getElementById('modalForm').addEventListener('submit', function(e) {
 
   form.addEventListener('submit', function(e) {
     e.preventDefault();
+    if (form.querySelector('[name="website"]').value !== '') {
+      form.style.display = 'none';
+      form.parentElement.querySelector('.text-widget-consent').style.display = 'none';
+      success.style.display = 'block';
+      return;
+    }
+    var allText = '';
+    form.querySelectorAll('input[type="text"], input[type="tel"], input[type="email"], textarea').forEach(function(el) { allText += el.value + ' '; });
+    if (/[\u0400-\u04FF\u0500-\u052F]/.test(allText)) {
+      form.style.display = 'none';
+      form.parentElement.querySelector('.text-widget-consent').style.display = 'none';
+      success.style.display = 'block';
+      return;
+    }
     var submitBtn = form.querySelector('.text-send-btn');
     submitBtn.disabled = true;
     submitBtn.textContent = 'Sending...';
-    var formData = new FormData(form);
-    fetch('https://app.leadsnap.com/embed/store', {
+    var formData = new URLSearchParams(new FormData(form)).toString();
+    fetch('/.netlify/functions/lead', {
       method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: formData
     }).then(function() {
       form.style.display = 'none';

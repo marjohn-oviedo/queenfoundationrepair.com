@@ -1,3 +1,14 @@
+# SECURITY: block public access to dev files + functions source (these leak the LeadSnap API key).
+# The ! force flag overrides the real files. Does NOT affect /.netlify/functions/ (the live endpoint).
+/netlify/*  /  404!
+/root-index.html  /  404!
+/service-page-master-template.html  /  404!
+/build_location.py  /  404!
+/homepage-content.md  /  404!
+/collage-preview.html  /  404!
+/location-template/*  /  404!
+/staging/*  /  404!
+
 # Brand pages
 /about/  /about-us/  301
 /contact/  /contact-us/  301
@@ -632,7 +643,6 @@
 /virginia/  /  301
 /wadley/  /  301
 /mass-page-template-sejuk/  /  301
-/privacy-policy/  /  301
 /reviews/  /  301
 /locations/  /  301
 
